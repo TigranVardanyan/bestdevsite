@@ -1,0 +1,31 @@
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    width: calc(100% - 30px);
+    .author{
+      font-size: 30px !important;
+    }
+    .social-links_new {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  :root {
+    --header-height: 50px;
+    --acent-color:blue;
+  }
+  .wrapper {
+    header {
+      nav {
+        ul {
+          transform: translateY(var(--header-height));
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

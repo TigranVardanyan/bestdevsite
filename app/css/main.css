@@ -58,6 +58,64 @@ html {
       text-decoration: none;
       color: inherit; }
 
+aside {
+  position: fixed;
+  top: 140px;
+  right: 0;
+  width: 160px; }
+  aside .switch {
+    background: #999999;
+    height: 40px;
+    width: 40px;
+    margin: 15px 0 15px 15px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    left: -webkit-calc(100% - 55px);
+    left: calc(100% - 55px); }
+  aside .page_color {
+    background: antiquewhite;
+    padding: 15px 15px 20px 15px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #424242; }
+    aside .page_color-colors {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5px;
+      text-align: center;
+      margin-bottom: 22px; }
+      aside .page_color-colors .color1 {
+        background-color: #7e6df6; }
+      aside .page_color-colors .color2 {
+        background-color: #F44336; }
+      aside .page_color-colors .color3 {
+        background-color: #2196F3; }
+      aside .page_color-colors .color4 {
+        background-color: #FF5722; }
+      aside .page_color-colors .color5 {
+        background-color: #2eca7f; }
+      aside .page_color-colors .color6 {
+        background-color: #29B6F6; }
+      aside .page_color-colors .color7 {
+        background-color: #E91E63; }
+      aside .page_color-colors .color8 {
+        background-color: #A0F; }
+      aside .page_color-colors .color9 {
+        background-color: #FF9800; }
+      aside .page_color-colors .color10 {
+        background-color: #FBC02D; }
+      aside .page_color-colors .color11 {
+        background-color: #9dd100; }
+      aside .page_color-colors .color12 {
+        background-color: #26d9ac; }
+      aside .page_color-colors div {
+        cursor: pointer;
+        width: 35px;
+        height: 24px; }
+
 .wrapper header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -76,15 +134,15 @@ html {
       font-weight: 700; }
       .wrapper header .title a h1 .cChange {
         color: var(--acent-color); }
-  .wrapper header .navigation ul {
+  .wrapper header nav ul {
     list-style: none; }
-    .wrapper header .navigation ul li {
+    .wrapper header nav ul li {
       line-height: 1;
       display: inline-block;
       padding: 8px 0px;
       margin: 0px 20px;
       color: #b8bbbf; }
-      .wrapper header .navigation ul li:last-child {
+      .wrapper header nav ul li:last-child {
         margin: 0px 0px 0px 20px; }
 
 .wrapper .main {
@@ -112,6 +170,9 @@ html {
         -o-transition: 0.4s all ease;
         transition: 0.4s all ease; }
         .wrapper .main-header .photo img:hover {
+          -webkit-transform: translateY(-10px);
+              -ms-transform: translateY(-10px);
+                  transform: translateY(-10px);
           -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
                   box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15); }
     .wrapper .main-header_text {
@@ -162,6 +223,9 @@ html {
     .wrapper .main-content table .cChange {
       color: var(--acent-color); }
     .wrapper .main-content .download_button {
+      -webkit-transition: 0.4s all ease;
+      -o-transition: 0.4s all ease;
+      transition: 0.4s all ease;
       font-size: 14px;
       font-weight: 600;
       border: none;
@@ -278,3 +342,24 @@ body {
   100% {
     left: -10%;
     top: -10%; } }
+
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px); }
+    .wrapper .author {
+      font-size: 30px !important; }
+    .wrapper .social-links_new {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 992px) {
+  :root {
+    --header-height: 50px;
+    --acent-color:blue; }
+  .wrapper header nav ul {
+    -webkit-transform: translateY(var(--header-height));
+        -ms-transform: translateY(var(--header-height));
+            transform: translateY(var(--header-height)); }
+    .wrapper header nav ul li {
+      display: block; } }
