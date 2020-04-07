@@ -1,7 +1,6 @@
 @charset "UTF-8";
 :root {
-  --header-height: 100px;
-  --acent-color:blue; }
+  --header-height: 100px; }
 
 ::-webkit-scrollbar {
   width: 6px; }
@@ -74,7 +73,7 @@ aside {
     left: -webkit-calc(100% - 55px);
     left: calc(100% - 55px); }
   aside .page_color {
-    background: antiquewhite;
+    background: #ffffff;
     padding: 15px 15px 20px 15px;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -133,7 +132,7 @@ aside {
       font-size: 20px;
       font-weight: 700; }
       .wrapper header .title a h1 .cChange {
-        color: var(--acent-color); }
+        color: var(--accent-color); }
   .wrapper header nav ul {
     list-style: none; }
     .wrapper header nav ul li {
@@ -152,7 +151,7 @@ aside {
           box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 25px 0px; }
   .wrapper .main-header {
     padding: 50px;
-    background-color: rgba(0, 0, 255, 0.3);
+    background-color: var(--accent-color);
     background-size: contain;
     background-image: url("../img/main_bg.png");
     border-top-left-radius: 15px;
@@ -221,7 +220,7 @@ aside {
     .wrapper .main-content table .table_a {
       color: #9E9E9E; }
     .wrapper .main-content table .cChange {
-      color: var(--acent-color); }
+      color: var(--accent-color); }
     .wrapper .main-content .download_button {
       -webkit-transition: 0.4s all ease;
       -o-transition: 0.4s all ease;
@@ -288,7 +287,7 @@ body {
   position: relative; }
 
 .soc_btn a .cChange {
-  color: var(--acent-color); }
+  color: var(--accent-color); }
 
 .soc_btn i {
   line-height: var(--soc_btn_size);
@@ -308,7 +307,7 @@ body {
   position: absolute;
   width: 120%;
   height: 120%;
-  background-color: var(--acent-color);
+  background-color: var(--accent-color);
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -356,7 +355,7 @@ body {
 @media only screen and (max-width: 992px) {
   :root {
     --header-height: 50px;
-    --acent-color:blue; }
+    --accent-color:blue; }
   .wrapper header nav ul {
     -webkit-transform: translateY(var(--header-height));
         -ms-transform: translateY(var(--header-height));

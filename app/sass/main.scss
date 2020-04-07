@@ -3,7 +3,6 @@
 
 :root {
   --header-height: 100px;
-  --acent-color:blue;
 }
 ::-webkit-scrollbar { width: 6px;}
 ::-webkit-scrollbar-button {  background-color: transparent; height: 0px }
@@ -49,7 +48,6 @@ aside {
   top: 140px;
   right: 0;
   width: 160px;
-
   .switch {
     background: #999999;
     height: 40px;
@@ -61,7 +59,7 @@ aside {
     left: calc(100% - 55px);
   }
   .page_color {
-    background: antiquewhite;
+    background: #ffffff;
     padding: 15px 15px 20px 15px;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -132,7 +130,7 @@ aside {
           font-size: 20px;
           font-weight: 700;
           .cChange {
-            color: var(--acent-color);
+            color: var(--accent-color);
           }
         }
       }
@@ -159,7 +157,7 @@ aside {
     box-shadow:rgba(0, 0, 0, 0.1) 0px 15px 25px 0px;
     &-header {
       padding: 50px;
-      background-color: rgba(0,0,255,0.3);
+      background-color: var(--accent-color);
       background-size: contain;
       background-image: url("../img/main_bg.png");
       border-top-left-radius: 15px;
@@ -220,7 +218,7 @@ aside {
           color: #9E9E9E;
         }
         .cChange {
-          color: var(--acent-color);
+          color: var(--accent-color);
         }
       }
       .download_button {
@@ -287,7 +285,7 @@ body {
 }
 
 .soc_btn a .cChange {
-  color: var(--acent-color);
+  color: var(--accent-color);
 }
 
 .soc_btn i {
@@ -306,7 +304,7 @@ body {
   position: absolute;
   width: 120%;
   height: 120%;
-  background-color: var(--acent-color);
+  background-color: var(--accent-color);
   transform: rotate(45deg);
   left: -110%;
   top: 90%;
