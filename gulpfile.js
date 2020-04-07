@@ -27,7 +27,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     //     notify: false // Отключаем уведомления
     // });
     browserSync.init({
-        proxy: "",  //enter location
+        proxy: "localhost/homepage/4project/bestdevsite/app/",  //enter location
         port: 433
     });
 });

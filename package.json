@@ -1,21 +1,21 @@
 {
-  "name": "optimizedHtmlCssJsProject",
+  "name": "bestdevsite",
   "version": "0.0.0",
-  "description": "",
+  "description": "before start change param(object) proxy in browserSync init method",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TigranVardanyan/optimizedHtmlCssJsProject"
+    "url": "git+https://github.com/TigranVardanyan/bestdevsite"
   },
   "author": "TigVa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TigranVardanyan/optimizedHtmlCssJsProject/issues"
+    "url": "https://github.com/TigranVardanyan/bestdevsite/issues"
   },
-  "homepage": "https://github.com/TigranVardanyan/optimizedHtmlCssJsProject#readme",
+  "homepage": "https://github.com/TigranVardanyan/bestdevsite#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
