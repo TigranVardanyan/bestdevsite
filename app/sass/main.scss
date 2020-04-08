@@ -1,8 +1,9 @@
 //imports
-
+@import "animations";
 
 :root {
   --header-height: 100px;
+  --text-color-change-transition: 0.4s all ease;
 }
 ::-webkit-scrollbar { width: 6px;}
 ::-webkit-scrollbar-button {  background-color: transparent; height: 0px }
@@ -25,7 +26,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: #424242;
-  transition:  0.3s all ease;
+  transition:  var(--text-color-change-transition);
   body {
     background-image: url("../img/body_bg.png");
     background-color: #f5f5f5;
@@ -43,13 +44,19 @@ html {
     }
   }
 }
+
+.mobile_header {
+  display: none;
+}
+
 aside {
   position: fixed;
   top: 140px;
   right: 0;
-  width: 160px;
+  z-index: 9999;
   .switch {
-    background: #999999;
+    background: #fff;
+    border: 1px solid #d5d5d5;
     height: 40px;
     width: 40px;
     margin: 15px 0 15px 15px;
@@ -57,18 +64,37 @@ aside {
     text-align: center;
     position: relative;
     left: calc(100% - 55px);
+    transition: var(--text-color-change-transition);
+    i {
+      transition: var(--text-color-change-transition);
+    }
+    &:hover {
+      i {
+        transition: var(--text-color-change-transition);
+        transform-origin: 52% 52%;
+        transform: rotate(700deg);
+      }
+    }
   }
   .page_color {
     background: #ffffff;
+    transition: 0.5s all ease;
+    box-shadow: 0 1px 12px rgba(0,0,0,.1);
+    border: 1px solid #d5d5d5;
     padding: 15px 15px 20px 15px;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     color: #424242;
+    transform: translateX(100%);
+    &.show_toolbar {
+      transform: translateX(0);
+    }
     &-colors {
       display: grid;
+      margin: 0 auto;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 35px 35px 35px;
       grid-gap: 5px;
       text-align: center;
       margin-bottom: 22px;
@@ -110,8 +136,12 @@ aside {
       }
       div {
         cursor: pointer;
-        width: 35px;
+        width: 100%;
         height: 24px;
+        color: #fff;
+        font-size: 10px;
+        line-height: 24px;
+        text-align: center;
       }
     }
   }
@@ -147,15 +177,50 @@ aside {
           &:last-child {
             margin: 0px 0px 0px 20px;
           }
+          &:hover {
+            a {
+              opacity: 1;
+              &::before {
+                transform: scale(1);
+              }
+            }
+          }
+          &.active {
+            a {
+              opacity: 1;
+              &::before {
+                transform: scale(1);
+              }
+            }
+          }
+          a {
+            position: relative;
+            color: #49515d;
+            opacity: 0.7;
+            font-weight: 400;
+            outline: none;
+            &::before {
+              transition: var(--text-color-change-transition) ;
+              content: "";
+              position: absolute;
+              width: 86%;
+              height: 2px;
+              border-radius: 1px;
+              background-color: var(--accent-color);
+              left: 10%;
+              bottom: -30%;
+              transform: scale(0);
+            }
+          }
         }
       }
     }
   }
   .main {
-    background-color: #fff;
     border-radius: 15px;
-    box-shadow:rgba(0, 0, 0, 0.1) 0px 15px 25px 0px;
+
     &-header {
+      transition: var(--text-color-change-transition);
       padding: 50px;
       background-color: var(--accent-color);
       background-size: contain;
@@ -168,7 +233,7 @@ aside {
           position: relative;
           max-width: 100%;
           border: 3px solid #fff;
-          margin-bottom: -105px;
+          margin-bottom: -75px;
           box-shadow: 0 3px 8px 0 rgba(0,0,0,.1);
           transition:  0.4s all ease;
           &:hover {
@@ -186,38 +251,45 @@ aside {
           font-size: 54px;
           font-weight: 700;
           text-align: center;
+          color: #fff;
         }
-        .rotate_profession {
+        .profession {
           position: relative;
           h2 {
             font-size: 18px;
-            position: relative;
-            backface-visibility: hidden;
-            &:first-child {
-              top:23px;
-            }
-            &:last-child {
-              top:-23px;
-              transform: rotateY(180deg);
-            }
+            color: #fff;
+            //position: relative;
+            //backface-visibility: hidden;
+            //&:first-child {
+            //  top:23px;
+            //}
+            //&:last-child {
+            //  top:-23px;
+            //  transform: rotateY(180deg);
+            //}
           }
         }
       }
     }
     &-content {
+      box-shadow:rgba(0, 0, 0, 0.1) 0px 15px 25px 0px;
       font-family: "Roboto", sans-serif;
       padding: 50px;
       line-height: 24px;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
       table {
+        width: 100%;
         .table_q {
           color:#424242;
+          min-width: 120%;
         }
         .table_a {
           color: #9E9E9E;
+          min-width: 120%;
         }
         .cChange {
+          transition: var(--text-color-change-transition);
           color: var(--accent-color);
         }
       }
@@ -278,13 +350,14 @@ body {
   border-radius: 30%;
   border: 3px solid #f1f1f1;
   box-shadow: 0 5px 15px -5px #00000070;
-  color: var(--primary-color);
+  color: var(--accent-color);
   overflow: hidden;
   position: relative;
 
 }
 
 .soc_btn a .cChange {
+  transition: var(--text-color-change-transition);
   color: var(--accent-color);
 }
 
@@ -305,6 +378,7 @@ body {
   width: 120%;
   height: 120%;
   background-color: var(--accent-color);
+  transition: var(--text-color-change-transition);
   transform: rotate(45deg);
   left: -110%;
   top: 90%;

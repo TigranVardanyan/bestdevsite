@@ -13,10 +13,10 @@
 </head>
 <body>
 <aside>
-  <div class="switch">
-    <i class="fas fa-cog cogRot2"></i>
+  <div class="switch" id="cogRot">
+    <i class="fas fa-cog" ></i>
   </div>
-  <div class="page_color">
+  <div class="page_color" id="toolbarColors">
     <div>
       <p>
         Main color
@@ -38,25 +38,37 @@
     </div>
   </div>
 </aside>
-<div class="wrapper container">
-  <header class="row">
-    <div class="title">
-      <a href="#">
-        <h1>Tigran <span class="cChange">Vardanyan</span></h1>
-      </a>
+<div class="mobile_header">
+  <div class="mobile_header-title">
+    Tigran Vardanyan
+  </div>
+  <div class="mobile_header-nav-toggle">
+    <i class="fas fa-bars" id="nav-toggle"></i>
+  </div>
+</div>
+<div class="wrapper container-fluid">
+  <div class="row">
+    <div class="container">
+      <header class="row">
+        <div class="title mobile_hidden">
+          <a href="#">
+            <h1>Tigran <span class="cChange">Vardanyan</span></h1>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Extra</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Extra</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
   <div class="main row">
     <div class="container">
       <div class="main-header row">
@@ -67,9 +79,8 @@
         </div>
         <div class="col-md-8 col-12 main-header_text">
           <h2 class="author">TIGRAN VARDANYAN</h2>
-          <div class="rotate_profession">
-            <h2>Software Developer</h2>
-            <h2>Frontend Developer</h2>
+          <div class="profession">
+            <h2 class="reveal">Software Developer</h2>
           </div>
           <div class="main-header-social_links">
             <div class="social-links_new">
@@ -133,6 +144,8 @@
     </div>
   </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+<script src="js/reveal.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

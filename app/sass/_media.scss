@@ -1,6 +1,89 @@
 @media only screen and (max-width: 576px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+  :root {
+    --header-height: 50px;
+  }
+  .mobile_header {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    width: 100%;
+    background-color: var(--accent-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: var(--header-height);
+    line-height: var(--header-height);
+    &-title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+    }
+    &-nav-toggle {
+      font-size: 21px;
+    }
+  }
   .wrapper {
+    margin-top: var(--header-height);
+    padding-top: 15px;
     width: calc(100% - 30px);
+    header {
+      height: 0px;
+      .title {
+        &.mobile_hidden {
+          display: none;
+        }
+      }
+      nav {
+        position: fixed;
+        top: var(--header-height);
+        left: 100%;
+        z-index: 99999;
+        transition: 0.4s all ease-in-out;
+        background-color: var(--accent-color);
+        width: 110vw;
+        height: 110vh;
+        &.active {
+          left: calc(100% - 320px);
+          position: fixed;
+          top: var(--header-height);
+        }
+        ul {
+          background-color: var(--accent-color);
+          li {
+            display: block;
+            a {
+              color: #fff;
+              margin: 15px 10px;
+              &::before {
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .main {
+      &-header {
+        padding: 50px 30px;
+        .photo {
+          img {
+            margin-bottom: 10px;
+          }
+        }
+        &_text {
+        }
+      }
+      &-content {
+        padding: 50px 30px;
+        .download_button {
+          margin-bottom: 10px;
+        }
+      }
+    }
     .author{
       font-size: 30px !important;
     }
@@ -11,21 +94,3 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
-  :root {
-    --header-height: 50px;
-    --accent-color:blue;
-  }
-  .wrapper {
-    header {
-      nav {
-        ul {
-          transform: translateY(var(--header-height));
-          li {
-            display: block;
-          }
-        }
-      }
-    }
-  }
-}
