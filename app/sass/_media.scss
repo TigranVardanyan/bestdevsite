@@ -71,28 +71,51 @@
     }
     .main {
       padding-top: 0;
-      &-header {
-        padding: 50px 30px;
-        background-size: cover;
-        background-attachment: scroll;
-        background-position: center center;
-        background-repeat: no-repeat;
-        .photo {
-          img {
+      .section-home {
+        .main-header {
+          padding: 50px 30px;
+          background-size: cover;
+          background-attachment: scroll;
+          background-position: center center;
+          background-repeat: no-repeat;
+          .photo {
+            img {
+              margin-bottom: 10px;
+            }
+          }
+          &_text {
+          }
+        }
+        .main-content {
+          padding: 50px 30px;
+          font-size: 12px;
+          table {
+            font-size: 12px;
+          }
+          .download_button {
             margin-bottom: 10px;
           }
         }
-        &_text {
-        }
       }
-      &-content {
-        padding: 50px 30px;
-        font-size: 12px;
-        table {
-          font-size: 12px;
+      .section-portfolio {
+        .main-header {
+          .section-heading {
+          }
         }
-        .download_button {
-          margin-bottom: 10px;
+        .main-content {
+          .portfolio-filters{
+            ul {
+              li {
+              }
+            }
+          }
+          .portfolio-grid {
+            grid-template-columns: 50% 50%;
+            .portfolio-item {
+              img  {
+              }
+            }
+          }
         }
       }
     }
