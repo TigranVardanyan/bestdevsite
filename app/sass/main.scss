@@ -38,9 +38,11 @@ html {
   a {
     text-decoration: none;
     color: inherit;
+    outline: none;
     &:hover {
       text-decoration: none;
       color: inherit;
+      outline: none;
     }
   }
 }
@@ -148,68 +150,79 @@ aside {
 }
 
 .wrapper {
-  header {
-    display: flex;
-    justify-content: space-between;
-    height: var(--header-height);
-    line-height: var(--header-height);
-    .title {
-      a {
-        display: inline-block;
-        h1 {
-          font-size: 20px;
-          font-weight: 700;
-          .cChange {
-            color: var(--accent-color);
+  .header-row {
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+    &.sticked {
+      background-color: #fff;
+      box-shadow: 0 3px 8px 0 rgba(0,0,0,.1);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      height: var(--header-height);
+      line-height: var(--header-height);
+      transition: 0.3s all ease;
+
+      .title {
+        a {
+          display: inline-block;
+          h1 {
+            font-size: 20px;
+            font-weight: 700;
+            .cChange {
+              color: var(--accent-color);
+            }
           }
         }
       }
-    }
-    nav {
-      ul {
-        list-style: none;
-        li {
-          line-height: 1;
-          display: inline-block;
-          padding: 8px 0px;
-          margin: 0px 20px;
-          color : #b8bbbf;
-          &:last-child {
-            margin: 0px 0px 0px 20px;
-          }
-          &:hover {
-            a {
-              opacity: 1;
-              &::before {
-                transform: scale(1);
+      nav {
+        ul {
+          list-style: none;
+          li {
+            line-height: 1;
+            display: inline-block;
+            padding: 8px 0px;
+            margin: 0px 20px;
+            color : #b8bbbf;
+            &:last-child {
+              margin: 0px 0px 0px 20px;
+            }
+            &:hover {
+              a {
+                opacity: 1;
+                &::before {
+                  transform: scale(1);
+                }
               }
             }
-          }
-          &.active {
-            a {
-              opacity: 1;
-              &::before {
-                transform: scale(1);
+            &.active {
+              a {
+                opacity: 1;
+                &::before {
+                  transform: scale(1);
+                }
               }
             }
-          }
-          a {
-            position: relative;
-            color: #49515d;
-            opacity: 0.7;
-            font-weight: 400;
-            outline: none;
-            &::before {
-              transition: var(--text-color-change-transition) ;
-              content: "";
-              position: absolute;
-              width: 86%;
-              height: 2px;
-              border-radius: 1px;
-              background-color: var(--accent-color);
-              left: 10%;
-              bottom: -30%;
-              transform: scale(0);
+            a {
+              position: relative;
+              color: #49515d;
+              opacity: 0.7;
+              font-weight: 400;
+              outline: none;
+              &::before {
+                transition: var(--text-color-change-transition) ;
+                content: "";
+                position: absolute;
+                width: 86%;
+                height: 2px;
+                border-radius: 1px;
+                background-color: var(--accent-color);
+                left: 10%;
+                bottom: -30%;
+                transform: scale(0);
+              }
             }
           }
         }
@@ -218,7 +231,7 @@ aside {
   }
   .main {
     border-radius: 15px;
-
+    padding-top: var(--header-height);
     &-header {
       transition: var(--text-color-change-transition);
       padding: 50px;
@@ -255,6 +268,8 @@ aside {
         }
         .profession {
           position: relative;
+          width: 100%;
+          text-align: center;
           h2 {
             font-size: 18px;
             color: #fff;
@@ -278,6 +293,7 @@ aside {
       line-height: 24px;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
+      background-color: #fff;
       table {
         width: 100%;
         .table_q {
@@ -294,6 +310,7 @@ aside {
         }
       }
       .download_button {
+        outline: none;
         transition:  0.4s all ease;
         font-size: 14px;
         font-weight: 600;
@@ -313,8 +330,8 @@ aside {
   footer {
     div {
       width: 100%;
-      margin-top: 24px;
-      margin-bottom: 18px;
+      margin-top: 34px;
+      margin-bottom: 28px;
       text-align: center;
     }
   }

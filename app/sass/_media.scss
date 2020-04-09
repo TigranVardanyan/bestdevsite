@@ -30,36 +30,39 @@
     margin-top: var(--header-height);
     padding-top: 15px;
     width: calc(100% - 30px);
-    header {
-      height: 0px;
-      .title {
-        &.mobile_hidden {
-          display: none;
+    .header-row {
+      z-index: 99999;
+      header {
+        height: 0px;
+        .title {
+          &.mobile_hidden {
+            display: none;
+          }
         }
-      }
-      nav {
-        position: fixed;
-        top: var(--header-height);
-        left: 100%;
-        z-index: 99999;
-        transition: 0.4s all ease-in-out;
-        background-color: var(--accent-color);
-        width: 110vw;
-        height: 110vh;
-        &.active {
-          left: calc(100% - 320px);
+        nav {
           position: fixed;
           top: var(--header-height);
-        }
-        ul {
+          left: 100%;
+          z-index: 99999;
+          transition: 0.4s all ease-in-out;
           background-color: var(--accent-color);
-          li {
-            display: block;
-            a {
-              color: #fff;
-              margin: 15px 10px;
-              &::before {
-                background-color: #fff;
+          width: 110vw;
+          height: 110vh;
+          &.active {
+            left: calc(100% - 320px);
+            position: fixed;
+            top: var(--header-height);
+          }
+          ul {
+            background-color: var(--accent-color);
+            li {
+              display: block;
+              a {
+                color: #fff;
+                margin: 15px 10px;
+                &::before {
+                  background-color: #fff;
+                }
               }
             }
           }
@@ -67,8 +70,13 @@
       }
     }
     .main {
+      padding-top: 0;
       &-header {
         padding: 50px 30px;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
         .photo {
           img {
             margin-bottom: 10px;
@@ -79,6 +87,10 @@
       }
       &-content {
         padding: 50px 30px;
+        font-size: 12px;
+        table {
+          font-size: 12px;
+        }
         .download_button {
           margin-bottom: 10px;
         }

@@ -75,3 +75,27 @@ navToggle.addEventListener('click', () => {
   }
 
 });
+
+
+
+
+
+/*
+Scroll / header fix
+ */
+
+//main scripts
+let headerRow = document.querySelector('.header-row');
+window.onscroll = function() {
+  if(document.documentElement.clientWidth > 992) {
+    if(window.pageYOffset > 25) {
+      headerRow.classList.add('sticked');
+      root.style.setProperty('--header-height', '60px');
+    } else {
+      headerRow.classList.remove('sticked');
+      root.style.setProperty('--header-height', "100px");
+    }
+  } else {
+    root.style.setProperty('--header-height', "50px")
+  }
+};
