@@ -72,6 +72,46 @@
     visibility: hidden;
     display: none; } }
 
+@-webkit-keyframes animeOn {
+  0% {
+    opacity: 0 !important;
+    visibility: visible;
+    height: 0; }
+  100% {
+    opacity: 1 !important;
+    visibility: visible;
+    height: auto; } }
+
+@keyframes animeOn {
+  0% {
+    opacity: 0 !important;
+    visibility: visible;
+    height: 0; }
+  100% {
+    opacity: 1 !important;
+    visibility: visible;
+    height: auto; } }
+
+@-webkit-keyframes animeOff {
+  0% {
+    opacity: 1 !important;
+    visibility: visible;
+    height: auto; }
+  100% {
+    opacity: 0 !important;
+    visibility: hidden;
+    height: 0; } }
+
+@keyframes animeOff {
+  0% {
+    opacity: 1 !important;
+    visibility: visible;
+    height: auto; }
+  100% {
+    opacity: 0 !important;
+    visibility: hidden;
+    height: 0; } }
+
 :root {
   --header-height: 100px;
   --text-color-change-transition: 0.4s all ease; }
@@ -356,7 +396,8 @@ aside {
     overflow: visible;
     height: auto; }
   .wrapper .main .section-home .main-header .photo {
-    max-width: 280px; }
+    max-width: 280px;
+    margin: 0 auto; }
     .wrapper .main .section-home .main-header .photo img {
       position: relative;
       max-width: 100%;
@@ -402,7 +443,8 @@ aside {
       text-align: center; }
       .wrapper .main .section-home .main-header_text .profession h2 {
         font-size: 18px;
-        color: #fff; }
+        color: #fff;
+        margin: 0 -6px; }
   .wrapper .main .section-home .main-content table {
     width: 100%; }
     .wrapper .main .section-home .main-content table .table_q {
@@ -703,4 +745,80 @@ body {
       font-size: 30px !important; }
     .wrapper .social-links_new {
       display: grid;
-      grid-template-columns: 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+@media only screen and (max-width: 576px) {
+  .wrapper .social-links_new {
+    grid-template-columns: 1fr 1fr; } }
+
+.animateOn {
+  -webkit-animation-name: animeon;
+          animation-name: animeon;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s; }
+
+.animateOff {
+  -webkit-animation-name: animeoff;
+          animation-name: animeoff;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s; }
+
+@-webkit-keyframes animeon {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    height: auto; }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    height: auto; } }
+
+@keyframes animeon {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    height: auto; }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    height: auto; } }
+
+@-webkit-keyframes animeoff {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    height: auto; }
+  100% {
+    opacity: 0;
+    visibility: visible;
+    height: auto; } }
+
+@keyframes animeoff {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    height: auto; }
+  100% {
+    opacity: 0;
+    visibility: visible;
+    height: auto; } }
+
+@-webkit-keyframes anime {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes anime {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }

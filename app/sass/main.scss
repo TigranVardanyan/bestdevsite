@@ -256,6 +256,7 @@ aside {
     position: relative;
     perspective: 1500px;
     section {
+      //transition: 4s all ease-in-out;
       visibility: hidden;
       z-index: 90;
       opacity: 0;
@@ -278,6 +279,7 @@ aside {
       .main-header {
         .photo {
           max-width: 280px;
+          margin: 0 auto;
           img {
             position: relative;
             max-width: 100%;
@@ -309,6 +311,7 @@ aside {
             h2 {
               font-size: 18px;
               color: #fff;
+              margin: 0 -6px;
               //position: relative;
               //backface-visibility: hidden;
               //&:first-child {
@@ -532,9 +535,48 @@ body {
 
 
 
-//.animate {
-//  animation-name: sectionsAnimation1;
-//  animation-iteration-count: 1;
-//  animation-fill-mode: both;
-//  animation-duration: 4s;
-//}
+.animateOn {
+  animation-name: animeon;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+}
+
+.animateOff {
+  animation-name: animeoff;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+}
+@keyframes animeon {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    height: auto;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+}
+@keyframes animeoff {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+  100% {
+    opacity: 0;
+    visibility: visible;
+    height: auto;
+  }
+}
+@keyframes anime {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
