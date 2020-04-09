@@ -154,6 +154,7 @@ aside {
     position: fixed;
     width: 100%;
     z-index: 9999999;
+    transition: 0.6s all ease;
     &.sticked {
       background-color: #fff;
       box-shadow: 0 3px 8px 0 rgba(0,0,0,.1);
@@ -163,7 +164,7 @@ aside {
       justify-content: space-between;
       height: var(--header-height);
       line-height: var(--header-height);
-      transition: 0.3s all ease;
+      transition: 0.6s all ease;
 
       .title {
         a {
@@ -231,7 +232,7 @@ aside {
   }
   .main {
     border-radius: 15px;
-    padding-top: var(--header-height);
+    padding-top: 100px;
     &-header {
       transition: var(--text-color-change-transition);
       padding: 50px;

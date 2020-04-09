@@ -175,7 +175,10 @@ aside {
 .wrapper .header-row {
   position: fixed;
   width: 100%;
-  z-index: 9999999; }
+  z-index: 9999999;
+  -webkit-transition: 0.6s all ease;
+  -o-transition: 0.6s all ease;
+  transition: 0.6s all ease; }
   .wrapper .header-row.sticked {
     background-color: #fff;
     -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
@@ -191,9 +194,9 @@ aside {
             justify-content: space-between;
     height: var(--header-height);
     line-height: var(--header-height);
-    -webkit-transition: 0.3s all ease;
-    -o-transition: 0.3s all ease;
-    transition: 0.3s all ease; }
+    -webkit-transition: 0.6s all ease;
+    -o-transition: 0.6s all ease;
+    transition: 0.6s all ease; }
     .wrapper .header-row header .title a {
       display: inline-block; }
       .wrapper .header-row header .title a h1 {
@@ -247,7 +250,7 @@ aside {
 
 .wrapper .main {
   border-radius: 15px;
-  padding-top: var(--header-height); }
+  padding-top: 100px; }
   .wrapper .main-header {
     -webkit-transition: var(--text-color-change-transition);
     -o-transition: var(--text-color-change-transition);
