@@ -253,7 +253,28 @@ aside {
   .main {
     border-radius: 15px;
     padding-top: 100px;
-    .section {
+    position: relative;
+    perspective: 1500px;
+    section {
+      visibility: hidden;
+      z-index: 90;
+      opacity: 0;
+      overflow: hidden;
+      height: 0;
+      position: absolute;
+      transform-origin: 0 0;
+      transform: rotate3d(0,0,0,0deg) translate3d(0,0,0) scale3d(1,1,1);
+    }
+    .current-section {
+      position: relative;
+      visibility: visible;
+      z-index: 90;
+      opacity: 1;
+      overflow: visible;
+      height: auto;
+    }
+    .section-home {
+      //transition: 0.3s all ease-in-out;
       .main-header {
         .photo {
           max-width: 280px;
@@ -336,6 +357,7 @@ aside {
       }
     }
     .section-portfolio {
+      //transition: 0.3s all ease-in-out;
       .main-header {
         display: flex;
         justify-content: center;
@@ -506,3 +528,13 @@ body {
 //media imports
 
 @import "media";
+
+
+
+
+//.animate {
+//  animation-name: sectionsAnimation1;
+//  animation-iteration-count: 1;
+//  animation-fill-mode: both;
+//  animation-duration: 4s;
+//}

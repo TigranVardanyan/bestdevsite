@@ -1,4 +1,35 @@
-@keyframes cogAnimation {
-  from {transform: rotateZ(0deg);}
-  to {transform: rotateZ(70deg);}
+@keyframes sectionsAnimation1 {
+  0% {
+    transform-origin: 0 0;
+    transform: rotate(0deg) translateY(0%);
+    top: 0%;
+    position: relative;
+  }
+  25% {
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+    top: 0%;
+    position: relative;
+  }
+  70% {
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+    top: 100%;
+    position: relative;
+
+  }
+  99% {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+  100% {
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+    top: 100%;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
 }

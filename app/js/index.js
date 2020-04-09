@@ -5,5 +5,9 @@ class AnimatedTransitions {
     this.pageOn = pageOn;
     this.pageOff = pageOff;
   }
-  
+  getAnimationTypeNumber() {
+    return Math.floor(Math.random()*7);
+  }
+  animationType = {}
 }
+
