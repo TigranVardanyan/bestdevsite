@@ -4,6 +4,9 @@
 :root {
   --header-height: 100px;
   --text-color-change-transition: 0.4s all ease;
+  --timeline-circle-demension: 12px;
+  --timeline-circle-border: 2px;
+  --timeline-margin-left: 20px;
 }
 ::-webkit-scrollbar { width: 6px;}
 ::-webkit-scrollbar-button {  background-color: transparent; height: 0px }
@@ -24,6 +27,7 @@ h1,h2,h3,h4,h5,h6 {
 ul, li, ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 html {
@@ -432,6 +436,133 @@ aside {
           &:hover {
             box-shadow: 0 0px 4px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.3);
           }
+        }
+      }
+    }
+    .section-resume {
+      .main-header {
+        display: flex;
+        justify-content: center;
+        .section-heading {
+          font-size: 54px;
+          font-weight: 700;
+          text-align: center;
+          color: #fff;
+        }
+      }
+      .main-content {
+        .title {
+          color: #212121;
+          font-weight: 700;
+          font-family: "Montserrat", sans-serif;
+          font-size: 21px;
+          margin-bottom: 25px;
+        }
+        .timeline {
+          display: flex;
+          border-left: 2px solid #e0e0e0;
+          ul {
+            li {
+              .timeline-item {
+                width: 90%;
+                list-style: none;
+                margin: 0 0 20px var(--timeline-margin-left);
+                padding: 15px 20px 10px;
+                box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+                border-left: var(--timeline-circle-border) solid var(--accent-color);
+                position: relative;
+                &:hover {
+                  box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+                }
+                &::before {
+                  content: "";
+                  background-color: #fff;
+                  height: var(--timeline-circle-demension);
+                  width: var(--timeline-circle-demension);
+                  border-radius: 50%;
+                  border: var(--timeline-circle-border) solid var(--accent-color);
+                  position: absolute;
+                  top: 16px;
+                  left: calc((var(--timeline-circle-demension) + var(--timeline-circle-border)) / 2 * (-1) - var(--timeline-circle-border) - var(--timeline-margin-left));
+                  outline: none;
+                  z-index: 1;
+                }
+                &::after {
+                  content: "";
+                  background-color: var(--accent-color);
+                  width: 20px;
+                  height: var(--timeline-circle-border);
+                  position: absolute;
+                  top: 21px;
+                  left: -20px;
+                  outline: none;
+                  z-index: 0;
+                }
+                &-title {
+                  font-size: 16px;
+                  line-height: 16px;
+                  font-family: Montserrat, sans-serif;
+                  font-weight: 700;
+                }
+                &-data {
+                  transition: var(--text-color-change-transition);
+                  color: var(--accent-color);
+                  margin-bottom: 8px;
+                  font-size: 12px;
+                  display: inline-block;
+                }
+                &-place {
+                  display: inline-block;
+                  margin-bottom: 8px;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+        .skills {
+          width: 50%;
+          margin: 30px auto 0;
+          .title {
+            font-weight: bolder;
+            font-family: "Montserrat" , sans-serif;
+            font-size: 21px;
+            text-align: center;
+            span {
+              transition: var(--text-color-change-transition);
+              color: var(--accent-color)
+            }
+          }
+          .progress {
+            margin-bottom: 8px;
+            color: #212121;
+            .progress-bar {
+              transition: var(--text-color-change-transition);
+              background-color: var(--accent-color);
+            }
+          }
+          .button-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .download_button {
+              outline: none;
+              transition:  0.4s all ease;
+              font-size: 14px;
+              font-weight: 600;
+              border: none;
+              background: transparent;
+              margin-top: 15px;
+              padding:  0 21px;
+              line-height: 39px;
+              box-shadow: 0 1px 1px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.3);
+              border-radius: 3px;
+              &:hover {
+                box-shadow: 0 2px 4px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.3);
+              }
+            }
+          }
+
         }
       }
     }

@@ -59,12 +59,12 @@
         </div>
         <nav>
           <ul>
-            <li class="active"><a href="#"  data-section="home" id="homeBtn">Home</a></li>
-            <li><a href="#"  data-section="portfolio" id="portfolioBtn">Portfolio</a></li>
-            <li><a href="#"  data-section="resume" id="resumeBtn">Resume</a></li>
-            <li><a href="#"  data-section="services" id="servicesBtn">Services</a></li>
-            <li><a href="#"  data-section="blog" id="blogBtn">Blog</a></li>
-            <li><a href="#"  data-section="contact" id="contactBtn">Contact</a></li>
+            <li class="active"><a href="#" data-section="home" id="homeBtn">Home</a></li>
+            <li><a href="#" data-section="portfolio" id="portfolioBtn">Portfolio</a></li>
+            <li><a href="#" data-section="resume" id="resumeBtn">Resume</a></li>
+            <li><a href="#" data-section="services" id="servicesBtn">Services</a></li>
+            <li><a href="#" data-section="blog" id="blogBtn">Blog</a></li>
+            <li><a href="#" data-section="contact" id="contactBtn">Contact</a></li>
             <li><a href="#" data-section="extra" id="extraBtn">Extra</a></li>
           </ul>
         </nav>
@@ -73,7 +73,7 @@
   </div>
   <div class="main row">
     <div class="container modified-container">
-      <section id="home" class="section-home section current-section">
+      <section id="home" class="section-home section">
         <div class="main-header row">
           <div class="col-md-4 col-12">
             <div class="photo">
@@ -111,9 +111,9 @@
               </div>
               <div>
               </div>
-              <button class="download_button">
+              <a class="download_button">
                 DOWNLOAD RESUME
-              </button>
+              </a>
             </div>
           </div>
           <div class="main_content-data col-md-6 col-sm-12">
@@ -211,7 +211,7 @@
           </div>
         </div>
       </section>
-      <section id="resume" class="section-resume section">
+      <section id="resume" class="section-resume section  current-section">
         <div class="main-header row">
           <div>
             <h2 class="section-heading">
@@ -222,54 +222,136 @@
         <div class="main-content row">
           <div class="container">
             <div class="row">
-              <div class="portfolio-filters">
-                <ul>
-                  <li class="active">Programs</li>
-                  <li>Games</li>
-                  <li>Algorithms</li>
-                </ul>
+              <div class="col-lg-6 col-md-12">
+                <div class="row">
+                  <div class="resume-block">
+                    <h2 class="title">Experience</h2>
+                    <div class="experience timeline">
+                      <ul>
+                        <li>
+                          <div class="timeline-item">
+                            <div class="timeline-item-title">Junior software engineer</div>
+                            <span class="timeline-item-data">2020 mar - now</span>
+                            |
+                            <span class="timeline-item-place">10WEB</span>
+                            <p class="timeline-item-description">
+                              Plugin development and customer support
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-item">
+                            <div class="timeline-item-title">Software engineer intern</div>
+                            <span class="timeline-item-data">2019 dec - 2020 feb</span>
+                            |
+                            <span class="timeline-item-place">10WEB</span>
+                            <p class="timeline-item-description">
+                              Plugin development and customer support
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-item">
+                            <div class="timeline-item-title">Website administrator</div>
+                            <span class="timeline-item-data">2019 feb - 2019 jul</span>
+                            |
+                            <span class="timeline-item-place">Armos</span>
+                            <p class="timeline-item-description">
+                              Manage and maintain website, add functionality, change appearance and content, SEO optimization, social media advertising and email newsletters, create and update web pages, testing and customer support.
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="row">
+                  <div class="resume-block">
+                    <h2 class="title">Education</h2>
+                    <div class="education timeline">
+                      <ul>
+                        <li>
+                          <div class="timeline-item">
+                            <div class="timeline-item-title">Radiophysics</div>
+                            <span class="timeline-item-data">2015-2019</span>
+                            |
+                            <span class="timeline-item-place">YSU</span>
+                            <p class="timeline-item-description">
+                              Radiophysics and electronics - Chair of Ultra high – Frequency Radiophysics
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row">
-              <div class="portfolio-grid">
-                <div class="portfolio-item">
-                  Calculator
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Snake
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Perspective
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Purble pairs
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Paint
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Clicker
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Stopwatch
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Dice
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Ajax form
-                  <img src="img/snake.png" alt="">
+              <div class="col-12">
+                <div class="row">
+                  <div class="skills">
+                    <h2 class="title">Coding <span>Skills</span></h2>
+                    <ul>
+                      <li>
+                        <h3>
+                          HTML
+                        </h3>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h3>
+                          CSS/SASS
+                        </h3>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h3>
+                          JavaScript
+                        </h3>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h3>
+                          PHP
+                        </h3>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h3>
+                          SQL
+                        </h3>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h3>
+                          C#
+                        </h3>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="button-wrapper">
+                      <a class="download_button" href="https://www.mydailycode.ru/Tigran%20Vardanyan(CV).pdf" download="proposed_file_name" >
+                        DOWNLOAD RESUME
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <button class="load-more">LOAD MORE</button>
             </div>
           </div>
         </div>

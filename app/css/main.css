@@ -1,7 +1,10 @@
 @charset "UTF-8";
 :root {
   --header-height: 100px;
-  --text-color-change-transition: 0.4s all ease; }
+  --text-color-change-transition: 0.4s all ease;
+  --timeline-circle-demension: 12px;
+  --timeline-circle-border: 2px;
+  --timeline-margin-left: 20px; }
 
 ::-webkit-scrollbar {
   width: 6px; }
@@ -39,7 +42,8 @@ h1, h2, h3, h4, h5, h6 {
 
 ul, li, ol {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -443,6 +447,136 @@ aside {
       .wrapper .main .section-portfolio .main-content .load-more:hover {
         -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
                 box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3); }
+  .wrapper .main .section-resume .main-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .wrapper .main .section-resume .main-header .section-heading {
+      font-size: 54px;
+      font-weight: 700;
+      text-align: center;
+      color: #fff; }
+  .wrapper .main .section-resume .main-content .title {
+    color: #212121;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    margin-bottom: 25px; }
+  .wrapper .main .section-resume .main-content .timeline {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-left: 2px solid #e0e0e0; }
+    .wrapper .main .section-resume .main-content .timeline ul li .timeline-item {
+      width: 90%;
+      list-style: none;
+      margin: 0 0 20px var(--timeline-margin-left);
+      padding: 15px 20px 10px;
+      -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+              box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+      border-left: var(--timeline-circle-border) solid var(--accent-color);
+      position: relative; }
+      .wrapper .main .section-resume .main-content .timeline ul li .timeline-item:hover {
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); }
+      .wrapper .main .section-resume .main-content .timeline ul li .timeline-item::before {
+        content: "";
+        background-color: #fff;
+        height: var(--timeline-circle-demension);
+        width: var(--timeline-circle-demension);
+        border-radius: 50%;
+        border: var(--timeline-circle-border) solid var(--accent-color);
+        position: absolute;
+        top: 16px;
+        left: -webkit-calc((var(--timeline-circle-demension) + var(--timeline-circle-border)) / 2 * (-1) - var(--timeline-circle-border) - var(--timeline-margin-left));
+        left: calc((var(--timeline-circle-demension) + var(--timeline-circle-border)) / 2 * (-1) - var(--timeline-circle-border) - var(--timeline-margin-left));
+        outline: none;
+        z-index: 1; }
+      .wrapper .main .section-resume .main-content .timeline ul li .timeline-item::after {
+        content: "";
+        background-color: var(--accent-color);
+        width: 20px;
+        height: var(--timeline-circle-border);
+        position: absolute;
+        top: 21px;
+        left: -20px;
+        outline: none;
+        z-index: 0; }
+      .wrapper .main .section-resume .main-content .timeline ul li .timeline-item-title {
+        font-size: 16px;
+        line-height: 16px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700; }
+      .wrapper .main .section-resume .main-content .timeline ul li .timeline-item-data {
+        -webkit-transition: var(--text-color-change-transition);
+        -o-transition: var(--text-color-change-transition);
+        transition: var(--text-color-change-transition);
+        color: var(--accent-color);
+        margin-bottom: 8px;
+        font-size: 12px;
+        display: inline-block; }
+      .wrapper .main .section-resume .main-content .timeline ul li .timeline-item-place {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-size: 12px; }
+  .wrapper .main .section-resume .main-content .skills {
+    width: 50%;
+    margin: 30px auto 0; }
+    .wrapper .main .section-resume .main-content .skills .title {
+      font-weight: bolder;
+      font-family: "Montserrat" , sans-serif;
+      font-size: 21px;
+      text-align: center; }
+      .wrapper .main .section-resume .main-content .skills .title span {
+        -webkit-transition: var(--text-color-change-transition);
+        -o-transition: var(--text-color-change-transition);
+        transition: var(--text-color-change-transition);
+        color: var(--accent-color); }
+    .wrapper .main .section-resume .main-content .skills .progress {
+      margin-bottom: 8px;
+      color: #212121; }
+      .wrapper .main .section-resume .main-content .skills .progress .progress-bar {
+        -webkit-transition: var(--text-color-change-transition);
+        -o-transition: var(--text-color-change-transition);
+        transition: var(--text-color-change-transition);
+        background-color: var(--accent-color); }
+    .wrapper .main .section-resume .main-content .skills .button-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .wrapper .main .section-resume .main-content .skills .button-wrapper .download_button {
+        outline: none;
+        -webkit-transition: 0.4s all ease;
+        -o-transition: 0.4s all ease;
+        transition: 0.4s all ease;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+        background: transparent;
+        margin-top: 15px;
+        padding: 0 21px;
+        line-height: 39px;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 3px; }
+        .wrapper .main .section-resume .main-content .skills .button-wrapper .download_button:hover {
+          -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3); }
 
 .wrapper footer div {
   width: 100%;
