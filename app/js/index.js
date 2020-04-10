@@ -27,12 +27,13 @@ class AnimatedTransitions {
     // }
     this.pageOff.classList.add('animateOff');
     this.pageOn.classList.add("animateOn");
-    this.pageOn.classList.add("current-section");
+    //
     setTimeout(()=>{
       this.pageOff.classList.remove('current-section');
       this.pageOff.classList.remove('animateOff');
       this.pageOn.classList.remove("animateOn");
-    }, 4000)
+      this.pageOn.classList.add("current-section");
+    }, 400)
   }
 }
 let navigationSection = document.querySelector('nav ul');
@@ -42,10 +43,15 @@ navigationSection.addEventListener('click', (e)=> {
     let pageOn = document.getElementById(e.target.getAttribute('data-section'));
     console.log(e.toElement.parentElement);
     let q = new AnimatedTransitions(pageOn);
-    q.resetNavActiveClass(navigationSectionLi);
-    e.toElement.parentElement.classList.add('active');
-    nav.classList.remove('active');
-    q.showCurrentSection();
+    if (q.pageOff === pageOn) {
+      console.log('same')
+      return
+    } else {
+      q.resetNavActiveClass(navigationSectionLi);
+      e.toElement.parentElement.classList.add('active');
+      nav.classList.remove('active');
+      q.showCurrentSection();
+    }
   }
 });
 

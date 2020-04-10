@@ -1,117 +1,4 @@
 @charset "UTF-8";
-@-webkit-keyframes sectionsAnimation1 {
-  0% {
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(0deg) translateY(0%);
-            transform: rotate(0deg) translateY(0%);
-    top: 0%;
-    position: relative; }
-  25% {
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: 0%;
-    position: relative; }
-  70% {
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: 100%;
-    position: relative; }
-  99% {
-    opacity: 1;
-    display: block;
-    visibility: visible; }
-  100% {
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: 100%;
-    position: relative;
-    opacity: 0;
-    visibility: hidden;
-    display: none; } }
-@keyframes sectionsAnimation1 {
-  0% {
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(0deg) translateY(0%);
-            transform: rotate(0deg) translateY(0%);
-    top: 0%;
-    position: relative; }
-  25% {
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: 0%;
-    position: relative; }
-  70% {
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: 100%;
-    position: relative; }
-  99% {
-    opacity: 1;
-    display: block;
-    visibility: visible; }
-  100% {
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: 100%;
-    position: relative;
-    opacity: 0;
-    visibility: hidden;
-    display: none; } }
-
-@-webkit-keyframes animeOn {
-  0% {
-    opacity: 0 !important;
-    visibility: visible;
-    height: 0; }
-  100% {
-    opacity: 1 !important;
-    visibility: visible;
-    height: auto; } }
-
-@keyframes animeOn {
-  0% {
-    opacity: 0 !important;
-    visibility: visible;
-    height: 0; }
-  100% {
-    opacity: 1 !important;
-    visibility: visible;
-    height: auto; } }
-
-@-webkit-keyframes animeOff {
-  0% {
-    opacity: 1 !important;
-    visibility: visible;
-    height: auto; }
-  100% {
-    opacity: 0 !important;
-    visibility: hidden;
-    height: 0; } }
-
-@keyframes animeOff {
-  0% {
-    opacity: 1 !important;
-    visibility: visible;
-    height: auto; }
-  100% {
-    opacity: 0 !important;
-    visibility: hidden;
-    height: 0; } }
-
 :root {
   --header-height: 100px;
   --text-color-change-transition: 0.4s all ease; }
@@ -143,6 +30,12 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif; }
+
+.modified-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100%;
+  position: relative; }
 
 ul, li, ol {
   margin: 0;
@@ -380,7 +273,7 @@ aside {
     visibility: hidden;
     z-index: 90;
     opacity: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     height: 0;
     position: absolute;
     -webkit-transform-origin: 0 0;
@@ -758,8 +651,8 @@ body {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s; }
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s; }
 
 .animateOff {
   -webkit-animation-name: animeoff;
@@ -768,57 +661,57 @@ body {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s; }
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s; }
 
 @-webkit-keyframes animeon {
   0% {
+    top: 0;
     opacity: 0;
     visibility: visible;
-    height: auto; }
+    height: auto;
+    overflow: visible; }
   100% {
+    top: 0;
     opacity: 1;
     visibility: visible;
-    height: auto; } }
+    height: auto;
+    overflow: visible; } }
 
 @keyframes animeon {
   0% {
+    top: 0;
     opacity: 0;
     visibility: visible;
-    height: auto; }
+    height: auto;
+    overflow: visible; }
   100% {
+    top: 0;
     opacity: 1;
     visibility: visible;
-    height: auto; } }
+    height: auto;
+    overflow: visible; } }
 
 @-webkit-keyframes animeoff {
   0% {
     opacity: 1;
     visibility: visible;
-    height: auto; }
+    height: auto;
+    overflow: visible; }
   100% {
     opacity: 0;
     visibility: visible;
-    height: auto; } }
+    height: auto;
+    overflow: visible; } }
 
 @keyframes animeoff {
   0% {
     opacity: 1;
     visibility: visible;
-    height: auto; }
+    height: auto;
+    overflow: visible; }
   100% {
     opacity: 0;
     visibility: visible;
-    height: auto; } }
-
-@-webkit-keyframes anime {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes anime {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
+    height: auto;
+    overflow: visible; } }

@@ -15,7 +15,12 @@
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
 }
-
+.modified-container {
+  padding-left: 0!important;
+  padding-right: 0!important;
+  width: 100%;
+  position: relative;
+}
 ul, li, ol {
   margin: 0;
   padding: 0;
@@ -260,7 +265,7 @@ aside {
       visibility: hidden;
       z-index: 90;
       opacity: 0;
-      overflow: hidden;
+      overflow-x: hidden;
       height: 0;
       position: absolute;
       transform-origin: 0 0;
@@ -539,25 +544,29 @@ body {
   animation-name: animeon;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-duration: 4s;
+  animation-duration: 0.4s;
 }
 
 .animateOff {
   animation-name: animeoff;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-duration: 4s;
+  animation-duration: 0.4s;
 }
 @keyframes animeon {
   0% {
+    top: 0;
     opacity: 0;
     visibility: visible;
     height: auto;
+    overflow: visible;
   }
   100% {
+    top: 0;
     opacity: 1;
     visibility: visible;
     height: auto;
+    overflow: visible;
   }
 }
 @keyframes animeoff {
@@ -565,18 +574,12 @@ body {
     opacity: 1;
     visibility: visible;
     height: auto;
+    overflow: visible;
   }
   100% {
     opacity: 0;
     visibility: visible;
     height: auto;
-  }
-}
-@keyframes anime {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+    overflow: visible;
   }
 }

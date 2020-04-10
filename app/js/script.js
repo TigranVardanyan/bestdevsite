@@ -100,28 +100,28 @@ window.onscroll = function() {
   }
 };
 
-
-
-let homeBtn = document.getElementById('homeBtn');
-let home = document.getElementById('home');
-let portfolioBtn = document.getElementById('portfolioBtn');
-let portfolio = document.getElementById('portfolio');
-portfolioBtn.addEventListener('click', ()=> {
-  // portfolio.style.opacity = "1";
-  // portfolio.style.height = "auto";
-  // portfolio.style.transform = "scale(1)";
-  // home.style.opacity = "0";
-  // home.style.height = "0";
-  // home.style.transform = "scale(0)";
-  home.classList.add('animate');
-  // portfolio.style.display = "none";
-});
-
-// homeBtn.addEventListener('click', ()=> {
-//   // home.style.opacity = "1";
-//   home.style.height = "auto";
-//   home.style.transform = "scale(1)";
-//   // portfolio.style.opacity = "0";
-//   portfolio.style.height = "0";
-//   portfolio.style.transform = "scale(0)";
+//
+//
+// let homeBtn = document.getElementById('homeBtn');
+// let home = document.getElementById('home');
+// let portfolioBtn = document.getElementById('portfolioBtn');
+// let portfolio = document.getElementById('portfolio');
+// portfolioBtn.addEventListener('click', ()=> {
+//   // portfolio.style.opacity = "1";
+//   // portfolio.style.height = "auto";
+//   // portfolio.style.transform = "scale(1)";
+//   // home.style.opacity = "0";
+//   // home.style.height = "0";
+//   // home.style.transform = "scale(0)";
+//   //home.classList.add('animate');
+//   // portfolio.style.display = "none";
 // });
+//
+// // homeBtn.addEventListener('click', ()=> {
+// //   // home.style.opacity = "1";
+// //   home.style.height = "auto";
+// //   home.style.transform = "scale(1)";
+// //   // portfolio.style.opacity = "0";
+// //   portfolio.style.height = "0";
+// //   portfolio.style.transform = "scale(0)";
+// // });
