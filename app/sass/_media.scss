@@ -135,14 +135,26 @@
     }
   }
 }
-//
-//@media only screen and (min-width: 768px) and (max-width: 992px) {
-//  section {
-//    max-width: 930px;
-//  }
-//}
-//@media only screen and (min-width: 576px) and (max-width: 768px) {
-//  section {
-//    max-width: 540px;
-//  }
-//}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .testimonial-name {
+    left: 38%!important;
+  }
+  .testimonial-company {
+    left: 38%!important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .testimonial-item {
+    margin-top: 60px!important;
+    .testimonial-name {
+      left: 60%!important;
+    }
+    .testimonial-company {
+      left: 60%!important;
+    }
+  }
+}

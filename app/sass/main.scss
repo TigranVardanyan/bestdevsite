@@ -7,6 +7,8 @@
   --timeline-circle-demension: 12px;
   --timeline-circle-border: 2px;
   --timeline-margin-left: 20px;
+  //--testimonial-position: 0%;
+  --testimonial-img-heigh:80px;
 }
 ::-webkit-scrollbar { width: 6px;}
 ::-webkit-scrollbar-button {  background-color: transparent; height: 0px }
@@ -18,12 +20,12 @@
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
 }
-.modified-container {
-  padding-left: 0!important;
-  padding-right: 0!important;
-  width: 100%;
-  position: relative;
-}
+//.modified-container {
+//  padding-left: 0!important;
+//  padding-right: 0!important;
+//  width: 100%;
+//  position: relative;
+//}
 ul, li, ol {
   margin: 0;
   padding: 0;
@@ -563,6 +565,149 @@ aside {
             }
           }
 
+        }
+      }
+    }
+    .section-services {
+      .main-header {
+        display: flex;
+        justify-content: center;
+        .section-heading {
+          font-size: 54px;
+          font-weight: 700;
+          text-align: center;
+          color: #fff;
+        }
+      }
+      .main-content {
+        .my-services {
+          .title {
+            color: #212121;
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+            font-size: 21px;
+            margin-bottom: 25px;
+            span {
+              color: var(--accent-color);
+              transition: var(--text-color-change-transition);
+            }
+          }
+          .service {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .service-logo {
+              width: 120px;
+              height: 120px;
+              background-size: 64px 64px;
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              border-radius: 50%;
+              box-shadow: 0 3px 20px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.6), 0 2px 0 rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.1);
+              &:hover {
+                box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 2px 0 rgba(0, 0, 0, 0.1);
+                background-position: 50% 60%;
+              }
+              &.web {
+                background-image: url("../img/programming.svg");
+              }
+              &.optimization {
+                background-image: url("../img/optimization.svg");
+              }
+              &.managment {
+                background-image: url("../img/management.svg");
+              }
+              &.layout {
+                background-image: url("../img/layout.svg");
+              }
+            }
+            .service-title {
+              color: #212121;
+              font-weight: 700;
+              font-family: "Montserrat", sans-serif;
+              font-size: 17px;
+              padding: 25px 0 15px;
+            }
+          }
+          .title {
+            color: #212121;
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+            font-size: 21px;
+          }
+          .testimonial-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 15px 0;
+            .testimonial {
+              display: inline-block;
+              white-space: nowrap;
+              width: 100%;
+              transition: 0.5s all ease-in-out;
+              transform: translateX(var(--testimonial-position));
+              .testimonial-item {
+                position: relative;
+                white-space: initial;
+                width: var(--testimonial-item-width);
+                display: inline-block;
+                border: 1px solid #e0e0e0;
+                border-top: 1px solid var(--accent-color);
+                margin-right: 2%;
+                padding: 30px 5px;
+                margin-top: 80px;
+                .testimonial-img {
+                  position: absolute;
+                  width: var(--testimonial-img-heigh);
+                  height: var(--testimonial-img-heigh);
+                  border-radius: 50%;
+                  top: calc(var(--testimonial-img-heigh) / 1.5 * (-1));
+                  left: 18%;
+                }
+                .testimonial-company {
+                  position: absolute;
+                  top: -23px;
+                  left: 36%;
+                  font-size: 10px;
+                  color: var(--accent-color);
+                  text-transform: uppercase;
+                  font-style: italic;
+                  font-weight: lighter;
+                }
+                .testimonial-name {
+                  position: absolute;
+                  top: -46px;
+                  left: 36%;
+                  font-family: "Roboto", sans-serif;
+                  font-size: 15px;
+                  color: #212121;
+                  font-weight: 400;
+                }
+              }
+            }
+            .testimonial-nav {
+              margin: 0 auto;
+            }
+            button {
+              outline: none;
+              transition:  0.4s all ease;
+              font-size: 14px;
+              font-weight: 600;
+              border: none;
+              background: transparent;
+              margin: 15px 5px;
+              padding:  0 21px;
+              line-height: 39px;
+              box-shadow: 0 1px 1px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.3);
+              border-radius: 3px;
+              &:hover {
+                box-shadow: 0 2px 4px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.3);
+              }
+            }
+          }
         }
       }
     }

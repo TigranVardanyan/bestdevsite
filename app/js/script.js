@@ -125,3 +125,29 @@ window.onscroll = function() {
 // //   portfolio.style.height = "0";
 // //   portfolio.style.transform = "scale(0)";
 // // });
+
+
+let testimonial_next = document.getElementById('testimonial_next');
+let testimonial_prev = document.getElementById('testimonial_prev');
+let testimonial_position = 0;
+let testimonial_width = 49;
+root.style.setProperty("--testimonial-position", testimonial_position + "%");
+root.style.setProperty("--testimonial-item-width", testimonial_width + "%");
+console.log(root.style.getPropertyValue("--testimonial-position"));
+
+testimonial_next.addEventListener('click', ()=> {
+  if(testimonial_position > -100) {
+    testimonial_position = testimonial_position - 51;
+    root.style.setProperty("--testimonial-position",  testimonial_position + "%");
+    console.log(root.style.getPropertyValue("--testimonial-position"));
+  }
+});
+
+testimonial_prev.addEventListener('click', ()=> {
+  if(testimonial_position < 0) {
+    testimonial_position = testimonial_position + 51;
+    root.style.setProperty("--testimonial-position", testimonial_position + "%");
+    console.log(root.style.getPropertyValue("--testimonial-position"));
+  }
+});
+
