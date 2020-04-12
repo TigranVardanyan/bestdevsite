@@ -137,7 +137,7 @@ console.log(root.style.getPropertyValue("--testimonial-position"));
 
 testimonial_next.addEventListener('click', ()=> {
   if(testimonial_position > -100) {
-    testimonial_position = testimonial_position - 51;
+    testimonial_position = testimonial_position - 101;
     root.style.setProperty("--testimonial-position",  testimonial_position + "%");
     console.log(root.style.getPropertyValue("--testimonial-position"));
   }
@@ -145,7 +145,7 @@ testimonial_next.addEventListener('click', ()=> {
 
 testimonial_prev.addEventListener('click', ()=> {
   if(testimonial_position < 0) {
-    testimonial_position = testimonial_position + 51;
+    testimonial_position = testimonial_position + 101;
     root.style.setProperty("--testimonial-position", testimonial_position + "%");
     console.log(root.style.getPropertyValue("--testimonial-position"));
   }

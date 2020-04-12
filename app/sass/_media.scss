@@ -157,6 +157,9 @@
   .testimonial-company {
     left: 38%!important;
   }
+  .blog-wrapper {
+    grid-template-columns: 1fr!important;
+  }
 }
 @media only screen and (max-width: 576px) {
   .testimonial-item {
@@ -167,5 +170,8 @@
     .testimonial-company {
       left: 60%!important;
     }
+  }
+  .blog-wrapper {
+    grid-template-columns: 1fr!important;
   }
 }
