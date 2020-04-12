@@ -361,6 +361,7 @@ aside {
       transition: var(--text-color-change-transition);
       color: var(--accent-color); }
   .wrapper .main .section-home .main-content .download_button {
+    text-align: center;
     outline: none;
     -webkit-transition: 0.4s all ease;
     -o-transition: 0.4s all ease;
@@ -566,6 +567,7 @@ aside {
           -ms-flex-align: center;
               align-items: center; }
       .wrapper .main .section-resume .main-content .skills .button-wrapper .download_button {
+        text-align: center;
         outline: none;
         -webkit-transition: 0.4s all ease;
         -o-transition: 0.4s all ease;
