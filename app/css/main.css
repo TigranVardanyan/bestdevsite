@@ -36,8 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif; }
 
 .relative-container {
-  position: relative;
-  width: 100%; }
+  position: relative; }
 
 ul, li, ol {
   margin: 0;
@@ -273,17 +272,19 @@ aside {
   -webkit-perspective: 1500px;
           perspective: 1500px; }
   .wrapper .main section {
+    max-width: 100%;
     visibility: hidden;
     z-index: 90;
     opacity: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 0;
     position: absolute;
+    right: 0;
     -webkit-transform-origin: 0 0;
         -ms-transform-origin: 0 0;
             transform-origin: 0 0;
-    -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
-            transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0) scale3d(1, 1, 1); }
+    -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+            transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0); }
   .wrapper .main .current-section {
     position: relative;
     visibility: visible;
@@ -391,66 +392,67 @@ aside {
       font-weight: 700;
       text-align: center;
       color: #fff; }
-  .wrapper .main .section-portfolio .main-content {
-    padding: 30px 50px 50px; }
-    .wrapper .main .section-portfolio .main-content .portfolio-filters {
-      width: 100%; }
-      .wrapper .main .section-portfolio .main-content .portfolio-filters ul {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        .wrapper .main .section-portfolio .main-content .portfolio-filters ul li {
-          cursor: pointer;
-          -webkit-transition: 0.2s all ease;
-          -o-transition: 0.2s all ease;
-          transition: 0.2s all ease;
-          margin: 3px 6px;
-          padding: 5px 10px;
-          color: #9E9E9E;
-          list-style: none;
-          display: inline-block;
-          border-radius: 3px; }
-          .wrapper .main .section-portfolio .main-content .portfolio-filters ul li:hover {
-            background-color: #eeeeee; }
-          .wrapper .main .section-portfolio .main-content .portfolio-filters ul li.active {
-            background-color: var(--accent-color);
-            color: #fff; }
-    .wrapper .main .section-portfolio .main-content .portfolio-grid {
-      display: grid;
+  .wrapper .main .section-portfolio .main-content .portfolio-filters {
+    width: 100%; }
+    .wrapper .main .section-portfolio .main-content .portfolio-filters ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .wrapper .main .section-portfolio .main-content .portfolio-filters ul li {
+        cursor: pointer;
+        -webkit-transition: 0.2s all ease;
+        -o-transition: 0.2s all ease;
+        transition: 0.2s all ease;
+        margin: 3px 6px;
+        padding: 5px 10px;
+        color: #9E9E9E;
+        list-style: none;
+        display: inline-block;
+        border-radius: 3px; }
+        .wrapper .main .section-portfolio .main-content .portfolio-filters ul li:hover {
+          background-color: #eeeeee; }
+        .wrapper .main .section-portfolio .main-content .portfolio-filters ul li.active {
+          background-color: var(--accent-color);
+          color: #fff; }
+  .wrapper .main .section-portfolio .main-content .portfolio-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6px;
+    text-align: center; }
+    .wrapper .main .section-portfolio .main-content .portfolio-grid .portfolio-item img {
       width: 100%;
-      grid-template-columns: 33.3% 33.3% 33.3%;
-      grid-gap: 6px;
-      text-align: center; }
-      .wrapper .main .section-portfolio .main-content .portfolio-grid .portfolio-item img {
-        width: 100%;
-        height: auto; }
-    .wrapper .main .section-portfolio .main-content .load-more {
-      margin: 30px auto 0;
-      outline: none;
-      -webkit-transition: 0.4s all ease;
-      -o-transition: 0.4s all ease;
-      transition: 0.4s all ease;
-      font-size: 14px;
-      font-weight: 600;
-      border: none;
-      background: transparent;
-      padding: 0 21px;
-      line-height: 39px;
-      -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
-              box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
-      border-radius: 3px; }
-      .wrapper .main .section-portfolio .main-content .load-more:hover {
-        -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
-                box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3); }
+      height: auto; }
+  .wrapper .main .section-portfolio .main-content .load-more {
+    margin: 30px auto 0;
+    outline: none;
+    -webkit-transition: 0.4s all ease;
+    -o-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    padding: 0 21px;
+    line-height: 39px;
+    -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 3px; }
+    .wrapper .main .section-portfolio .main-content .load-more:hover {
+      -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+              box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3); }
   .wrapper .main .section-resume .main-header {
     display: -webkit-box;
     display: -webkit-flex;

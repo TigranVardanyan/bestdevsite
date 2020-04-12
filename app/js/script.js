@@ -130,7 +130,7 @@ window.onscroll = function() {
 let testimonial_next = document.getElementById('testimonial_next');
 let testimonial_prev = document.getElementById('testimonial_prev');
 let testimonial_position = 0;
-let testimonial_width = 49;
+let testimonial_width = 98;
 root.style.setProperty("--testimonial-position", testimonial_position + "%");
 root.style.setProperty("--testimonial-item-width", testimonial_width + "%");
 console.log(root.style.getPropertyValue("--testimonial-position"));

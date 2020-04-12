@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .relative-container {
   position: relative;
-  width: 100%;
+  //width: 100%;
 }
 ul, li, ol {
   margin: 0;
@@ -265,14 +265,16 @@ aside {
     perspective: 1500px;
     section {
       //transition: 4s all ease-in-out;
+      max-width: 100%;
       visibility: hidden;
       z-index: 90;
       opacity: 0;
-      overflow-x: hidden;
+      overflow: hidden;
       height: 0;
       position: absolute;
+      right: 0;
       transform-origin: 0 0;
-      transform: rotate3d(0,0,0,0deg) translate3d(0,0,0) scale3d(1,1,1);
+      transform: rotate3d(0,0,0,0deg) translate3d(0,0,0);
 
     }
     .current-section {
@@ -389,11 +391,12 @@ aside {
         }
       }
       .main-content {
-        padding: 30px 50px 50px;
+
         .portfolio-filters{
           width: 100%;
           ul {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             li {
@@ -419,7 +422,7 @@ aside {
         .portfolio-grid {
           display: grid;
           width: 100%;
-          grid-template-columns: 33.3% 33.3% 33.3%;
+          grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 6px;
           text-align: center;
           .portfolio-item {
@@ -842,6 +845,7 @@ body {
     visibility: visible;
     height: auto;
     overflow: visible;
+    //margin: 0 15px;
   }
   100% {
     top: 0;
@@ -849,6 +853,7 @@ body {
     visibility: visible;
     height: auto;
     overflow: visible;
+    //margin: 0 15px;
   }
 }
 @keyframes animeoff {
