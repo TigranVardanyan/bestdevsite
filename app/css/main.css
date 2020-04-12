@@ -987,13 +987,15 @@ body {
     opacity: 0;
     visibility: visible;
     height: auto;
-    overflow: visible; }
+    overflow: visible;
+    padding: 0 15px; }
   100% {
     top: 0;
     opacity: 1;
     visibility: visible;
     height: auto;
-    overflow: visible; } }
+    overflow: visible;
+    padding: 0 15px; } }
 
 @keyframes animeon {
   0% {
@@ -1001,13 +1003,15 @@ body {
     opacity: 0;
     visibility: visible;
     height: auto;
-    overflow: visible; }
+    overflow: visible;
+    padding: 0 15px; }
   100% {
     top: 0;
     opacity: 1;
     visibility: visible;
     height: auto;
-    overflow: visible; } }
+    overflow: visible;
+    padding: 0 15px; } }
 
 @-webkit-keyframes animeoff {
   0% {
