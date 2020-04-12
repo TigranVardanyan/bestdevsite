@@ -67,13 +67,24 @@
     }
     .main {
       padding-top: 0;
-      .section-home {
+      section {
         .main-header {
           padding: 50px 30px;
           background-size: cover;
           background-attachment: scroll;
           background-position: center center;
           background-repeat: no-repeat;
+        }
+        .main-content {
+          padding: 50px 30px;
+          background-size: cover;
+          background-attachment: scroll;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+      }
+      .section-home {
+        .main-header {
           .photo {
             img {
               margin-bottom: 10px;

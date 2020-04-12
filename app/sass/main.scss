@@ -20,12 +20,10 @@
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
 }
-//.modified-container {
-//  padding-left: 0!important;
-//  padding-right: 0!important;
-//  width: 100%;
-//  position: relative;
-//}
+.relative-container {
+  position: relative;
+  width: 100%;
+}
 ul, li, ol {
   margin: 0;
   padding: 0;
@@ -196,7 +194,6 @@ aside {
       height: var(--header-height);
       line-height: var(--header-height);
       transition: 0.6s all ease;
-
       .title {
         a {
           display: inline-block;
@@ -276,6 +273,7 @@ aside {
       position: absolute;
       transform-origin: 0 0;
       transform: rotate3d(0,0,0,0deg) translate3d(0,0,0) scale3d(1,1,1);
+
     }
     .current-section {
       position: relative;
@@ -337,6 +335,14 @@ aside {
         }
       }
       .main-content {
+        &-about {
+          h2 {
+            span {
+              color: var(--accent-color);
+              transition: var(--text-color-change-transition);
+            }
+          }
+        }
         table {
           width: 100%;
           .table_q {

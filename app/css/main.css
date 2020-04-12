@@ -35,6 +35,10 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif; }
 
+.relative-container {
+  position: relative;
+  width: 100%; }
+
 ul, li, ol {
   margin: 0;
   padding: 0;
@@ -337,6 +341,11 @@ aside {
         font-size: 18px;
         color: #fff;
         margin: 0 -6px; }
+  .wrapper .main .section-home .main-content-about h2 span {
+    color: var(--accent-color);
+    -webkit-transition: var(--text-color-change-transition);
+    -o-transition: var(--text-color-change-transition);
+    transition: var(--text-color-change-transition); }
   .wrapper .main .section-home .main-content table {
     width: 100%; }
     .wrapper .main .section-home .main-content table .table_q {
@@ -903,14 +912,20 @@ body {
                   background-color: #fff; }
     .wrapper .main {
       padding-top: 0; }
-      .wrapper .main .section-home .main-header {
+      .wrapper .main section .main-header {
         padding: 50px 30px;
         background-size: cover;
         background-attachment: scroll;
         background-position: center center;
         background-repeat: no-repeat; }
-        .wrapper .main .section-home .main-header .photo img {
-          margin-bottom: 10px; }
+      .wrapper .main section .main-content {
+        padding: 50px 30px;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat; }
+      .wrapper .main .section-home .main-header .photo img {
+        margin-bottom: 10px; }
       .wrapper .main .section-home .main-content {
         padding: 50px 30px;
         font-size: 12px; }
