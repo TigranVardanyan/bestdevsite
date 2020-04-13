@@ -65,7 +65,7 @@
             <li><a href="#" data-section="services" id="servicesBtn">Services</a></li>
             <li><a href="#" data-section="blog" id="blogBtn">Blog</a></li>
             <li><a href="#" data-section="contact" id="contactBtn">Contact</a></li>
-            <li><a href="#" data-section="extra" id="extraBtn">Extra</a></li>
+<!--            <li><a href="#" data-section="extra" id="extraBtn">Extra</a></li>-->
           </ul>
         </nav>
       </header>
@@ -73,7 +73,7 @@
   </div>
   <div class="main row ">
     <div class="container relative-container">
-      <section id="home" class="section-home section ">
+      <section id="home" class="section-home section current-section ">
         <div class="main-header row">
           <div class="col-md-4 col-12">
             <div class="photo">
@@ -482,11 +482,11 @@
           </div>
         </div>
       </section>
-      <section id="blog" class="section-blog section current-section">
+      <section id="blog" class="section-blog section ">
         <div class="main-header row">
           <div>
             <h2 class="section-heading">
-              Contact
+              Blog
             </h2>
           </div>
         </div>
@@ -627,132 +627,118 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="section-contact section">
+      <section id="contact" class="section-contact section ">
         <div class="main-header row">
           <div>
             <h2 class="section-heading">
-              Blog
+              Contact
             </h2>
           </div>
         </div>
         <div class="main-content row">
-          <div class="container">
+          <div class="contact-wrapper">
             <div class="row">
-              <div class="portfolio-filters">
-                <ul>
-                  <li class="active">Programs</li>
-                  <li>Games</li>
-                  <li>Algorithms</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="portfolio-grid">
-                <div class="portfolio-item">
-                  Calculator
-                  <img src="img/snake.png" alt="">
+              <div class="contact-grid">
+                <div class="map-section">
+                  <h3 class="title">Get in <span>Touch</span></h3>
+                  <script type="text/javascript" charset="utf-8" async
+                          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3ab8e1d250589aba08e407d4e267553de3669930e8fbe2c54b4f232205942d1&amp;width=100%&amp;height=180&amp;lang=en_US&amp;scroll=true"></script>
+                  <div class="info">
+                    <div class="info_el"><i class="fas fa-map-marker-alt"></i>  <span>Yerevan, Armenia</span></div>
+                    <div class="info_el"><i class="fas fa-envelope"></i>  <span>tig.vardanyan.001@gmail.com</span></div>
+                    <div class="info_el"><i class="fas fa-phone"></i>  <span>+374 77 720166</span></div>
+                    <div class="info_el"><i class="fas fa-check"></i>  <span>Freelance Available</span></div>
+                  </div>
                 </div>
-                <div class="portfolio-item">
-                  Snake
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Perspective
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Purble pairs
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Paint
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Clicker
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Stopwatch
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Dice
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Ajax form
-                  <img src="img/snake.png" alt="">
+                <div class="form-section">
+                  <h3 class="title">Contact <span>Form</span></h3>
+                  <form id="contact-form-1">
+                    <div class="form-group" id="form-group-text">
+                      <i class="fas fa-user"></i>
+                      <label for="inputName">Full Name</label>
+                      <input type="text" class="form-control" id="inputName" name="inputName">
+                    </div>
+                    <div class="form-group" id="form-group-email">
+                      <i class="fas fa-envelope"></i>
+                      <label for="inputEmail">Email Address</label>
+                      <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+                    </div>
+                    <div class="form-group" id="form-group-textarea">
+                      <i class="fas fa-comment"></i>
+                      <label for="inputTextarea">Message for Me</label>
+                      <textarea name="inputTextarea" id="inputTextarea" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="submit-form" id="form-group-submit">Submit</button>
+                  </form>
                 </div>
               </div>
-              <button class="load-more">LOAD MORE</button>
             </div>
           </div>
         </div>
       </section>
-      <section id="extra" class="section-extra section">
-        <div class="main-header row">
-          <div>
-            <h2 class="section-heading">
-              Extra
-            </h2>
-          </div>
-        </div>
-        <div class="main-content row">
-          <div class="container">
-            <div class="row">
-              <div class="portfolio-filters">
-                <ul>
-                  <li class="active">Programs</li>
-                  <li>Games</li>
-                  <li>Algorithms</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="portfolio-grid">
-                <div class="portfolio-item">
-                  Calculator
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Snake
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Perspective
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Purble pairs
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Paint
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Clicker
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Stopwatch
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Dice
-                  <img src="img/snake.png" alt="">
-                </div>
-                <div class="portfolio-item">
-                  Ajax form
-                  <img src="img/snake.png" alt="">
-                </div>
-              </div>
-              <button class="load-more">LOAD MORE</button>
-            </div>
-          </div>
-        </div>
-      </section>
+<!--      <section id="extra" class="section-extra section">-->
+<!--        <div class="main-header row">-->
+<!--          <div>-->
+<!--            <h2 class="section-heading">-->
+<!--              Extra-->
+<!--            </h2>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="main-content row">-->
+<!--          <div class="container">-->
+<!--            <div class="row">-->
+<!--              <div class="portfolio-filters">-->
+<!--                <ul>-->
+<!--                  <li class="active">Programs</li>-->
+<!--                  <li>Games</li>-->
+<!--                  <li>Algorithms</li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="portfolio-grid">-->
+<!--                <div class="portfolio-item">-->
+<!--                  Calculator-->
+<!--                  <img src="img/snake.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-item">-->
+<!--                  Snake-->
+<!--                  <img src="img/snake.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-item">-->
+<!--                  Perspective-->
+<!--                  <img src="img/snake.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-item">-->
+<!--                  Purble pairs-->
+<!--                  <img src="img/snake.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-item">-->
+<!--                  Paint-->
+<!--                  <img src="img/snake.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-item">-->
+<!--                  Clicker-->
+<!--                  <img src="img/snake.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-item">-->
+<!--                  Stopwatch-->
+<!--                  <img src="img/snake.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-item">-->
+<!--                  Dice-->
+<!--                  <img src="img/snake.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-item">-->
+<!--                  Ajax form-->
+<!--                  <img src="img/snake.png" alt="">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <button class="load-more">LOAD MORE</button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </section>-->
     </div>
   </div>
   <footer class="footer row">

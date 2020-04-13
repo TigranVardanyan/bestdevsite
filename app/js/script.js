@@ -137,7 +137,7 @@ console.log(root.style.getPropertyValue("--testimonial-position"));
 
 testimonial_next.addEventListener('click', ()=> {
   if(testimonial_position > -100) {
-    testimonial_position = testimonial_position - 101;
+    testimonial_position = testimonial_position - 100;
     root.style.setProperty("--testimonial-position",  testimonial_position + "%");
     console.log(root.style.getPropertyValue("--testimonial-position"));
   }
@@ -145,9 +145,47 @@ testimonial_next.addEventListener('click', ()=> {
 
 testimonial_prev.addEventListener('click', ()=> {
   if(testimonial_position < 0) {
-    testimonial_position = testimonial_position + 101;
+    testimonial_position = testimonial_position + 100;
     root.style.setProperty("--testimonial-position", testimonial_position + "%");
     console.log(root.style.getPropertyValue("--testimonial-position"));
   }
 });
 
+
+
+
+/*
+    Contact
+    Form animations
+ */
+
+let contactForm = document.getElementById('contact-form-1');
+let formsLabels = document.querySelectorAll('form .form-group label');
+let zz = document.querySelectorAll('form .form-group input,textarea');
+let formsLabelsState = [];
+for(let i = 0; i < formsLabels.length; i++) {
+  formsLabelsState[i] = false;
+}
+let events = ['click', 'focus', 'blur', 'change', 'keydown', 'mouseleave' ];
+for(event of events) {
+  contactForm.addEventListener(event, (e) => {
+    for(let i = 0; i < formsLabels.length; i++) {
+      if (formsLabelsState[i] != true) {
+        formsLabels[i].style.top = "0";
+      }
+    }
+    if (e.target.nodeName == "INPUT" || e.target.nodeName == "TEXTAREA") {
+
+      console.log(e);
+      e.target.previousElementSibling.style.top = "-20px";
+    }
+    for(let i = 0; i < formsLabels.length; i++) {
+      if(zz[i].value != "") {
+        formsLabelsState[i] = true;
+      } else {
+        formsLabelsState[i] = false;
+      }
+    }
+    console.log(formsLabelsState);
+  });
+}
