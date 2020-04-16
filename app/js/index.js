@@ -41,14 +41,14 @@ let navigationSectionLi = document.querySelectorAll('nav ul li');
 navigationSection.addEventListener('click', (e)=> {
   if(e.target.hasAttribute('data-section')) {
     let pageOn = document.getElementById(e.target.getAttribute('data-section'));
-    console.log(e.toElement.parentElement);
+    console.log(e.target.parentElement);
     let q = new AnimatedTransitions(pageOn);
     if (q.pageOff === pageOn) {
-      console.log('same')
+      // console.log('same')
       return
     } else {
       q.resetNavActiveClass(navigationSectionLi);
-      e.toElement.parentElement.classList.add('active');
+      e.target.parentElement.classList.add('active');
       nav.classList.remove('active');
       q.showCurrentSection();
     }

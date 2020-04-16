@@ -836,8 +836,6 @@ aside {
         }
       }
       .main-content {
-        .contact-wrapper {
-          width: 100%;
           .contact-grid {
             display: grid;
             width: 100%;
@@ -855,6 +853,7 @@ aside {
               }
             }
             .map-section {
+              width: 100%;
               .info {
                 padding-top: 30px;
                 font-size: 13px;
@@ -878,6 +877,7 @@ aside {
               }
             }
             .form-section {
+              width: 100%;
               form {
                 font-family: "Roboto", sans-serif;
                 .form-group {
@@ -949,7 +949,7 @@ aside {
               }
             }
           }
-        }
+
       }
     }
 

@@ -167,8 +167,8 @@ for(let i = 0; i < formsLabels.length; i++) {
   formsLabelsState[i] = false;
 }
 let events = ['click', 'focus', 'blur', 'change', 'keydown', 'mouseleave' ];
-for(event of events) {
-  contactForm.addEventListener(event, (e) => {
+for(let evnt of events) {   /*  evnt is not typo  dont touch it!! */
+  contactForm.addEventListener(evnt, (e) => {
     for(let i = 0; i < formsLabels.length; i++) {
       if (formsLabelsState[i] != true) {
         formsLabels[i].style.top = "0";
@@ -176,7 +176,7 @@ for(event of events) {
     }
     if (e.target.nodeName == "INPUT" || e.target.nodeName == "TEXTAREA") {
 
-      console.log(e);
+      //console.log(e);
       e.target.previousElementSibling.style.top = "-20px";
     }
     for(let i = 0; i < formsLabels.length; i++) {
