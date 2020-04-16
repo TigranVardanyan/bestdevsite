@@ -12,18 +12,18 @@ function ToolbarUncheck(toolbarColors) {
   }
 } // toolbar uncheck
 function initCChanger() { //init ColorChanger
-  ToolbarUncheck(toolbarColors);
+  ToolbarUncheck(toolbarColors);  // unchecking toolbar colors
   document.querySelector(`[data-color = "${localStorage.getItem('targetColor')}"]`);
-  root.style.setProperty('--accent-color', localStorage.getItem('targetColor'));
   if(localStorage.getItem('targetColor')) { // if any color in local storage
     document.querySelector(`[data-color = "${localStorage.getItem('targetColor')}"]`).innerHTML = "<i class=\"fas fa-check\"></i>";
+    root.style.setProperty('--accent-color', localStorage.getItem('targetColor'));
   } else {
     localStorage.setItem('targetColor' , "#2196F3"); //if not set default
+    root.style.setProperty('--accent-color', localStorage.getItem('targetColor'));
     toolbarColors[2].innerHTML = "<i class=\"fas fa-check\"></i>";
   }
-
-
 }
+
 initCChanger();
 
 
