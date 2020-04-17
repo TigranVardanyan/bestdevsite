@@ -7,11 +7,6 @@ class AnimatedTransitions {
   getAnimationTypeNumber() {
     return Math.floor(Math.random()*7);
   }
-  resetNavActiveClass(elements) {
-    for(let i = 0; i < elements.length; i++) {
-      elements[i].classList.remove('active')
-    }
-  }
   showCurrentSection() {
     // let sections = document.querySelectorAll('section.section')
     // for(let i = 0; i < sections.length; i++) {
@@ -28,6 +23,12 @@ class AnimatedTransitions {
     }, 400)
   }
 }
+function resetNavActiveClass(elements) {
+  for(let i = 0; i < elements.length; i++) {
+    elements[i].classList.remove('active')
+  }
+}
+
 let navigationSection = document.querySelector('nav ul');
 let navigationSectionLi = document.querySelectorAll('nav ul li');
 navigationSection.addEventListener('click', (e)=> {
@@ -40,7 +41,7 @@ navigationSection.addEventListener('click', (e)=> {
       // console.log('same')
       return
     } else {
-      q.resetNavActiveClass(navigationSectionLi);
+      resetNavActiveClass(navigationSectionLi);
       e.target.parentElement.classList.add('active');
       nav.classList.remove('active');
       q.showCurrentSection();
@@ -48,9 +49,12 @@ navigationSection.addEventListener('click', (e)=> {
   }
 });
 
+
+resetNavActiveClass(navigationSectionLi);
 if (sessionStorage.getItem('section')) {
   document.getElementById(sessionStorage.getItem('section')).classList.add('current-section');
 } else {
   sessionStorage.setItem('section', 'home');
   document.getElementById(sessionStorage.getItem('section')).classList.add('current-section');
 }
+document.querySelector(`[data-section = ${sessionStorage.getItem('section')}`).parentElement.classList.add('active');

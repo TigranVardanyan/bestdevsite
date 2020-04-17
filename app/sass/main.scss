@@ -534,7 +534,7 @@ aside {
           }
         }
         .skills {
-          width: 50%;
+          width: 75%;
           margin: 30px auto 0;
           .title {
             font-weight: bolder;
@@ -567,7 +567,7 @@ aside {
               border: none;
               background: transparent;
               margin-top: 15px;
-              padding:  0 21px;
+              padding:  5px 10px;
               line-height: 39px;
               box-shadow: 0 1px 1px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.3);
               border-radius: 3px;
@@ -825,6 +825,7 @@ aside {
       }
     }
     .section-contact {
+      left: 0;
       .main-header {
         display: flex;
         justify-content: center;

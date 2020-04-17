@@ -535,7 +535,7 @@ aside {
         margin-bottom: 8px;
         font-size: 12px; }
   .wrapper .main .section-resume .main-content .skills {
-    width: 50%;
+    width: 75%;
     margin: 30px auto 0; }
     .wrapper .main .section-resume .main-content .skills .title {
       font-weight: bolder;
@@ -579,7 +579,7 @@ aside {
         border: none;
         background: transparent;
         margin-top: 15px;
-        padding: 0 21px;
+        padding: 5px 10px;
         line-height: 39px;
         -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
                 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -845,130 +845,132 @@ aside {
           text-align: center;
           font-weight: 700;
           font-family: "Montserrat", sans-serif; }
-  .wrapper .main .section-contact .main-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .wrapper .main .section-contact .main-header .section-heading {
-      font-size: 44px;
-      font-weight: 700;
-      text-align: center;
-      color: #fff; }
-  .wrapper .main .section-contact .main-content .contact-grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px; }
-    .wrapper .main .section-contact .main-content .contact-grid .title {
-      color: #212121;
-      font-weight: 700;
-      font-family: "Montserrat", sans-serif;
-      font-size: 21px;
-      margin-bottom: 25px; }
-      .wrapper .main .section-contact .main-content .contact-grid .title span {
-        color: var(--accent-color);
-        -webkit-transition: var(--text-color-change-transition);
-        -o-transition: var(--text-color-change-transition);
-        transition: var(--text-color-change-transition); }
-    .wrapper .main .section-contact .main-content .contact-grid .map-section {
-      width: 100%; }
-      .wrapper .main .section-contact .main-content .contact-grid .map-section .info {
-        padding-top: 30px;
-        font-size: 13px;
-        color: #212121; }
-        .wrapper .main .section-contact .main-content .contact-grid .map-section .info .info_el {
-          padding: 10px 10px 10px 0;
-          font-family: "Montserrat", sans-serif;
-          font-weight: bolder; }
-          .wrapper .main .section-contact .main-content .contact-grid .map-section .info .info_el i {
-            color: var(--accent-color);
+  .wrapper .main .section-contact {
+    left: 0; }
+    .wrapper .main .section-contact .main-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .wrapper .main .section-contact .main-header .section-heading {
+        font-size: 44px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff; }
+    .wrapper .main .section-contact .main-content .contact-grid {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px; }
+      .wrapper .main .section-contact .main-content .contact-grid .title {
+        color: #212121;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        font-size: 21px;
+        margin-bottom: 25px; }
+        .wrapper .main .section-contact .main-content .contact-grid .title span {
+          color: var(--accent-color);
+          -webkit-transition: var(--text-color-change-transition);
+          -o-transition: var(--text-color-change-transition);
+          transition: var(--text-color-change-transition); }
+      .wrapper .main .section-contact .main-content .contact-grid .map-section {
+        width: 100%; }
+        .wrapper .main .section-contact .main-content .contact-grid .map-section .info {
+          padding-top: 30px;
+          font-size: 13px;
+          color: #212121; }
+          .wrapper .main .section-contact .main-content .contact-grid .map-section .info .info_el {
+            padding: 10px 10px 10px 0;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bolder; }
+            .wrapper .main .section-contact .main-content .contact-grid .map-section .info .info_el i {
+              color: var(--accent-color);
+              -webkit-transition: var(--text-color-change-transition);
+              -o-transition: var(--text-color-change-transition);
+              transition: var(--text-color-change-transition);
+              font-size: 18px;
+              height: 36px;
+              width: 36px;
+              line-height: 36px;
+              border-radius: 50%;
+              background-color: #f5f5f5;
+              text-align: center; }
+      .wrapper .main .section-contact .main-content .contact-grid .form-section {
+        width: 100%; }
+        .wrapper .main .section-contact .main-content .contact-grid .form-section form {
+          font-family: "Roboto", sans-serif; }
+          .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            position: relative;
+            border-bottom: 1px solid #e0e0e0; }
+            .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group:focus i {
+              color: var(--accent-color);
+              -webkit-transition: var(--text-color-change-transition);
+              -o-transition: var(--text-color-change-transition);
+              transition: var(--text-color-change-transition); }
+            .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group label {
+              -webkit-transition: 0.3s all ease;
+              -o-transition: 0.3s all ease;
+              transition: 0.3s all ease;
+              pointer-events: none;
+              position: absolute;
+              height: 42px;
+              line-height: 42px;
+              left: 50px;
+              color: #424242;
+              opacity: 0.4; }
+            .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group i {
+              width: 40px;
+              line-height: 42px;
+              background-color: #fafafa;
+              color: #bdbdbd;
+              text-align: center; }
+            .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group input {
+              outline: none;
+              border: none;
+              padding: 10px 0 10px 12px;
+              line-height: 22px;
+              font-size: 15px;
+              height: auto;
+              -webkit-box-shadow: none;
+                      box-shadow: none; }
+            .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group textarea {
+              outline: none;
+              border: none;
+              padding: 10px;
+              height: auto;
+              padding: 0;
+              width: 100%;
+              line-height: 22px;
+              font-size: 15px;
+              padding: 10px 0 10px 12px; }
+          .wrapper .main .section-contact .main-content .contact-grid .form-section form .submit-form {
+            text-align: center;
+            outline: none;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            margin-top: 15px;
+            padding: 0 21px;
+            line-height: 39px;
+            background-color: var(--accent-color);
             -webkit-transition: var(--text-color-change-transition);
             -o-transition: var(--text-color-change-transition);
             transition: var(--text-color-change-transition);
-            font-size: 18px;
-            height: 36px;
-            width: 36px;
-            line-height: 36px;
-            border-radius: 50%;
-            background-color: #f5f5f5;
-            text-align: center; }
-    .wrapper .main .section-contact .main-content .contact-grid .form-section {
-      width: 100%; }
-      .wrapper .main .section-contact .main-content .contact-grid .form-section form {
-        font-family: "Roboto", sans-serif; }
-        .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          position: relative;
-          border-bottom: 1px solid #e0e0e0; }
-          .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group:focus i {
-            color: var(--accent-color);
-            -webkit-transition: var(--text-color-change-transition);
-            -o-transition: var(--text-color-change-transition);
-            transition: var(--text-color-change-transition); }
-          .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group label {
-            -webkit-transition: 0.3s all ease;
-            -o-transition: 0.3s all ease;
-            transition: 0.3s all ease;
-            pointer-events: none;
-            position: absolute;
-            height: 42px;
-            line-height: 42px;
-            left: 50px;
-            color: #424242;
-            opacity: 0.4; }
-          .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group i {
-            width: 40px;
-            line-height: 42px;
-            background-color: #fafafa;
-            color: #bdbdbd;
-            text-align: center; }
-          .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group input {
-            outline: none;
-            border: none;
-            padding: 10px 0 10px 12px;
-            line-height: 22px;
-            font-size: 15px;
-            height: auto;
-            -webkit-box-shadow: none;
-                    box-shadow: none; }
-          .wrapper .main .section-contact .main-content .contact-grid .form-section form .form-group textarea {
-            outline: none;
-            border: none;
-            padding: 10px;
-            height: auto;
-            padding: 0;
-            width: 100%;
-            line-height: 22px;
-            font-size: 15px;
-            padding: 10px 0 10px 12px; }
-        .wrapper .main .section-contact .main-content .contact-grid .form-section form .submit-form {
-          text-align: center;
-          outline: none;
-          font-size: 14px;
-          font-weight: 600;
-          border: none;
-          margin-top: 15px;
-          padding: 0 21px;
-          line-height: 39px;
-          background-color: var(--accent-color);
-          -webkit-transition: var(--text-color-change-transition);
-          -o-transition: var(--text-color-change-transition);
-          transition: var(--text-color-change-transition);
-          color: #fff;
-          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
-                  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
-          border-radius: 3px; }
-          .wrapper .main .section-contact .main-content .contact-grid .form-section form .submit-form:hover {
-            -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3); }
+            color: #fff;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+            border-radius: 3px; }
+            .wrapper .main .section-contact .main-content .contact-grid .form-section form .submit-form:hover {
+              -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+                      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3); }
 
 .wrapper footer div {
   width: 100%;
