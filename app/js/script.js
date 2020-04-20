@@ -43,7 +43,7 @@ colors.addEventListener('click', (e) => { // if click get color from data-color 
 
 
 let cog = document.getElementById('cogRot');
-let toolbarColorsWrapper = document.getElementById('toolbarColors');
+let toolbarColorsWrapper = document.getElementById('aside');
 cog.addEventListener('click', () => {
   if (toolbarColorsWrapper.classList.contains('show_toolbar')) {
     toolbarColorsWrapper.classList.remove('show_toolbar')
