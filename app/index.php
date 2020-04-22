@@ -16,9 +16,7 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/62038246" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
-  <?php require_once 'config/config.php';
-  echo CV;
-  ?>
+  <?php require_once 'config/config.php';?>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -130,7 +128,7 @@
               </div>
               <div>
               </div>
-              <a class="download_button">
+              <a class="download_button" href="<?php echo CV?>" download>
                 DOWNLOAD RESUME
               </a>
             </div>
@@ -368,8 +366,7 @@
                       </li>
                     </ul>
                     <div class="button-wrapper">
-                      <a class="download_button" href=""
-                         download="proposed_file_name">
+                      <a class="download_button" href="<?php echo CV?>" download>
                         DOWNLOAD RESUME
                       </a>
                     </div>
