@@ -1,5 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#"
+      xmlns:og="http://ogp.me/ns#">
 <head>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
@@ -17,10 +19,35 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/62038246" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
   <?php require_once 'config/config.php';?>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "mydailycode.com",
+      "sameAs": "mydailycode.ru",
+      "image": "/img/avatar.png",
+      "author": "Tigran Vardanyan",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "mydailycode.com",
+        "query": "Software Engineer"
+      }
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--  yandex-->
+  <meta name="yandex-verification" content="7584605005fa8093" />
+  <!--  yandex-->
+<!--  FB OG-->
+  <meta property="og:title"              content="Tigran Vardanyan Software Engineer" />
+  <meta property="og:description"        content="Tigran Vardanyan | Junior Software Engineer | 10Web" />
+  <meta property="og:image"              content="https://www.mydailycode.ru/img/avatar.png" />
+  <meta property="og:type"               content="profile" />
+  <meta property="og:url"                content="https://www.mydailycode.ru" />
+<!--  FB OG-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">

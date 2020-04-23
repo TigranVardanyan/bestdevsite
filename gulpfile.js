@@ -83,7 +83,10 @@ gulp.task('prebuild', async function() {
       .pipe(gulp.dest('dist'));
 
     var buildRes = gulp.src('app/res/**/*') // resours to production
-      .pipe(gulp.dest('dist/res/**/*'));
+      .pipe(gulp.dest('dist/res'));
+
+    var buildConfig = gulp.src('app/config/**/*') // resours to production
+      .pipe(gulp.dest('dist/config/'));
 });
 
 gulp.task('clear', function (callback) {
