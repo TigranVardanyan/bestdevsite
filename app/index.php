@@ -41,6 +41,9 @@
   <!--  yandex-->
   <meta name="yandex-verification" content="7584605005fa8093" />
   <!--  yandex-->
+<!--  google-->
+  <meta name="google-site-verification" content="jz9-mKR7zubwpKU1L1qK3D_X6oHaGM22zGnM_WGSsF8" />
+<!--  google-->
 <!--  FB OG-->
   <meta property="og:title"              content="Tigran Vardanyan Software Engineer" />
   <meta property="og:description"        content="Tigran Vardanyan | Junior Software Engineer | 10Web" />
