@@ -4,21 +4,28 @@
       xmlns:og="http://ogp.me/ns#">
 <head>
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
     ym(62038246, "init", {
-      clickmap:true,
-      trackLinks:true,
-      accurateTrackBounce:true,
-      webvisor:true
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
     });
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/62038246" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/62038246" style="position:absolute; left:-9999px;" alt=""/></div>
+  </noscript>
   <!-- /Yandex.Metrika counter -->
-  <?php require_once 'config/config.php';?>
+  <?php require_once 'config/config.php'; ?>
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -39,18 +46,18 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--  yandex-->
-  <meta name="yandex-verification" content="7584605005fa8093" />
+  <meta name="yandex-verification" content="7584605005fa8093"/>
   <!--  yandex-->
-<!--  google-->
-  <meta name="google-site-verification" content="jz9-mKR7zubwpKU1L1qK3D_X6oHaGM22zGnM_WGSsF8" />
-<!--  google-->
-<!--  FB OG-->
-  <meta property="og:title"              content="Tigran Vardanyan Software Engineer" />
-  <meta property="og:description"        content="Tigran Vardanyan | Junior Software Engineer | 10Web" />
-  <meta property="og:image"              content="https://www.mydailycode.ru/img/avatar.png" />
-  <meta property="og:type"               content="profile" />
-  <meta property="og:url"                content="https://www.mydailycode.ru" />
-<!--  FB OG-->
+  <!--  google-->
+  <meta name="google-site-verification" content="jz9-mKR7zubwpKU1L1qK3D_X6oHaGM22zGnM_WGSsF8"/>
+  <!--  google-->
+  <!--  FB OG-->
+  <meta property="og:title" content="Tigran Vardanyan Software Engineer"/>
+  <meta property="og:description" content="Tigran Vardanyan | Junior Software Engineer | 10Web"/>
+  <meta property="og:image" content="https://www.mydailycode.ru/img/avatar.png"/>
+  <meta property="og:type" content="profile"/>
+  <meta property="og:url" content="https://www.mydailycode.ru"/>
+  <!--  FB OG-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
@@ -112,7 +119,7 @@
             <li><a href="#" data-section="services" id="servicesBtn">Services</a></li>
             <li><a href="#" data-section="blog" id="blogBtn">Blog</a></li>
             <li><a href="#" data-section="contact" id="contactBtn">Contact</a></li>
-<!--            <li><a href="#" data-section="extra" id="extraBtn">Extra</a></li>-->
+            <!--            <li><a href="#" data-section="extra" id="extraBtn">Extra</a></li>-->
           </ul>
         </nav>
       </header>
@@ -135,13 +142,13 @@
             <div class="main-header-social_links">
               <div class="social-links_new">
                 <a class="soc_btn cChange" href="https://www.facebook.com/profile.php?id=100005146777210"><i
-                    class="fab fa-facebook-f"></i></a>
+                      class="fab fa-facebook-f"></i></a>
                 <a class="soc_btn cChange" href="https://www.instagram.com/tig.va/"><i
-                    class="fab fa-instagram"></i></a>
+                      class="fab fa-instagram"></i></a>
                 <a class="soc_btn cChange" href="https://ru.stackoverflow.com/users/299327/tigran-vardanyan"><i
-                    class="fab fa-stack-overflow"></i></a>
+                      class="fab fa-stack-overflow"></i></a>
                 <a class="soc_btn cChange" href="https://github.com/TigranVardanyan"><i
-                    class="fab fa-github-alt"></i></a>
+                      class="fab fa-github-alt"></i></a>
               </div>
             </div>
           </div>
@@ -158,7 +165,7 @@
               </div>
               <div>
               </div>
-              <a class="download_button" href="<?php echo CV?>" download>
+              <a class="download_button" href="<?php echo CV ?>" download>
                 DOWNLOAD RESUME
               </a>
             </div>
@@ -205,18 +212,22 @@
         </div>
         <div class="main-content row">
           <div class="container">
-<!--            <div class="row">-->
-<!--              <div class="portfolio-filters">-->
-<!--                <ul>-->
-<!--                  <li class="active">Programs</li>-->
-<!--                  <li>Games</li>-->
-<!--                  <li>Algorithms</li>-->
-<!--                </ul>-->
-<!--              </div>-->
-<!--            </div>-->
+            <!--            <div class="row">-->
+            <!--              <div class="portfolio-filters">-->
+            <!--                <ul>-->
+            <!--                  <li class="active">Programs</li>-->
+            <!--                  <li>Games</li>-->
+            <!--                  <li>Algorithms</li>-->
+            <!--                </ul>-->
+            <!--              </div>-->
+            <!--            </div>-->
             <div class="row">
               <div class="portfolio-grid">
-                  <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/project_snake/">
+                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/imgtonline/">
+                  imgtonline
+                  <img src="img/imgtonline.png" alt="">
+                </a>
+                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/project_snake/">
                   Snake
                   <img src="img/snake.png" alt="">
                 </a>
@@ -249,7 +260,7 @@
                   <img src="img/dice.png" alt="">
                 </a>
               </div>
-<!--              <button class="load-more">LOAD MORE</button>-->
+              <!--              <button class="load-more">LOAD MORE</button>-->
             </div>
           </div>
         </div>
@@ -396,7 +407,7 @@
                       </li>
                     </ul>
                     <div class="button-wrapper">
-                      <a class="download_button" href="<?php echo CV?>" download>
+                      <a class="download_button" href="<?php echo CV ?>" download>
                         DOWNLOAD RESUME
                       </a>
                     </div>
@@ -494,22 +505,22 @@
                               provident quas reprehenderit?
                             </p>
                           </div>
-<!--                                                    <div class="testimonial-item">-->
-<!--                                                      <h5 class="testimonial-name">Mya Haworth</h5>-->
-<!--                                                      <h5 class="testimonial-company">Iceberg Systems</h5>-->
-<!--                                                      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="" class="testimonial-img">-->
-<!--                                                      <p class="testimonial-text">-->
-<!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum eveniet ipsam magni recusandae voluptatum.-->
-<!--                                                      </p>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="testimonial-item">-->
-<!--                                                      <h5 class="testimonial-name">Lexi-Mai A.</h5>-->
-<!--                                                      <h5 class="testimonial-company">Dragonetworks</h5>-->
-<!--                                                      <img src="https://www.w3schools.com/w3images/avatar6.png" alt="" class="testimonial-img">-->
-<!--                                                      <p class="testimonial-text">-->
-<!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum eveniet ipsam magni recusandae voluptatum.-->
-<!--                                                      </p>-->
-<!--                                                    </div>-->
+                          <!--                                                    <div class="testimonial-item">-->
+                          <!--                                                      <h5 class="testimonial-name">Mya Haworth</h5>-->
+                          <!--                                                      <h5 class="testimonial-company">Iceberg Systems</h5>-->
+                          <!--                                                      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="" class="testimonial-img">-->
+                          <!--                                                      <p class="testimonial-text">-->
+                          <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum eveniet ipsam magni recusandae voluptatum.-->
+                          <!--                                                      </p>-->
+                          <!--                                                    </div>-->
+                          <!--                                                    <div class="testimonial-item">-->
+                          <!--                                                      <h5 class="testimonial-name">Lexi-Mai A.</h5>-->
+                          <!--                                                      <h5 class="testimonial-company">Dragonetworks</h5>-->
+                          <!--                                                      <img src="https://www.w3schools.com/w3images/avatar6.png" alt="" class="testimonial-img">-->
+                          <!--                                                      <p class="testimonial-text">-->
+                          <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum eveniet ipsam magni recusandae voluptatum.-->
+                          <!--                                                      </p>-->
+                          <!--                                                    </div>-->
                         </div>
                         <div class="testimonial-nav">
                           <button id="testimonial_prev"><i class="fas fa-chevron-left"></i></button>
@@ -679,106 +690,106 @@
         </div>
         <div class="main-content row">
 
-              <div class="contact-grid">
-                <div class="map-section">
-                  <h3 class="title">Get in <span>Touch</span></h3>
-                  <script type="text/javascript" charset="utf-8" async
-                          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3ab8e1d250589aba08e407d4e267553de3669930e8fbe2c54b4f232205942d1&amp;height=180&amp;lang=en_US&amp;scroll=true"></script>
-                  <div class="info">
-                    <div class="info_el"><i class="fas fa-map-marker-alt"></i>  <span>Yerevan, Armenia</span></div>
-                    <div class="info_el"><i class="fas fa-envelope"></i>  <span>tig.vardanyan.001@gmail.com</span></div>
-                    <div class="info_el"><i class="fas fa-phone"></i>  <span>+374 77 720166</span></div>
-                    <div class="info_el"><i class="fas fa-check"></i>  <span>Freelance Available</span></div>
-                  </div>
-                </div>
-                <div class="form-section">
-                  <h3 class="title">Contact <span>Form</span></h3>
-                  <form id="contact-form-1">
-                    <div class="form-group" id="form-group-text">
-                      <i class="fas fa-user"></i>
-                      <label for="inputName">Full Name</label>
-                      <input type="text" class="form-control" id="inputName" name="inputName">
-                    </div>
-                    <div class="form-group" id="form-group-email">
-                      <i class="fas fa-envelope"></i>
-                      <label for="inputEmail">Email Address</label>
-                      <input type="email" class="form-control" id="inputEmail" name="inputEmail">
-                    </div>
-                    <div class="form-group" id="form-group-textarea">
-                      <i class="fas fa-comment"></i>
-                      <label for="inputTextarea">Message for Me</label>
-                      <textarea name="inputTextarea" id="inputTextarea" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="submit-form" id="form-group-submit">Submit</button>
-                  </form>
-                </div>
+          <div class="contact-grid">
+            <div class="map-section">
+              <h3 class="title">Get in <span>Touch</span></h3>
+              <script type="text/javascript" charset="utf-8" async
+                      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3ab8e1d250589aba08e407d4e267553de3669930e8fbe2c54b4f232205942d1&amp;height=180&amp;lang=en_US&amp;scroll=true"></script>
+              <div class="info">
+                <div class="info_el"><i class="fas fa-map-marker-alt"></i> <span>Yerevan, Armenia</span></div>
+                <div class="info_el"><i class="fas fa-envelope"></i> <span>tig.vardanyan.001@gmail.com</span></div>
+                <div class="info_el"><i class="fas fa-phone"></i> <span>+374 77 720166</span></div>
+                <div class="info_el"><i class="fas fa-check"></i> <span>Freelance Available</span></div>
               </div>
+            </div>
+            <div class="form-section">
+              <h3 class="title">Contact <span>Form</span></h3>
+              <form id="contact-form-1">
+                <div class="form-group" id="form-group-text">
+                  <i class="fas fa-user"></i>
+                  <label for="inputName">Full Name</label>
+                  <input type="text" class="form-control" id="inputName" name="inputName">
+                </div>
+                <div class="form-group" id="form-group-email">
+                  <i class="fas fa-envelope"></i>
+                  <label for="inputEmail">Email Address</label>
+                  <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+                </div>
+                <div class="form-group" id="form-group-textarea">
+                  <i class="fas fa-comment"></i>
+                  <label for="inputTextarea">Message for Me</label>
+                  <textarea name="inputTextarea" id="inputTextarea" rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-form" id="form-group-submit">Submit</button>
+              </form>
+            </div>
+          </div>
 
         </div>
       </section>
-<!--      <section id="extra" class="section-extra section">-->
-<!--        <div class="main-header row">-->
-<!--          <div>-->
-<!--            <h2 class="section-heading">-->
-<!--              Extra-->
-<!--            </h2>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="main-content row">-->
-<!--          <div class="container">-->
-<!--            <div class="row">-->
-<!--              <div class="portfolio-filters">-->
-<!--                <ul>-->
-<!--                  <li class="active">Programs</li>-->
-<!--                  <li>Games</li>-->
-<!--                  <li>Algorithms</li>-->
-<!--                </ul>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--              <div class="portfolio-grid">-->
-<!--                <div class="portfolio-item">-->
-<!--                  Calculator-->
-<!--                  <img src="img/snake.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="portfolio-item">-->
-<!--                  Snake-->
-<!--                  <img src="img/snake.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="portfolio-item">-->
-<!--                  Perspective-->
-<!--                  <img src="img/snake.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="portfolio-item">-->
-<!--                  Purble pairs-->
-<!--                  <img src="img/snake.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="portfolio-item">-->
-<!--                  Paint-->
-<!--                  <img src="img/snake.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="portfolio-item">-->
-<!--                  Clicker-->
-<!--                  <img src="img/snake.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="portfolio-item">-->
-<!--                  Stopwatch-->
-<!--                  <img src="img/snake.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="portfolio-item">-->
-<!--                  Dice-->
-<!--                  <img src="img/snake.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="portfolio-item">-->
-<!--                  Ajax form-->
-<!--                  <img src="img/snake.png" alt="">-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <button class="load-more">LOAD MORE</button>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </section>-->
+      <!--      <section id="extra" class="section-extra section">-->
+      <!--        <div class="main-header row">-->
+      <!--          <div>-->
+      <!--            <h2 class="section-heading">-->
+      <!--              Extra-->
+      <!--            </h2>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--        <div class="main-content row">-->
+      <!--          <div class="container">-->
+      <!--            <div class="row">-->
+      <!--              <div class="portfolio-filters">-->
+      <!--                <ul>-->
+      <!--                  <li class="active">Programs</li>-->
+      <!--                  <li>Games</li>-->
+      <!--                  <li>Algorithms</li>-->
+      <!--                </ul>-->
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--            <div class="row">-->
+      <!--              <div class="portfolio-grid">-->
+      <!--                <div class="portfolio-item">-->
+      <!--                  Calculator-->
+      <!--                  <img src="img/snake.png" alt="">-->
+      <!--                </div>-->
+      <!--                <div class="portfolio-item">-->
+      <!--                  Snake-->
+      <!--                  <img src="img/snake.png" alt="">-->
+      <!--                </div>-->
+      <!--                <div class="portfolio-item">-->
+      <!--                  Perspective-->
+      <!--                  <img src="img/snake.png" alt="">-->
+      <!--                </div>-->
+      <!--                <div class="portfolio-item">-->
+      <!--                  Purble pairs-->
+      <!--                  <img src="img/snake.png" alt="">-->
+      <!--                </div>-->
+      <!--                <div class="portfolio-item">-->
+      <!--                  Paint-->
+      <!--                  <img src="img/snake.png" alt="">-->
+      <!--                </div>-->
+      <!--                <div class="portfolio-item">-->
+      <!--                  Clicker-->
+      <!--                  <img src="img/snake.png" alt="">-->
+      <!--                </div>-->
+      <!--                <div class="portfolio-item">-->
+      <!--                  Stopwatch-->
+      <!--                  <img src="img/snake.png" alt="">-->
+      <!--                </div>-->
+      <!--                <div class="portfolio-item">-->
+      <!--                  Dice-->
+      <!--                  <img src="img/snake.png" alt="">-->
+      <!--                </div>-->
+      <!--                <div class="portfolio-item">-->
+      <!--                  Ajax form-->
+      <!--                  <img src="img/snake.png" alt="">-->
+      <!--                </div>-->
+      <!--              </div>-->
+      <!--              <button class="load-more">LOAD MORE</button>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </section>-->
     </div>
   </div>
   <script>
@@ -790,7 +801,6 @@
     </div>
   </footer>
 </div>
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
