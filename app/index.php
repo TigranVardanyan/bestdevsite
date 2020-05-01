@@ -70,8 +70,7 @@
 <div class="switch" id="cogRot">
   <i class="fas fa-cog"></i>
 </div>
-<aside id="aside">
-
+<aside id="aside" class="show_toolbar">
   <div class="page_color" id="toolbarColors">
     <div>
       <p>
@@ -101,6 +100,13 @@
   <div class="mobile_header-nav-toggle">
     <i class="fas fa-bars" id="nav-toggle"></i>
   </div>
+</div>
+<div class="loading-wrapper">
+  <div class="snail">
+    <img src="img/snail.png" class="snail-main" alt="">
+    <img src="img/snail_animation.png" class="snail-animation" alt="">
+  </div>
+
 </div>
 <div class="wrapper container-fluid">
   <div class="header-row row">
@@ -141,13 +147,13 @@
             </div>
             <div class="main-header-social_links">
               <div class="social-links_new">
-                <a class="soc_btn cChange" href="https://www.facebook.com/profile.php?id=100005146777210"><i
+                <a class="soc_btn cChange" target="_blank" href="https://www.facebook.com/profile.php?id=100005146777210"><i
                       class="fab fa-facebook-f"></i></a>
-                <a class="soc_btn cChange" href="https://www.instagram.com/tig.va/"><i
+                <a class="soc_btn cChange" target="_blank" href="https://www.instagram.com/tig.va/"><i
                       class="fab fa-instagram"></i></a>
-                <a class="soc_btn cChange" href="https://ru.stackoverflow.com/users/299327/tigran-vardanyan"><i
+                <a class="soc_btn cChange" target="_blank" href="https://ru.stackoverflow.com/users/299327/tigran-vardanyan"><i
                       class="fab fa-stack-overflow"></i></a>
-                <a class="soc_btn cChange" href="https://github.com/TigranVardanyan"><i
+                <a class="soc_btn cChange" target="_blank" href="https://github.com/TigranVardanyan"><i
                       class="fab fa-github-alt"></i></a>
               </div>
             </div>
@@ -792,9 +798,6 @@
       <!--      </section>-->
     </div>
   </div>
-  <script>
-
-  </script>
   <footer class="footer row">
     <div>
       © 2020 All rights reserved.

@@ -56,6 +56,42 @@ html {
   }
 }
 
+.loading-wrapper {
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999999999999;
+  background-color: #f5f5f5;
+  &.hide_loading-wrapper {
+      display: none;
+    }
+  .snail {
+    position: absolute;
+    width: 120px;
+    height: 72px;
+    top: calc(50% - 36px);
+    left: calc(50% - 60px);
+    .snail-main{
+      position: absolute;
+      width: 100%;
+    }
+    .snail-animation {
+      position: absolute;
+      width: 40px;
+      height: auto;
+      top: 10px;
+      left: 14px;
+      animation-name: spin;
+      animation-timing-function: linear;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+}
+
 .mobile_header {
   display: none;
 }
@@ -268,6 +304,10 @@ aside {
     padding-top: 100px;
     position: relative;
     perspective: 1500px;
+    .container {
+      overflow: hidden;
+    }
+    overflow: hidden;
     section {
       //transition: 4s all ease-in-out;
       max-width: 100%;
@@ -1055,7 +1095,9 @@ body {
   }
 }
 
-
+.disable-click {
+  pointer-events: none;
+}
 
 //media imports
 
@@ -1064,48 +1106,78 @@ body {
 
 
 
-.animateOn {
+.animateOn1 {
   animation-name: animeon;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-duration: 0.4s;
+  animation-duration: 0.65s;
 }
 
-.animateOff {
+.animateOff1 {
   animation-name: animeoff;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-duration: 0.4s;
+  animation-duration: 0.65s;
 }
-@keyframes animeon {
-  0% {
-    top: 0;
-    opacity: 0;
-    visibility: visible;
-    height: auto;
-    overflow: visible;
-    padding: 0 15px;
-  }
-  100% {
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-    height: auto;
-    overflow: visible;
-    padding: 0 15px;
-  }
+
+.animateOn2 {
+  animation-name: slideron;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.65s;
 }
-@keyframes animeoff {
-  0% {
-    opacity: 1;
-    visibility: visible;
-    height: auto;
-    overflow: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: visible;
-    height: auto;
-    overflow: visible;
-  }
+
+.animateOff2 {
+  animation-name: slideroff;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.65s;
 }
+
+.animateOn3 {
+  animation-name: sliderupon;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.65s;
+}
+
+.animateOff3 {
+  animation-name: sliderupoff;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.65s;
+}
+
+.animateOn4 {
+  animation-name: angleoneon;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.65s;
+}
+
+.animateOff4 {
+  animation-name: angleoneoff;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.65s;
+}
+
+//.animateOn3 {
+//  transform-style: preserve-3d;
+//  perspective: 800px;
+//  transform-origin: 50% 0% 1000px;
+//  animation-name: rotationthreedon;
+//  animation-iteration-count: 1;
+//  animation-fill-mode: forwards;
+//  animation-duration: 4s;
+//}
+//
+//.animateOff3 {
+//  perspective: 800px;
+//  transform-style: preserve-3d;
+//  transform-origin: 50% 0% 1000px;
+//  animation-name: rotationthreedoff;
+//  animation-iteration-count: 1;
+//  animation-fill-mode: forwards;
+//  animation-duration: 4s;
+//}

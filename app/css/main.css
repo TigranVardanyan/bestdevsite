@@ -1,4 +1,283 @@
 @charset "UTF-8";
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes animeon {
+  0% {
+    top: 0;
+    opacity: 0;
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    padding: 0 15px; }
+  100% {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    padding: 0 15px; } }
+
+@keyframes animeon {
+  0% {
+    top: 0;
+    opacity: 0;
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    padding: 0 15px; }
+  100% {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    padding: 0 15px; } }
+
+@-webkit-keyframes animeoff {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    overflow: visible; }
+  100% {
+    opacity: 0;
+    visibility: visible;
+    height: auto;
+    overflow: visible; } }
+
+@keyframes animeoff {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    overflow: visible; }
+  100% {
+    opacity: 0;
+    visibility: visible;
+    height: auto;
+    overflow: visible; } }
+
+@-webkit-keyframes slideron {
+  0% {
+    top: 0;
+    left: 100vw;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%; }
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%; } }
+
+@keyframes slideron {
+  0% {
+    top: 0;
+    left: 100vw;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%; }
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%; } }
+
+@-webkit-keyframes slideroff {
+  0% {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: 100%; }
+  100% {
+    opacity: 1;
+    left: -100vw;
+    visibility: visible;
+    height: 100%;
+    overflow: visible; } }
+
+@keyframes slideroff {
+  0% {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: 100%; }
+  100% {
+    opacity: 1;
+    left: -100vw;
+    visibility: visible;
+    height: 100%;
+    overflow: visible; } }
+
+@-webkit-keyframes sliderupon {
+  0% {
+    top: 100vh;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%;
+    z-index: 91; }
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%;
+    z-index: 91; } }
+
+@keyframes sliderupon {
+  0% {
+    top: 100vh;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%;
+    z-index: 91; }
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%;
+    z-index: 91; } }
+
+@-webkit-keyframes sliderupoff {
+  0% {
+    left: 0;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: 100%; }
+  100% {
+    opacity: 1;
+    top: -100vh;
+    left: 0;
+    visibility: visible;
+    height: 100%;
+    overflow: visible; } }
+
+@keyframes sliderupoff {
+  0% {
+    left: 0;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: 100%; }
+  100% {
+    opacity: 1;
+    top: -100vh;
+    left: 0;
+    visibility: visible;
+    height: 100%;
+    overflow: visible; } }
+
+@-webkit-keyframes angleoneon {
+  0% {
+    top: 100vh;
+    left: 100vw;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%;
+    z-index: 91; }
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%;
+    z-index: 91; } }
+
+@keyframes angleoneon {
+  0% {
+    top: 100vh;
+    left: 100vw;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%;
+    z-index: 91; }
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    padding: 0 15px;
+    height: 100%;
+    z-index: 91; } }
+
+@-webkit-keyframes angleoneoff {
+  0% {
+    left: 0;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: 100%; }
+  100% {
+    top: -100vh;
+    left: -100vw;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    overflow: visible; } }
+
+@keyframes angleoneoff {
+  0% {
+    left: 0;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: 100%; }
+  100% {
+    top: -100vh;
+    left: -100vw;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    overflow: visible; } }
+
 :root {
   --header-height: 100px;
   --text-color-change-transition: 0.4s all ease;
@@ -67,6 +346,42 @@ html {
       text-decoration: none;
       color: inherit;
       outline: none; }
+
+.loading-wrapper {
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999999999999;
+  background-color: #f5f5f5; }
+  .loading-wrapper.hide_loading-wrapper {
+    display: none; }
+  .loading-wrapper .snail {
+    position: absolute;
+    width: 120px;
+    height: 72px;
+    top: -webkit-calc(50% - 36px);
+    top: calc(50% - 36px);
+    left: -webkit-calc(50% - 60px);
+    left: calc(50% - 60px); }
+    .loading-wrapper .snail .snail-main {
+      position: absolute;
+      width: 100%; }
+    .loading-wrapper .snail .snail-animation {
+      position: absolute;
+      width: 40px;
+      height: auto;
+      top: 10px;
+      left: 14px;
+      -webkit-animation-name: spin;
+              animation-name: spin;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite; }
 
 .mobile_header {
   display: none; }
@@ -275,7 +590,10 @@ aside {
   padding-top: 100px;
   position: relative;
   -webkit-perspective: 1500px;
-          perspective: 1500px; }
+          perspective: 1500px;
+  overflow: hidden; }
+  .wrapper .main .container {
+    overflow: hidden; }
   .wrapper .main section {
     max-width: 100%;
     visibility: hidden;
@@ -1086,6 +1404,9 @@ body {
     left: -10%;
     top: -10%; } }
 
+.disable-click {
+  pointer-events: none; }
+
 @media only screen and (max-width: 992px) {
   :root {
     --header-height: 50px; }
@@ -1239,78 +1560,82 @@ body {
     height: 36px !important;
     line-height: 18px !important; } }
 
-.animateOn {
+.animateOn1 {
   -webkit-animation-name: animeon;
           animation-name: animeon;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s; }
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s; }
 
-.animateOff {
+.animateOff1 {
   -webkit-animation-name: animeoff;
           animation-name: animeoff;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s; }
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s; }
 
-@-webkit-keyframes animeon {
-  0% {
-    top: 0;
-    opacity: 0;
-    visibility: visible;
-    height: auto;
-    overflow: visible;
-    padding: 0 15px; }
-  100% {
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-    height: auto;
-    overflow: visible;
-    padding: 0 15px; } }
+.animateOn2 {
+  -webkit-animation-name: slideron;
+          animation-name: slideron;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s; }
 
-@keyframes animeon {
-  0% {
-    top: 0;
-    opacity: 0;
-    visibility: visible;
-    height: auto;
-    overflow: visible;
-    padding: 0 15px; }
-  100% {
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-    height: auto;
-    overflow: visible;
-    padding: 0 15px; } }
+.animateOff2 {
+  -webkit-animation-name: slideroff;
+          animation-name: slideroff;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s; }
 
-@-webkit-keyframes animeoff {
-  0% {
-    opacity: 1;
-    visibility: visible;
-    height: auto;
-    overflow: visible; }
-  100% {
-    opacity: 0;
-    visibility: visible;
-    height: auto;
-    overflow: visible; } }
+.animateOn3 {
+  -webkit-animation-name: sliderupon;
+          animation-name: sliderupon;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s; }
 
-@keyframes animeoff {
-  0% {
-    opacity: 1;
-    visibility: visible;
-    height: auto;
-    overflow: visible; }
-  100% {
-    opacity: 0;
-    visibility: visible;
-    height: auto;
-    overflow: visible; } }
+.animateOff3 {
+  -webkit-animation-name: sliderupoff;
+          animation-name: sliderupoff;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s; }
+
+.animateOn4 {
+  -webkit-animation-name: angleoneon;
+          animation-name: angleoneon;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s; }
+
+.animateOff4 {
+  -webkit-animation-name: angleoneoff;
+          animation-name: angleoneoff;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s; }

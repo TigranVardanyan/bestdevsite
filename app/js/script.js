@@ -6,6 +6,10 @@ let root = document.documentElement; // get root
 let colors = document.getElementById('colors'); // html elem all colors wrapper
 let toolbarColors = document.querySelectorAll(".page_color-colors div"); // get all colors
 
+window.onload  = () => {
+  document.querySelector('.loading-wrapper').classList.add('hide_loading-wrapper');
+};
+
 function ToolbarUncheck(toolbarColors) {
   for(let i = 0; i < toolbarColors.length; i++) {
     toolbarColors[i].innerHTML = "";   //uncheck

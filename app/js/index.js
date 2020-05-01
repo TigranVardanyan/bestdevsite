@@ -1,26 +1,31 @@
 class AnimatedTransitions {
   pageOn;
   pageOff = document.querySelector('section.current-section');
+  animation;
   constructor(pageOn) {
     this.pageOn = pageOn;
+    this.animation =   Math.round(Math.random() * 3 + 1);
   }
-  getAnimationTypeNumber() {
-    return Math.floor(Math.random()*7);
-  }
+  // getAnimationTypeNumber() {
+  //   return Math.floor(Math.random()*7);
+  // }
   showCurrentSection() {
-    // let sections = document.querySelectorAll('section.section')
-    // for(let i = 0; i < sections.length; i++) {
-    //   sections.classList.remove("current-section")
-    // }
-    this.pageOff.classList.add('animateOff');
-    this.pageOn.classList.add("animateOn");
+    let sections = document.querySelectorAll('section.section');
+    for(let i = 0; i < sections.length; i++) {
+      sections[i].classList.add("disable-click")
+    }
+    this.pageOff.classList.add('animateOff' + this.animation);
+    this.pageOn.classList.add("animateOn" + this.animation);
     //
     setTimeout(()=>{
       this.pageOff.classList.remove('current-section');
-      this.pageOff.classList.remove('animateOff');
-      this.pageOn.classList.remove("animateOn");
+      this.pageOff.classList.remove('animateOff' + this.animation);
+      this.pageOn.classList.remove("animateOn" + this.animation);
       this.pageOn.classList.add("current-section");
-    }, 400)
+      for(let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("disable-click")
+      }
+    }, 650)
   }
 }
 function resetNavActiveClass(elements) {
