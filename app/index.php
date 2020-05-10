@@ -229,6 +229,10 @@
             <!--            </div>-->
             <div class="row">
               <div class="portfolio-grid">
+                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/3danimation/">
+                  3danimation
+                  <img src="img/3danimation.png" alt="">
+                </a>
                 <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/imgtonline/">
                   imgtonline
                   <img src="img/imgtonline.png" alt="">
@@ -723,7 +727,7 @@
                 </div>
                 <div class="form-group" id="form-group-textarea">
                   <i class="fas fa-comment"></i>
-                  <label for="inputTextarea">Message for Me</label>
+                  <label for="inputTextarea">Message Me</label>
                   <textarea name="inputTextarea" id="inputTextarea" rows="3"></textarea>
                 </div>
                 <button type="submit" class="submit-form" id="form-group-submit">Submit</button>

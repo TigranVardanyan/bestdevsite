@@ -397,8 +397,8 @@ html {
   position: fixed;
   top: 75px;
   z-index: 999999999999999999;
-  left: -webkit-calc(100% - 55px);
-  left: calc(100% - 55px);
+  left: -webkit-calc(100% - 55px - 1px);
+  left: calc(100% - 55px - 1px);
   -webkit-transition: var(--text-color-change-transition);
   -o-transition: var(--text-color-change-transition);
   transition: var(--text-color-change-transition); }
@@ -425,11 +425,17 @@ aside {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
-  pointer-events: none; }
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   aside.show_toolbar {
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateX(-1px);
+        -ms-transform: translateX(-1px);
+            transform: translateX(-1px);
     pointer-events: auto; }
   aside .page_color {
     background: #ffffff;
@@ -592,8 +598,6 @@ aside {
   -webkit-perspective: 1500px;
           perspective: 1500px;
   overflow: hidden; }
-  .wrapper .main .container {
-    overflow: hidden; }
   .wrapper .main section {
     max-width: 100%;
     visibility: hidden;
