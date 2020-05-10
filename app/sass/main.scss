@@ -128,7 +128,9 @@ aside {
   z-index: 9999;
   transform: translateX(100%);
   pointer-events: none;
+  transition: all 0.3s ease;
   &.show_toolbar {
+    transition: all 0.3s ease;
     transform: translateX(0);
     pointer-events: auto;
   }
