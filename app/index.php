@@ -229,6 +229,10 @@
             <!--            </div>-->
             <div class="row">
               <div class="portfolio-grid">
+                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/3danimation/">
+                  3danimation
+                  <img src="img/3danimation.png" alt="">
+                </a>
                 <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/imgtonline/">
                   imgtonline
                   <img src="img/imgtonline.png" alt="">

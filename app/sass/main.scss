@@ -107,7 +107,7 @@ html {
   position: fixed;
   top: 75px;
   z-index: 999999999999999999;
-  left: calc(100% - 55px);
+  left: calc(100% - 55px - 1px);
   transition: var(--text-color-change-transition);
   i {
     transition: var(--text-color-change-transition);
@@ -131,7 +131,7 @@ aside {
   transition: all 0.3s ease;
   &.show_toolbar {
     transition: all 0.3s ease;
-    transform: translateX(0);
+    transform: translateX(-1px);
     pointer-events: auto;
   }
   .page_color {
