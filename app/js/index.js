@@ -39,9 +39,17 @@ let navigationSectionLi = document.querySelectorAll('nav ul li');
 navigationSection.addEventListener('click', (e)=> {
   if(e.target.hasAttribute('data-section')) {
     let pageOn = document.getElementById(e.target.getAttribute('data-section'));
-    sessionStorage.setItem('section', e.target.dataset.section)
+    sessionStorage.setItem('section', e.target.dataset.section);
     console.log(e.target.dataset.section);
     let q = new AnimatedTransitions(pageOn);
+    for(let k = 0; k < navigationSectionLi.length; k++) {
+      navigationSectionLi[k].style.pointerEvents = "none";
+    }
+    setTimeout(function() {
+      for(let k = 0; k < navigationSectionLi.length; k++) {
+        navigationSectionLi[k].style.pointerEvents = "auto";
+      }
+    }, 700);
     if (q.pageOff === pageOn) {
       // console.log('same')
       return
