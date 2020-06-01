@@ -596,8 +596,7 @@ aside {
   padding-top: 100px;
   position: relative;
   -webkit-perspective: 1500px;
-          perspective: 1500px;
-  overflow: hidden; }
+          perspective: 1500px; }
   .wrapper .main section {
     max-width: 100%;
     visibility: hidden;
