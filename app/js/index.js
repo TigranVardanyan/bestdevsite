@@ -40,7 +40,6 @@ navigationSection.addEventListener('click', (e)=> {
   if(e.target.hasAttribute('data-section')) {
     let pageOn = document.getElementById(e.target.getAttribute('data-section'));
     sessionStorage.setItem('section', e.target.dataset.section);
-    console.log(e.target.dataset.section);
     let q = new AnimatedTransitions(pageOn);
     for(let k = 0; k < navigationSectionLi.length; k++) {
       navigationSectionLi[k].style.pointerEvents = "none";

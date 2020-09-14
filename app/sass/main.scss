@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .relative-container {
   position: relative;
-  //width: 100%;
+  overflow: hidden;
 }
 ul, li, ol {
   margin: 0;
