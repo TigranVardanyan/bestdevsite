@@ -1646,27 +1646,27 @@
 
 @media only screen and (min-width: 375px) and (max-width: 425px) {
   ymaps {
-    max-width: 285px!important;
+    max-width: 285px !important;
   }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 768px) {
   ymaps {
-    max-width: 285px!important;
+    max-width: 285px !important;
   }
   .profession {
-    height: 36px!important;
-    line-height: 18px!important;
+    height: 36px !important;
+    line-height: 18px !important;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .social-links_new {
-    grid-template-columns: 1fr 1fr!important;
+    grid-template-columns: 1fr 1fr !important;
   }
   .profession {
-    height: 36px!important;
-    line-height: 18px!important;
+    height: 36px !important;
+    line-height: 18px !important;
   }
 }
 

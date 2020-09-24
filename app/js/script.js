@@ -5,32 +5,30 @@ ColorChange
 let root = document.documentElement; // get root
 let colors = document.getElementById('colors'); // html elem all colors wrapper
 let toolbarColors = document.querySelectorAll(".page_color-colors div"); // get all colors
-
-window.onload  = () => {
+window.onload = () => {
   document.querySelector('.loading-wrapper').classList.add('hide_loading-wrapper');
 };
 
 function ToolbarUncheck(toolbarColors) {
-  for(let i = 0; i < toolbarColors.length; i++) {
+  for (let i = 0; i < toolbarColors.length; i++) {
     toolbarColors[i].innerHTML = "";   //uncheck
   }
 } // toolbar uncheck
 function initCChanger() { //init ColorChanger
   ToolbarUncheck(toolbarColors);  // unchecking toolbar colors
   document.querySelector(`[data-color = "${localStorage.getItem('targetColor')}"]`);
-  if(localStorage.getItem('targetColor')) { // if any color in local storage
+  if (localStorage.getItem('targetColor')) { // if any color in local storage
     document.querySelector(`[data-color = "${localStorage.getItem('targetColor')}"]`).innerHTML = "<i class=\"fas fa-check\"></i>";
     root.style.setProperty('--accent-color', localStorage.getItem('targetColor'));
-  } else {
-    localStorage.setItem('targetColor' , "#2196F3"); //if not set default
+  }
+  else {
+    localStorage.setItem('targetColor', "#2196F3"); //if not set default
     root.style.setProperty('--accent-color', localStorage.getItem('targetColor'));
     toolbarColors[2].innerHTML = "<i class=\"fas fa-check\"></i>";
   }
 }
 
 initCChanger();
-
-
 colors.addEventListener('click', (e) => { // if click get color from data-color attr
   let color = e.target.getAttribute("data-color"); //if it is not null
   if (color != null) {
@@ -40,70 +38,49 @@ colors.addEventListener('click', (e) => { // if click get color from data-color 
     document.querySelector(`[data-color = "${localStorage.getItem('targetColor')}"]`).innerHTML = "<i class=\"fas fa-check\"></i>";
   }
 });
-
-
-
-
-
-
 let cog = document.getElementById('cogRot');
 let toolbarColorsWrapper = document.getElementById('aside');
 cog.addEventListener('click', () => {
   if (toolbarColorsWrapper.classList.contains('show_toolbar')) {
     toolbarColorsWrapper.classList.remove('show_toolbar')
-  } else {
+  }
+  else {
     toolbarColorsWrapper.classList.add('show_toolbar');
   }
 });
-
-
-
-
-
-
-
-
-
-
 /*
 nav toggle
  */
-
 let navToggle = document.getElementById('nav-toggle');
 let nav = document.querySelector('nav');
 navToggle.addEventListener('click', () => {
   if (nav.classList.contains('active')) {
     nav.classList.remove('active')
-  } else {
+  }
+  else {
     nav.classList.add('active')
   }
-
 });
-
-
-
-
-
 /*
 Scroll / header fix
  */
-
 //main scripts
 let headerRow = document.querySelector('.header-row');
-window.onscroll = function() {
-  if(document.documentElement.clientWidth > 992) {
-    if(window.pageYOffset > 25) {
+window.onscroll = function () {
+  if (document.documentElement.clientWidth > 992) {
+    if (window.pageYOffset > 25) {
       headerRow.classList.add('sticked');
       root.style.setProperty('--header-height', '60px');
-    } else {
+    }
+    else {
       headerRow.classList.remove('sticked');
       root.style.setProperty('--header-height', "100px");
     }
-  } else {
+  }
+  else {
     root.style.setProperty('--header-height', "50px")
   }
 };
-
 //
 //
 // let homeBtn = document.getElementById('homeBtn');
@@ -129,8 +106,6 @@ window.onscroll = function() {
 // //   portfolio.style.height = "0";
 // //   portfolio.style.transform = "scale(0)";
 // // });
-
-
 let testimonial_next = document.getElementById('testimonial_next');
 let testimonial_prev = document.getElementById('testimonial_prev');
 let testimonial_position = 0;
@@ -138,55 +113,48 @@ let testimonial_width = 98;
 root.style.setProperty("--testimonial-position", testimonial_position + "%");
 root.style.setProperty("--testimonial-item-width", testimonial_width + "%");
 console.log(root.style.getPropertyValue("--testimonial-position"));
-
-testimonial_next.addEventListener('click', ()=> {
-  if(testimonial_position > -100) {
+testimonial_next.addEventListener('click', () => {
+  if (testimonial_position > -100) {
     testimonial_position = testimonial_position - 100;
-    root.style.setProperty("--testimonial-position",  testimonial_position + "%");
+    root.style.setProperty("--testimonial-position", testimonial_position + "%");
     console.log(root.style.getPropertyValue("--testimonial-position"));
   }
 });
-
-testimonial_prev.addEventListener('click', ()=> {
-  if(testimonial_position < 0) {
+testimonial_prev.addEventListener('click', () => {
+  if (testimonial_position < 0) {
     testimonial_position = testimonial_position + 100;
     root.style.setProperty("--testimonial-position", testimonial_position + "%");
     console.log(root.style.getPropertyValue("--testimonial-position"));
   }
 });
-
-
-
-
 /*
     Contact
     Form animations
  */
-
 let contactForm = document.getElementById('contact-form-1');
 let formsLabels = document.querySelectorAll('form .form-group label');
 let zz = document.querySelectorAll('form .form-group input,textarea');
 let formsLabelsState = [];
-for(let i = 0; i < formsLabels.length; i++) {
+for (let i = 0; i < formsLabels.length; i++) {
   formsLabelsState[i] = false;
 }
-let events = ['click', 'focus', 'blur', 'change', 'keydown', 'mouseleave' ];
-for(let evnt of events) {   /*  evnt is not typo  dont touch it!! */
+let events = ['click', 'focus', 'blur', 'change', 'keydown', 'mouseleave'];
+for (let evnt of events) {   /*  evnt is not typo  dont touch it!! */
   contactForm.addEventListener(evnt, (e) => {
-    for(let i = 0; i < formsLabels.length; i++) {
+    for (let i = 0; i < formsLabels.length; i++) {
       if (formsLabelsState[i] != true) {
         formsLabels[i].style.top = "0";
       }
     }
     if (e.target.nodeName == "INPUT" || e.target.nodeName == "TEXTAREA") {
-
       //console.log(e);
       e.target.previousElementSibling.style.top = "-20px";
     }
-    for(let i = 0; i < formsLabels.length; i++) {
-      if(zz[i].value != "") {
+    for (let i = 0; i < formsLabels.length; i++) {
+      if (zz[i].value != "") {
         formsLabelsState[i] = true;
-      } else {
+      }
+      else {
         formsLabelsState[i] = false;
       }
     }

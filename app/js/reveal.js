@@ -1,4 +1,5 @@
 const text = baffle('.reveal');
+
 function loop() {
   text.set({
     characters: "▒░▓░ ▓▒<▒/ ░▓░█ █>/ /▓▒░ ░▒█▒",
@@ -7,5 +8,6 @@ function loop() {
   text.start();
   text.reveal(2500);
 }
+
 setTimeout(loop, 2500)
-setInterval(loop , 8000)
+setInterval(loop, 8000)
