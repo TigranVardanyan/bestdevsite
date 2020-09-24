@@ -13,7 +13,6 @@
       k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
     })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
     ym(62038246, "init", {
       clickmap: true,
       trackLinks: true,
@@ -147,14 +146,16 @@
             </div>
             <div class="main-header-social_links">
               <div class="social-links_new">
-                <a class="soc_btn cChange" target="_blank" href="https://www.facebook.com/profile.php?id=100005146777210"><i
-                      class="fab fa-facebook-f"></i></a>
+                <a class="soc_btn cChange" target="_blank"
+                   href="https://www.facebook.com/profile.php?id=100005146777210"><i
+                    class="fab fa-facebook-f"></i></a>
                 <a class="soc_btn cChange" target="_blank" href="https://www.instagram.com/tig.va/"><i
-                      class="fab fa-instagram"></i></a>
-                <a class="soc_btn cChange" target="_blank" href="https://ru.stackoverflow.com/users/299327/tigran-vardanyan"><i
-                      class="fab fa-stack-overflow"></i></a>
+                    class="fab fa-instagram"></i></a>
+                <a class="soc_btn cChange" target="_blank"
+                   href="https://ru.stackoverflow.com/users/299327/tigran-vardanyan"><i
+                    class="fab fa-stack-overflow"></i></a>
                 <a class="soc_btn cChange" target="_blank" href="https://github.com/TigranVardanyan"><i
-                      class="fab fa-github-alt"></i></a>
+                    class="fab fa-github-alt"></i></a>
               </div>
             </div>
           </div>
@@ -217,600 +218,593 @@
           </div>
         </div>
         <div class="main-content row">
-          <div class="container">
-            <!--            <div class="row">-->
-            <!--              <div class="portfolio-filters">-->
-            <!--                <ul>-->
-            <!--                  <li class="active">Programs</li>-->
-            <!--                  <li>Games</li>-->
-            <!--                  <li>Algorithms</li>-->
-            <!--                </ul>-->
-            <!--              </div>-->
-            <!--            </div>-->
-            <div class="row">
-              <div class="portfolio-grid">
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/smileCheckbox/">
-                  smileCheckbox
-                  <img src="img/smileCheckbox.png" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/3danimation/">
-                  3danimation
-                  <img src="img/3danimation.png" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/imgtonline/">
-                  imgtonline
-                  <img src="img/imgtonline.png" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/project_snake/">
-                  Snake
-                  <img src="img/snake.png" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/calculator/">
-                  Calculator
-                  <img src="img/calc.png" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/mouse/">
-                  Perspective
-                  <img src="img/mouse.gif" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/purble_pairs">
-                  Purble pairs
-                  <img src="img/purble_pairs.png" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/paintInMinimals/">
-                  Paint
-                  <img src="img/paintInMinimals.png" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/clicker/">
-                  Clicker
-                  <img src="img/clicker.png" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/stop_watch">
-                  Stopwatch
-                  <img src="img/stop_watch.png" alt="">
-                </a>
-                <a class="portfolio-item" href="https://www.mydailycode.ru/catalog/dice">
-                  Dice
-                  <img src="img/dice.png" alt="">
-                </a>
-              </div>
-              <!--              <button class="load-more">LOAD MORE</button>-->
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="resume" class="section-resume section ">
-        <div class="main-header row">
-          <div>
-            <h2 class="section-heading">
-              Resume
-            </h2>
-          </div>
-        </div>
-        <div class="main-content row">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-12">
-                <div class="row">
-                  <div class="resume-block">
-                    <h2 class="title">Experience</h2>
-                    <div class="experience timeline">
-                      <ul>
-                        <li>
-                          <div class="timeline-item">
-                            <div class="timeline-item-title">Junior software engineer</div>
-                            <span class="timeline-item-data">2020 mar - now</span>
-                            |
-                            <span class="timeline-item-place">10WEB</span>
-                            <p class="timeline-item-description">
-                              Plugin development and customer support
-                            </p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="timeline-item">
-                            <div class="timeline-item-title">Software engineer intern</div>
-                            <span class="timeline-item-data">2019 dec - 2020 feb</span>
-                            |
-                            <span class="timeline-item-place">10WEB</span>
-                            <p class="timeline-item-description">
-                              Plugin development and customer support
-                            </p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="timeline-item">
-                            <div class="timeline-item-title">Website administrator</div>
-                            <span class="timeline-item-data">2019 feb - 2019 jul</span>
-                            |
-                            <span class="timeline-item-place">Armos</span>
-                            <p class="timeline-item-description">
-                              Manage and maintain website, add functionality, change appearance and content, SEO
-                              optimization, social media advertising and email newsletters, create and update web
-                              pages, testing and customer support.
-                            </p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="row">
-                  <div class="resume-block">
-                    <h2 class="title">Education</h2>
-                    <div class="education timeline">
-                      <ul>
-                        <li>
-                          <div class="timeline-item">
-                            <div class="timeline-item-title">Radiophysics</div>
-                            <span class="timeline-item-data">2015-2019</span>
-                            |
-                            <span class="timeline-item-place">YSU</span>
-                            <p class="timeline-item-description">
-                              Radiophysics and electronics - Chair of Ultra high – Frequency Radiophysics
-                            </p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="row">
-                  <div class="skills">
-                    <h2 class="title">Coding <span>Skills</span></h2>
-                    <ul>
-                      <li>
-                        <h3>
-                          HTML
-                        </h3>
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95"
-                               aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <h3>
-                          CSS/SASS
-                        </h3>
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
-                               aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <h3>
-                          JavaScript
-                        </h3>
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70"
-                               aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <h3>
-                          PHP
-                        </h3>
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"
-                               aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <h3>
-                          SQL
-                        </h3>
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40"
-                               aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <h3>
-                          C#
-                        </h3>
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30"
-                               aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="button-wrapper">
-                      <a class="download_button" href="<?php echo CV ?>" download>
-                        DOWNLOAD RESUME
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="services" class="section-services section ">
-        <div class="main-header row">
-          <div>
-            <h2 class="section-heading">
-              Services
-            </h2>
-          </div>
-        </div>
-        <div class="main-content row">
-          <div class="container">
-            <div class="row">
-              <div class="my-services">
-                <h3 class="title">My <span>Services</span></h3>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-12">
-                      <div class="service">
-                        <div class="service-logo layout"></div>
-                        <h4 class="service-title">
-                          Web page layout
-                        </h4>
-                        <p>
-                          Layout of web pages from the layout using HTML5, CSS3 and JS
-                        </p>
-                      </div>
+          <!--          TODO portfolio filter-->
+          <!--          <div class="container">-->
+          <!--                        <div class="row">-->
+          <!--                          <div class="portfolio-filters">-->
+          <!--                            <ul>-->
+          <!--                              <li class="active">Programs</li>-->
+          <!--                              <li>Games</li>-->
+          <!--                              <li>Algorithms</li>-->
+          <!--                            </ul>-->
+          <!--                          </div>-->
+          <!--                        </div>-->
+          <!--            <div class="row">-->
 
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                      <div class="service">
-                        <div class="service-logo web"></div>
-                        <h4 class="service-title">
-                          Web site development
-                        </h4>
-                        <p>
-                          Creation of technical specifications for website development, layout, programming, testing
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                      <div class="service">
-                        <div class="service-logo managment"></div>
-                        <h4 class="service-title">
-                          Web site managment
-                        </h4>
-                        <p>
-                          Manage website, add functionality, social media advertising and email newsletters, create
-                          and update web pages.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                      <div class="service">
-                        <div class="service-logo optimization"></div>
-                        <h4 class="service-title">
-                          SEO optimization
-                        </h4>
-                        <p>
-                          Improving site visibility for search robots
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <h4 class="title">Testimonials</h4>
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="testimonial-wrapper">
-                        <div class="testimonial">
-                          <div class="testimonial-item">
-                            <h5 class="testimonial-name">Dave J.</h5>
-                            <h5 class="testimonial-company">Apple inc</h5>
-                            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="" class="testimonial-img">
-                            <p class="testimonial-text">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eligendi magni odit
-                              optio quas tempora.
-                            </p>
-                          </div>
-                          <div class="testimonial-item">
-                            <h5 class="testimonial-name">Fern L.</h5>
-                            <h5 class="testimonial-company">Yellow Networks</h5>
-                            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" class="testimonial-img">
-                            <p class="testimonial-text">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad impedit iste nesciunt
-                              provident quas reprehenderit?
-                            </p>
-                          </div>
-                          <!--                                                    <div class="testimonial-item">-->
-                          <!--                                                      <h5 class="testimonial-name">Mya Haworth</h5>-->
-                          <!--                                                      <h5 class="testimonial-company">Iceberg Systems</h5>-->
-                          <!--                                                      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="" class="testimonial-img">-->
-                          <!--                                                      <p class="testimonial-text">-->
-                          <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum eveniet ipsam magni recusandae voluptatum.-->
-                          <!--                                                      </p>-->
-                          <!--                                                    </div>-->
-                          <!--                                                    <div class="testimonial-item">-->
-                          <!--                                                      <h5 class="testimonial-name">Lexi-Mai A.</h5>-->
-                          <!--                                                      <h5 class="testimonial-company">Dragonetworks</h5>-->
-                          <!--                                                      <img src="https://www.w3schools.com/w3images/avatar6.png" alt="" class="testimonial-img">-->
-                          <!--                                                      <p class="testimonial-text">-->
-                          <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum eveniet ipsam magni recusandae voluptatum.-->
-                          <!--                                                      </p>-->
-                          <!--                                                    </div>-->
-                        </div>
-                        <div class="testimonial-nav">
-                          <button id="testimonial_prev"><i class="fas fa-chevron-left"></i></button>
-                          <button id="testimonial_next"><i class="fas fa-chevron-right"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <!--              <button class="load-more">LOAD MORE</button>-->
+          <div class="portfolio-grid">
+            <a class="portfolio-item" href="https://www.mydailycode.com/catalog/smileCheckbox/">
+              smileCheckbox
+              <img src="img/smileCheckbox.png" alt="">
+            </a>
+            <a class="portfolio-item" href="https://www.mydailycode.com/catalog/3danimation/">
+              3danimation
+              <img src="img/3danimation.png" alt="">
+            </a>
+            <a class="portfolio-item" href="https://www.mydailycode.com/catalog/imgtonline/">
+              imgtonline
+              <img src="img/imgtonline.png" alt="">
+            </a>
+            <a class="portfolio-item" href="https://www.mydailycode.com/catalog/project_snake/">
+              Snake
+              <img src="img/snake.png" alt="">
+            </a>
+            <a class="portfolio-item" href="https://www.mydailycode.com/catalog/calculator/">
+              Calculator
+              <img src="img/calc.png" alt="">
+            </a>
+            <a class="portfolio-item" href="https://www.mydailycode.com/catalog/mouse/">
+              Perspective
+              <img src="img/mouse.gif" alt="">
+            </a>
+            <!-- todo better purble_pairs-->
+            <a class="portfolio-item" href="https://www.mydailycode.com/catalog/paintInMinimals/">
+              Paint
+              <img src="img/paintInMinimals.png" alt="">
+            </a>
+            <a class="portfolio-item" href="https://www.mydailycode.com/catalog/clicker/">
+              Clicker
+              <img src="img/clicker.png" alt="">
+            </a>
+            <!-- todo stopwatch-->
+            <!-- todo better dice-->
           </div>
         </div>
-      </section>
-      <section id="blog" class="section-blog section ">
-        <div class="main-header row">
-          <div>
-            <h2 class="section-heading">
-              Blog
-            </h2>
-          </div>
-        </div>
-        <div class="main-content row">
-          <div class="blog-wrapper">
-            <div class="blog-item">
-              <div class="img-elems">
-                <img src="https://picsum.photos/id/237/400/300" alt="">
-                <div class="img_overlay">
-                  <p>
-                    <i class="fas fa-file-alt"></i>
-                  </p>
-                </div>
-                <div class="blog-date">
-                  <div class="date-day">18</div>
-                  <div class="date-month">Sep</div>
-                </div>
-              </div>
-              <div class="blog-item-text">
-                <div class="blog-item-heading">
-                  Web application
-                </div>
-                <div class="blog-item-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
-                </div>
-              </div>
-            </div>
-            <div class="blog-item">
-              <div class="img-elems">
-                <img src="https://picsum.photos/id/296/400/300" alt="">
-                <div class="img_overlay">
-                  <p>
-                    <i class="fas fa-file-alt"></i>
-                  </p>
-                </div>
-                <div class="blog-date">
-                  <div class="date-day">18</div>
-                  <div class="date-month">Sep</div>
-                </div>
-              </div>
-              <div class="blog-item-text">
-                <div class="blog-item-heading">
-                  Web application
-                </div>
-                <div class="blog-item-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
-                </div>
-              </div>
-            </div>
-            <div class="blog-item">
-              <div class="img-elems">
-                <img src="https://picsum.photos/id/223/400/300" alt="">
-                <div class="img_overlay">
-                  <p>
-                    <i class="fas fa-file-alt"></i>
-                  </p>
-                </div>
-                <div class="blog-date">
-                  <div class="date-day">18</div>
-                  <div class="date-month">Sep</div>
-                </div>
-              </div>
-              <div class="blog-item-text">
-                <div class="blog-item-heading">
-                  Web application
-                </div>
-                <div class="blog-item-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
-                </div>
-              </div>
-            </div>
-            <div class="blog-item">
-              <div class="img-elems">
-                <img src="https://picsum.photos/id/437/400/300" alt="">
-                <div class="img_overlay">
-                  <p>
-                    <i class="fas fa-file-alt"></i>
-                  </p>
-                </div>
-                <div class="blog-date">
-                  <div class="date-day">18</div>
-                  <div class="date-month">Sep</div>
-                </div>
-              </div>
-              <div class="blog-item-text">
-                <div class="blog-item-heading">
-                  Web application
-                </div>
-                <div class="blog-item-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
-                </div>
-              </div>
-            </div>
-            <div class="blog-item">
-              <div class="img-elems">
-                <img src="https://picsum.photos/id/247/400/300" alt="">
-                <div class="img_overlay">
-                  <p>
-                    <i class="fas fa-file-alt"></i>
-                  </p>
-                </div>
-                <div class="blog-date">
-                  <div class="date-day">18</div>
-                  <div class="date-month">Sep</div>
-                </div>
-              </div>
-              <div class="blog-item-text">
-                <div class="blog-item-heading">
-                  Web application
-                </div>
-                <div class="blog-item-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
-                </div>
-              </div>
-            </div>
-            <div class="blog-item">
-              <div class="img-elems">
-                <img src="https://picsum.photos/id/236/400/300" alt="">
-                <div class="img_overlay">
-                  <p>
-                    <i class="fas fa-file-alt"></i>
-                  </p>
-                </div>
-                <div class="blog-date">
-                  <div class="date-day">18</div>
-                  <div class="date-month">Sep</div>
-                </div>
-              </div>
-              <div class="blog-item-text">
-                <div class="blog-item-heading">
-                  Web application
-                </div>
-                <div class="blog-item-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="section-contact section ">
-        <div class="main-header row">
-          <div>
-            <h2 class="section-heading">
-              Contact
-            </h2>
-          </div>
-        </div>
-        <div class="main-content row">
-
-          <div class="contact-grid">
-            <div class="map-section">
-              <h3 class="title">Get in <span>Touch</span></h3>
-              <script type="text/javascript" charset="utf-8" async
-                      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3ab8e1d250589aba08e407d4e267553de3669930e8fbe2c54b4f232205942d1&amp;height=180&amp;lang=en_US&amp;scroll=true"></script>
-              <div class="info">
-                <div class="info_el"><i class="fas fa-map-marker-alt"></i> <span>Yerevan, Armenia</span></div>
-                <div class="info_el"><i class="fas fa-envelope"></i> <span>tig.vardanyan.001@gmail.com</span></div>
-                <div class="info_el"><i class="fas fa-phone"></i> <span>+374 77 720166</span></div>
-                <div class="info_el"><i class="fas fa-check"></i> <span>Freelance Available</span></div>
-              </div>
-            </div>
-            <div class="form-section">
-              <h3 class="title">Contact <span>Form</span></h3>
-              <form id="contact-form-1">
-                <div class="form-group" id="form-group-text">
-                  <i class="fas fa-user"></i>
-                  <label for="inputName">Full Name</label>
-                  <input type="text" class="form-control" id="inputName" name="inputName">
-                </div>
-                <div class="form-group" id="form-group-email">
-                  <i class="fas fa-envelope"></i>
-                  <label for="inputEmail">Email Address</label>
-                  <input type="email" class="form-control" id="inputEmail" name="inputEmail">
-                </div>
-                <div class="form-group" id="form-group-textarea">
-                  <i class="fas fa-comment"></i>
-                  <label for="inputTextarea">Message Me</label>
-                  <textarea name="inputTextarea" id="inputTextarea" rows="3"></textarea>
-                </div>
-                <button type="submit" class="submit-form" id="form-group-submit">Submit</button>
-              </form>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <!--      <section id="extra" class="section-extra section">-->
-      <!--        <div class="main-header row">-->
-      <!--          <div>-->
-      <!--            <h2 class="section-heading">-->
-      <!--              Extra-->
-      <!--            </h2>-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--        <div class="main-content row">-->
-      <!--          <div class="container">-->
-      <!--            <div class="row">-->
-      <!--              <div class="portfolio-filters">-->
-      <!--                <ul>-->
-      <!--                  <li class="active">Programs</li>-->
-      <!--                  <li>Games</li>-->
-      <!--                  <li>Algorithms</li>-->
-      <!--                </ul>-->
-      <!--              </div>-->
-      <!--            </div>-->
-      <!--            <div class="row">-->
-      <!--              <div class="portfolio-grid">-->
-      <!--                <div class="portfolio-item">-->
-      <!--                  Calculator-->
-      <!--                  <img src="img/snake.png" alt="">-->
-      <!--                </div>-->
-      <!--                <div class="portfolio-item">-->
-      <!--                  Snake-->
-      <!--                  <img src="img/snake.png" alt="">-->
-      <!--                </div>-->
-      <!--                <div class="portfolio-item">-->
-      <!--                  Perspective-->
-      <!--                  <img src="img/snake.png" alt="">-->
-      <!--                </div>-->
-      <!--                <div class="portfolio-item">-->
-      <!--                  Purble pairs-->
-      <!--                  <img src="img/snake.png" alt="">-->
-      <!--                </div>-->
-      <!--                <div class="portfolio-item">-->
-      <!--                  Paint-->
-      <!--                  <img src="img/snake.png" alt="">-->
-      <!--                </div>-->
-      <!--                <div class="portfolio-item">-->
-      <!--                  Clicker-->
-      <!--                  <img src="img/snake.png" alt="">-->
-      <!--                </div>-->
-      <!--                <div class="portfolio-item">-->
-      <!--                  Stopwatch-->
-      <!--                  <img src="img/snake.png" alt="">-->
-      <!--                </div>-->
-      <!--                <div class="portfolio-item">-->
-      <!--                  Dice-->
-      <!--                  <img src="img/snake.png" alt="">-->
-      <!--                </div>-->
-      <!--                <div class="portfolio-item">-->
-      <!--                  Ajax form-->
-      <!--                  <img src="img/snake.png" alt="">-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <button class="load-more">LOAD MORE</button>-->
-      <!--            </div>-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--      </section>-->
     </div>
   </div>
-  <footer class="footer row">
-    <div>
-      © 2020 All rights reserved.
+  </section>
+  <section id="resume" class="section-resume section ">
+    <div class="main-header row">
+      <div>
+        <h2 class="section-heading">
+          Resume
+        </h2>
+      </div>
     </div>
-  </footer>
+    <div class="main-content row">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="row">
+              <div class="resume-block">
+                <h2 class="title">Experience</h2>
+                <div class="experience timeline">
+                  <ul>
+                    <li>
+                      <div class="timeline-item">
+                        <div class="timeline-item-title">Junior software engineer</div>
+                        <span class="timeline-item-data">2020 mar - now</span>
+                        |
+                        <span class="timeline-item-place">10WEB</span>
+                        <p class="timeline-item-description">
+                          Plugin development and customer support
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-item">
+                        <div class="timeline-item-title">Software engineer intern</div>
+                        <span class="timeline-item-data">2019 dec - 2020 feb</span>
+                        |
+                        <span class="timeline-item-place">10WEB</span>
+                        <p class="timeline-item-description">
+                          Plugin development and customer support
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-item">
+                        <div class="timeline-item-title">Website administrator</div>
+                        <span class="timeline-item-data">2019 feb - 2019 jul</span>
+                        |
+                        <span class="timeline-item-place">Armos</span>
+                        <p class="timeline-item-description">
+                          Manage and maintain website, add functionality, change appearance and content, SEO
+                          optimization, social media advertising and email newsletters, create and update web
+                          pages, testing and customer support.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row">
+              <div class="resume-block">
+                <h2 class="title">Education</h2>
+                <div class="education timeline">
+                  <ul>
+                    <li>
+                      <div class="timeline-item">
+                        <div class="timeline-item-title">Radiophysics</div>
+                        <span class="timeline-item-data">2015-2019</span>
+                        |
+                        <span class="timeline-item-place">YSU</span>
+                        <p class="timeline-item-description">
+                          Radiophysics and electronics - Chair of Ultra high – Frequency Radiophysics
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="skills">
+                <h2 class="title">Coding <span>Skills</span></h2>
+                <ul>
+                  <li>
+                    <h3>
+                      HTML
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      CSS/SASS
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      JavaScript
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      PHP
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      SQL
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      C#
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="button-wrapper">
+                  <a class="download_button" href="<?php echo CV ?>" download>
+                    DOWNLOAD RESUME
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="section-services section ">
+    <div class="main-header row">
+      <div>
+        <h2 class="section-heading">
+          Services
+        </h2>
+      </div>
+    </div>
+    <div class="main-content row">
+      <div class="container">
+        <div class="row">
+          <div class="my-services">
+            <h3 class="title">My <span>Services</span></h3>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-12">
+                  <div class="service">
+                    <div class="service-logo layout"></div>
+                    <h4 class="service-title">
+                      Web page layout
+                    </h4>
+                    <p>
+                      Layout of web pages from the layout using HTML5, CSS3 and JS
+                    </p>
+                  </div>
+
+                </div>
+                <div class="col-lg-3 col-md-12">
+                  <div class="service">
+                    <div class="service-logo web"></div>
+                    <h4 class="service-title">
+                      Web site development
+                    </h4>
+                    <p>
+                      Creation of technical specifications for website development, layout, programming, testing
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                  <div class="service">
+                    <div class="service-logo managment"></div>
+                    <h4 class="service-title">
+                      Web site managment
+                    </h4>
+                    <p>
+                      Manage website, add functionality, social media advertising and email newsletters, create
+                      and update web pages.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                  <div class="service">
+                    <div class="service-logo optimization"></div>
+                    <h4 class="service-title">
+                      SEO optimization
+                    </h4>
+                    <p>
+                      Improving site visibility for search robots
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="title">Testimonials</h4>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="testimonial-wrapper">
+                    <div class="testimonial">
+                      <div class="testimonial-item">
+                        <h5 class="testimonial-name">Dave J.</h5>
+                        <h5 class="testimonial-company">Apple inc</h5>
+                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="" class="testimonial-img">
+                        <p class="testimonial-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eligendi magni odit
+                          optio quas tempora.
+                        </p>
+                      </div>
+                      <div class="testimonial-item">
+                        <h5 class="testimonial-name">Fern L.</h5>
+                        <h5 class="testimonial-company">Yellow Networks</h5>
+                        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" class="testimonial-img">
+                        <p class="testimonial-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad impedit iste nesciunt
+                          provident quas reprehenderit?
+                        </p>
+                      </div>
+                      <!--                                                    <div class="testimonial-item">-->
+                      <!--                                                      <h5 class="testimonial-name">Mya Haworth</h5>-->
+                      <!--                                                      <h5 class="testimonial-company">Iceberg Systems</h5>-->
+                      <!--                                                      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="" class="testimonial-img">-->
+                      <!--                                                      <p class="testimonial-text">-->
+                      <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum eveniet ipsam magni recusandae voluptatum.-->
+                      <!--                                                      </p>-->
+                      <!--                                                    </div>-->
+                      <!--                                                    <div class="testimonial-item">-->
+                      <!--                                                      <h5 class="testimonial-name">Lexi-Mai A.</h5>-->
+                      <!--                                                      <h5 class="testimonial-company">Dragonetworks</h5>-->
+                      <!--                                                      <img src="https://www.w3schools.com/w3images/avatar6.png" alt="" class="testimonial-img">-->
+                      <!--                                                      <p class="testimonial-text">-->
+                      <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum eveniet ipsam magni recusandae voluptatum.-->
+                      <!--                                                      </p>-->
+                      <!--                                                    </div>-->
+                    </div>
+                    <div class="testimonial-nav">
+                      <button id="testimonial_prev"><i class="fas fa-chevron-left"></i></button>
+                      <button id="testimonial_next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog" class="section-blog section ">
+    <div class="main-header row">
+      <div>
+        <h2 class="section-heading">
+          Blog
+        </h2>
+      </div>
+    </div>
+    <div class="main-content row">
+      <div class="blog-wrapper">
+        <div class="blog-item">
+          <div class="img-elems">
+            <img src="https://picsum.photos/id/237/400/300" alt="">
+            <div class="img_overlay">
+              <p>
+                <i class="fas fa-file-alt"></i>
+              </p>
+            </div>
+            <div class="blog-date">
+              <div class="date-day">18</div>
+              <div class="date-month">Sep</div>
+            </div>
+          </div>
+          <div class="blog-item-text">
+            <div class="blog-item-heading">
+              Web application
+            </div>
+            <div class="blog-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
+            </div>
+          </div>
+        </div>
+        <div class="blog-item">
+          <div class="img-elems">
+            <img src="https://picsum.photos/id/296/400/300" alt="">
+            <div class="img_overlay">
+              <p>
+                <i class="fas fa-file-alt"></i>
+              </p>
+            </div>
+            <div class="blog-date">
+              <div class="date-day">18</div>
+              <div class="date-month">Sep</div>
+            </div>
+          </div>
+          <div class="blog-item-text">
+            <div class="blog-item-heading">
+              Web application
+            </div>
+            <div class="blog-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
+            </div>
+          </div>
+        </div>
+        <div class="blog-item">
+          <div class="img-elems">
+            <img src="https://picsum.photos/id/223/400/300" alt="">
+            <div class="img_overlay">
+              <p>
+                <i class="fas fa-file-alt"></i>
+              </p>
+            </div>
+            <div class="blog-date">
+              <div class="date-day">18</div>
+              <div class="date-month">Sep</div>
+            </div>
+          </div>
+          <div class="blog-item-text">
+            <div class="blog-item-heading">
+              Web application
+            </div>
+            <div class="blog-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
+            </div>
+          </div>
+        </div>
+        <div class="blog-item">
+          <div class="img-elems">
+            <img src="https://picsum.photos/id/437/400/300" alt="">
+            <div class="img_overlay">
+              <p>
+                <i class="fas fa-file-alt"></i>
+              </p>
+            </div>
+            <div class="blog-date">
+              <div class="date-day">18</div>
+              <div class="date-month">Sep</div>
+            </div>
+          </div>
+          <div class="blog-item-text">
+            <div class="blog-item-heading">
+              Web application
+            </div>
+            <div class="blog-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
+            </div>
+          </div>
+        </div>
+        <div class="blog-item">
+          <div class="img-elems">
+            <img src="https://picsum.photos/id/247/400/300" alt="">
+            <div class="img_overlay">
+              <p>
+                <i class="fas fa-file-alt"></i>
+              </p>
+            </div>
+            <div class="blog-date">
+              <div class="date-day">18</div>
+              <div class="date-month">Sep</div>
+            </div>
+          </div>
+          <div class="blog-item-text">
+            <div class="blog-item-heading">
+              Web application
+            </div>
+            <div class="blog-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
+            </div>
+          </div>
+        </div>
+        <div class="blog-item">
+          <div class="img-elems">
+            <img src="https://picsum.photos/id/236/400/300" alt="">
+            <div class="img_overlay">
+              <p>
+                <i class="fas fa-file-alt"></i>
+              </p>
+            </div>
+            <div class="blog-date">
+              <div class="date-day">18</div>
+              <div class="date-month">Sep</div>
+            </div>
+          </div>
+          <div class="blog-item-text">
+            <div class="blog-item-heading">
+              Web application
+            </div>
+            <div class="blog-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa porro veritatis vero.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section-contact section ">
+    <div class="main-header row">
+      <div>
+        <h2 class="section-heading">
+          Contact
+        </h2>
+      </div>
+    </div>
+    <div class="main-content row">
+
+      <div class="contact-grid">
+        <div class="map-section">
+          <h3 class="title">Get in <span>Touch</span></h3>
+          <script type="text/javascript" charset="utf-8" async
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3ab8e1d250589aba08e407d4e267553de3669930e8fbe2c54b4f232205942d1&amp;height=180&amp;lang=en_US&amp;scroll=true"></script>
+          <div class="info">
+            <div class="info_el"><i class="fas fa-map-marker-alt"></i> <span>Yerevan, Armenia</span></div>
+            <div class="info_el"><i class="fas fa-envelope"></i> <span>tig.vardanyan.001@gmail.com</span></div>
+            <div class="info_el"><i class="fas fa-phone"></i> <span>+374 77 720166</span></div>
+            <div class="info_el"><i class="fas fa-check"></i> <span>Freelance Available</span></div>
+          </div>
+        </div>
+        <div class="form-section">
+          <h3 class="title">Contact <span>Form</span></h3>
+          <form id="contact-form-1">
+            <div class="form-group" id="form-group-text">
+              <i class="fas fa-user"></i>
+              <label for="inputName">Full Name</label>
+              <input type="text" class="form-control" id="inputName" name="inputName">
+            </div>
+            <div class="form-group" id="form-group-email">
+              <i class="fas fa-envelope"></i>
+              <label for="inputEmail">Email Address</label>
+              <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+            </div>
+            <div class="form-group" id="form-group-textarea">
+              <i class="fas fa-comment"></i>
+              <label for="inputTextarea">Message Me</label>
+              <textarea name="inputTextarea" id="inputTextarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="submit-form" id="form-group-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--      <section id="extra" class="section-extra section">-->
+  <!--        <div class="main-header row">-->
+  <!--          <div>-->
+  <!--            <h2 class="section-heading">-->
+  <!--              Extra-->
+  <!--            </h2>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--        <div class="main-content row">-->
+  <!--          <div class="container">-->
+  <!--            <div class="row">-->
+  <!--              <div class="portfolio-filters">-->
+  <!--                <ul>-->
+  <!--                  <li class="active">Programs</li>-->
+  <!--                  <li>Games</li>-->
+  <!--                  <li>Algorithms</li>-->
+  <!--                </ul>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="row">-->
+  <!--              <div class="portfolio-grid">-->
+  <!--                <div class="portfolio-item">-->
+  <!--                  Calculator-->
+  <!--                  <img src="img/snake.png" alt="">-->
+  <!--                </div>-->
+  <!--                <div class="portfolio-item">-->
+  <!--                  Snake-->
+  <!--                  <img src="img/snake.png" alt="">-->
+  <!--                </div>-->
+  <!--                <div class="portfolio-item">-->
+  <!--                  Perspective-->
+  <!--                  <img src="img/snake.png" alt="">-->
+  <!--                </div>-->
+  <!--                <div class="portfolio-item">-->
+  <!--                  Purble pairs-->
+  <!--                  <img src="img/snake.png" alt="">-->
+  <!--                </div>-->
+  <!--                <div class="portfolio-item">-->
+  <!--                  Paint-->
+  <!--                  <img src="img/snake.png" alt="">-->
+  <!--                </div>-->
+  <!--                <div class="portfolio-item">-->
+  <!--                  Clicker-->
+  <!--                  <img src="img/snake.png" alt="">-->
+  <!--                </div>-->
+  <!--                <div class="portfolio-item">-->
+  <!--                  Stopwatch-->
+  <!--                  <img src="img/snake.png" alt="">-->
+  <!--                </div>-->
+  <!--                <div class="portfolio-item">-->
+  <!--                  Dice-->
+  <!--                  <img src="img/snake.png" alt="">-->
+  <!--                </div>-->
+  <!--                <div class="portfolio-item">-->
+  <!--                  Ajax form-->
+  <!--                  <img src="img/snake.png" alt="">-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <button class="load-more">LOAD MORE</button>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </section>-->
+</div>
+</div>
+<footer class="footer row">
+  <div>
+    © 2020 All rights reserved.
+  </div>
+</footer>
 </div>
 
 
