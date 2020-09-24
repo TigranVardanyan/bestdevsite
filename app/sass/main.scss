@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .relative-container {
   position: relative;
-  overflow: hidden;
+  //overflow: hidden; bug
 }
 ul, li, ol {
   margin: 0;
@@ -1002,13 +1002,15 @@ aside {
     }
 
   }
-  footer {
-    div {
-      width: 100%;
-      margin-top: 34px;
-      margin-bottom: 28px;
-      text-align: center;
-    }
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  div {
+    margin-top: 34px;
+    margin-bottom: 28px;
+    text-align: center;
   }
 }
 
