@@ -10,7 +10,7 @@ const Navbar = props => {
           <Grid item xs={3}>
             <div className="title mobile_hidden">
               <Link to="/">
-                <h1>Tigran <span className="cChange">Vardanyan</span></h1>
+                <h1 className={classes.author}>Tigran <span className={classes.cChange}>Vardanyan</span></h1>
               </Link>
             </div>
           </Grid>

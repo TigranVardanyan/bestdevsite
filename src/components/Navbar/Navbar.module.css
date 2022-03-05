@@ -9,3 +9,15 @@
   margin: 0px 20px;
   color: #b8bbbf;
 }
+
+.author {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  color: #49515d;
+}
+
+.cChange {
+  color: cadetblue;
+}
