@@ -1,0 +1,11 @@
+.container {
+  height: 100px;
+}
+
+.navigationList li {
+  line-height: 1;
+  display: inline-block;
+  padding: 8px 0px;
+  margin: 0px 20px;
+  color: #b8bbbf;
+}

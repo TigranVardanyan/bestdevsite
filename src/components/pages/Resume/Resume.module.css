@@ -1,0 +1,13 @@
+.educationTimeline {
+  padding: 0 20px 0 0 ;
+}
+.experienceTimeline {
+  padding: 0 0 0 20px;
+}
+
+.educationTimeline h1, .experienceTimeline h1 {
+  font-family: "Montserrat" , sans-serif;
+  color: #1f1f1f;
+  font-size: 1.5rem;
+  padding: 8px 8px 8px 0px;
+}

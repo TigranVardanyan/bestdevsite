@@ -2,23 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="406d8bd2-a0f2-40e8-9b90-5630acd70000" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/body_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/main_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/snake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/reveal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sass/_animations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sass/_media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sass/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/body_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/main_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/snake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainSection/MainSection.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Service/Service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Service/Service.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TimelineElement/TimelineElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/TimelineElement/TimelineElement.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Resume/Resume.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/MainContent/MainContent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/MainContent/MainContent.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/MainHeader/MainHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/MainHeader/MainHeader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_bestdevsite/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/old_bestdevsite/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +35,15 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,9 +60,36 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\10web\self\bestdevsite\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\10web\self\bestdevsite\src\containers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -55,11 +99,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646424082873</updated>
-      <workItem from="1646424085157" duration="334000" />
+      <workItem from="1646424085157" duration="16900000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
