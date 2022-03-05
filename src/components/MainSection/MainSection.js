@@ -20,13 +20,13 @@ const MainSection = props => {
         >
           <Grid item xs={9}>
             <Routes>
-              <Route path="/" element={<Home/>}/>
-              <Route path="/portfolio" element={<Portfolio/>}/>
-              <Route path="/resume" element={<Resume/>}/>
-              <Route path="/services" element={<Services/>}/>
-              <Route path="/blog" element={<Blog/>}/>
-              <Route path="/contact" element={<Contact/>}/>
-              <Route path="/extra" element={<Extra/>}/>
+              <Route path="/bestdevsite/" element={<Home/>}/>
+              <Route path="/bestdevsite/portfolio" element={<Portfolio/>}/>
+              <Route path="/bestdevsite/resume" element={<Resume/>}/>
+              <Route path="/bestdevsite/services" element={<Services/>}/>
+              <Route path="/bestdevsite/blog" element={<Blog/>}/>
+              <Route path="/bestdevsite/contact" element={<Contact/>}/>
+              <Route path="/bestdevsite/extra" element={<Extra/>}/>
             </Routes>
           </Grid>
         </Grid>

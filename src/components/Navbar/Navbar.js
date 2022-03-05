@@ -16,13 +16,13 @@ const Navbar = props => {
           </Grid>
           <Grid item xs={9}>
               <ul className={classes.navigationList}>
-                <li><Link to="/" data-section="home" id="homeBtn">Home</Link></li>
-                <li><Link to="/portfolio" data-section="portfolio" id="portfolioBtn">Portfolio</Link></li>
-                <li><Link to="/resume" data-section="resume" id="resumeBtn">Resume</Link></li>
-                <li><Link to="/services" data-section="services" id="servicesBtn">Services</Link></li>
-                <li><Link to="/blog" data-section="blog" id="blogBtn">Blog</Link></li>
-                <li><Link to="/contact" data-section="contact" id="contactBtn">Contact</Link></li>
-                <li><Link to="/extra" data-section="extra" id="extraBtn">Extra</Link></li>
+                <li><Link to="/bestdevsite/" data-section="home" id="homeBtn">Home</Link></li>
+                <li><Link to="/bestdevsite/portfolio" data-section="portfolio" id="portfolioBtn">Portfolio</Link></li>
+                <li><Link to="/bestdevsite/resume" data-section="resume" id="resumeBtn">Resume</Link></li>
+                <li><Link to="/bestdevsite/services" data-section="services" id="servicesBtn">Services</Link></li>
+                <li><Link to="/bestdevsite/blog" data-section="blog" id="blogBtn">Blog</Link></li>
+                <li><Link to="/bestdevsite/contact" data-section="contact" id="contactBtn">Contact</Link></li>
+                <li><Link to="/bestdevsite/extra" data-section="extra" id="extraBtn">Extra</Link></li>
               </ul>
           </Grid>
         </Grid>
