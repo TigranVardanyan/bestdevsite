@@ -30,7 +30,7 @@ const Contact = props => {
         <Grid container direction="row">
           <Grid className={classes.contacts} item xs={12} md={6}>
             <Grid container direction="column">
-              <Grid item>
+              <Grid item xs={12} md={6}>
                 <h2>Get in <span className={classes.cChange}>Touch</span></h2>
                 <div className="ymaps" style={{ height: "240px" }}>
                   <YMaps query={{ lang: "en_US" }}>
@@ -39,7 +39,7 @@ const Contact = props => {
                       zoom: 16,
                       controls: [],
                       type: 'yandex#satellite'
-                    }}>
+                    }} width="100%">
                       <FullscreenControl/>
                       <TypeSelector options={{ float: 'left' }}
                                     defaultMapTypes={['yandex#map', 'yandex#hybrid', 'yandex#satellite']}/>
@@ -79,7 +79,7 @@ const Contact = props => {
               <Grid item xs={12}>
                 <Grid container justifyContent={'center'}>
                   <Button variant="contained" sx={{ backgroundColor: 'cadetblue', mt: 1 }} endIcon={<SendIcon/>}>
-                    Send
+                    Send Message
                   </Button>
                 </Grid>
               </Grid>
