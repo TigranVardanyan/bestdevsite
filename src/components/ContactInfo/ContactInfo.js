@@ -11,7 +11,7 @@ const ContactInfo = props => {
         <TableBody>
           <TableRow>
             <TableCell>
-              <MyLocationOutlinedIcon/>
+              <MyLocationOutlinedIcon sx={{color: "var(--theme-color)"}}/>
             </TableCell>
             <TableCell>
               Yerevan, Armenia
@@ -19,7 +19,7 @@ const ContactInfo = props => {
           </TableRow>
           <TableRow>
             <TableCell>
-              <EmailOutlinedIcon/>
+              <EmailOutlinedIcon sx={{color: "var(--theme-color)"}}/>
             </TableCell>
             <TableCell>
               tig.vardanyan.001@gmail.com
@@ -27,7 +27,7 @@ const ContactInfo = props => {
           </TableRow>
           <TableRow>
             <TableCell>
-              <PhoneEnabledOutlinedIcon/>
+              <PhoneEnabledOutlinedIcon sx={{color: "var(--theme-color)"}}/>
             </TableCell>
             <TableCell>
               +374 77 720 166
@@ -35,7 +35,7 @@ const ContactInfo = props => {
           </TableRow>
           <TableRow>
             <TableCell>
-              <CheckOutlinedIcon/>
+              <CheckOutlinedIcon sx={{color: "var(--theme-color)"}}/>
             </TableCell>
             <TableCell>
               Freelance Available

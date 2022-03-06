@@ -1,41 +1,48 @@
 import classes from './ColorChanger.module.css'
 import BrightnessHighIcon from '@mui/icons-material/BrightnessHigh';
 import CheckIcon from '@mui/icons-material/Check';
-import {useState} from "react";
-
+import {useEffect, useState} from "react";
+import ColorChangeElement from "./ColorChangeElement";
 
 const ColorChanger = props => {
-  const [cogClass, setCogClass] = useState('cogRot1')
-  const [cColor, setCColor] = useState('#7E6DF6')
+  const [showColorPalette, setShowColorPalette] = useState(true)
+  const [selectedColor, setSelectedColor ] = useState('paletteColor1')
 
-  const cogMouseOverHandler = () => {
-    setCogClass('cogRot2')
+  useEffect(() => {
+    localStorage.getItem('theme-palette') && setSelectedColor(localStorage.getItem('theme-palette'))
+    document.documentElement.style.setProperty('--theme-color', localStorage.getItem('theme-color'));
+  }, [])
+
+  const cogClickHandler = () => {
+    setShowColorPalette(!showColorPalette);
   }
-
-  const cogMouseLeaveHandler = () => {
-    setCogClass('cogRot1')
+  const colorClickHandler = (e) => {
+    if ( e.target.dataset.color ) {
+      setSelectedColor(e.target.id)
+      document.documentElement.style.setProperty('--theme-color', e.target.dataset.color);
+      localStorage.setItem('theme-palette', e.target.id)
+      localStorage.setItem('theme-color', e.target.dataset.color)
+    }
   }
   return (<aside className={classes.colorChanger}>
-    <div className={classes.colorChangerToggler} onMouseOver={cogMouseOverHandler} onMouseLeave={cogMouseLeaveHandler}>
-      <BrightnessHighIcon sx={{transition: 'unset'}} className={classes[cogClass]}/>
+    <div className={classes.colorChangerToggler}>
+      <BrightnessHighIcon sx={{ transition: 'unset' }} className={classes.cogRot1} onClick={cogClickHandler}/>
     </div>
-    <div className={classes.colorPalette}>
+    <div className={`${classes.colorPalette} ${showColorPalette ? classes.show : ''}` }>
       <span>Main Color</span>
-      <div className={classes.colors}>
-        <div className={classes.color} data-color={'#7E6DF6'} style={{backgroundColor: "#7E6DF6"}}>
-          <CheckIcon/>
-        </div>
-        <div className={classes.color} data-color={'#F44336'} style={{backgroundColor: "#F44336"}}/>
-        <div className={classes.color} data-color={'#2196F3'} style={{backgroundColor: "#2196F3"}}/>
-        <div className={classes.color} data-color={'#FF5722'} style={{backgroundColor: "#FF5722"}}/>
-        <div className={classes.color} data-color={'#2ECA7F'} style={{backgroundColor: "#2ECA7F"}}/>
-        <div className={classes.color} data-color={'#29B6F6'} style={{backgroundColor: "#29B6F6"}}/>
-        <div className={classes.color} data-color={'#E91E63'} style={{backgroundColor: "#E91E63"}}/>
-        <div className={classes.color} data-color={'#AA00FF'} style={{backgroundColor: "#AA00FF"}}/>
-        <div className={classes.color} data-color={'#FF9800'} style={{backgroundColor: "#FF9800"}}/>
-        <div className={classes.color} data-color={'#FBC02D'} style={{backgroundColor: "#FBC02D"}}/>
-        <div className={classes.color} data-color={'#9DD100'} style={{backgroundColor: "#9DD100"}}/>
-        <div className={classes.color} data-color={'#26D9AC'} style={{backgroundColor: "#26D9AC"}}/>
+      <div className={classes.colors} onClick={colorClickHandler}>
+        <ColorChangeElement id={'paletteColor1'} color={'#7E6DF6'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor2'} color={'#F44336'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor3'} color={'#2196F3'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor4'} color={'#FF5722'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor5'} color={'#2ECA7F'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor6'} color={'#29B6F6'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor7'} color={'#E91E63'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor8'} color={'#AA00FF'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor9'} color={'#FF9800'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor10'} color={'#FBC02D'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor11'} color={'#9DD100'} selected={selectedColor}/>
+        <ColorChangeElement id={'paletteColor12'} color={'#26D9AC'} selected={selectedColor}/>
       </div>
     </div>
   </aside>)

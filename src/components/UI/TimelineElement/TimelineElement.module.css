@@ -5,7 +5,7 @@
 
 .timelineElement {
   border: 2px solid #e0e0e0;
-  border-left: 2px solid cadetblue;
+  border-left: 2px solid var(--theme-color);
   margin-left: 20px;
   position: relative;
   padding: 10px;
@@ -22,7 +22,7 @@
   width: 12px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 2px solid cadetblue;
+  border: 2px solid var(--theme-color);
   background-color: white;
 }
 
@@ -32,7 +32,7 @@
   content: "";
   height: 2px;
   width: 16px;
-  background-color: cadetblue;
+  background-color: var(--theme-color);
   top: 23px;
   left: -17px;
 }

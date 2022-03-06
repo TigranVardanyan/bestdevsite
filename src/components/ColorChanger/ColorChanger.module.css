@@ -30,6 +30,13 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
+  transform: translateX(100%);
+  transform-origin: 100% center;
+  transition: 1s ease;
+}
+
+.colorPalette.show {
+  transform: translateX(0px);
 }
 
 .colorPalette span {
@@ -50,17 +57,12 @@
   margin-bottom: 5px;
 }
 
-.color {
-  height: 25px;
-  width: 35px;
-}
-
 .colorChanger .cogRot1 {
   transform: rotate(-720deg);
   transition: 0.45s linear;
 }
 
-.colorChanger .cogRot2 {
+.colorChanger .cogRot1:hover {
   transform: rotate(720deg);
   transition: 0.45s linear;
 }

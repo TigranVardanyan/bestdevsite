@@ -58,27 +58,27 @@ const Contact = props => {
                 <h2>Contact <span className={classes.cChange}>Form</span></h2>
               </Grid>
               <Box item xs={12} sx={{ display: 'flex', alignItems: 'flex-start', mt: 1 }}>
-                <AccountCircleOutlinedIcon sx={{ color: 'cadetblue', width: "28px", height: '28px', mx: 2, my: 2 }}/>
+                <AccountCircleOutlinedIcon sx={{ color: 'var(--theme-color)', width: "28px", height: '28px', mx: 2, my: 2 }}/>
                 <FormControl fullWidth>
                   <TextField id="input-with-sx" label="Full name" variant="standard"/>
                 </FormControl>
               </Box>
               <Box item xs={12} sx={{ display: 'flex', alignItems: 'flex-start', mt: 1 }}>
-                <EmailOutlinedIcon sx={{ color: 'cadetblue', width: "28px", height: '28px', mx: 2, my: 2 }}/>
+                <EmailOutlinedIcon sx={{ color: 'var(--theme-color)', width: "28px", height: '28px', mx: 2, my: 2 }}/>
                 <FormControl fullWidth>
                   <TextField id="input-with-sx" label="Email" variant="standard"/>
                 </FormControl>
               </Box>
               <Box item xs={12} sx={{ display: 'flex', alignItems: 'flex-start', mt: 1 }}>
                 <ChatBubbleOutlineOutlinedIcon
-                  sx={{ color: 'cadetblue', width: "28px", height: '28px', mx: 2, my: 2 }}/>
+                  sx={{ color: 'var(--theme-color)', width: "28px", height: '28px', mx: 2, my: 2 }}/>
                 <FormControl fullWidth>
                   <TextField id="input-with-sx" label="Message" variant="standard" multiline={true} rows={6}/>
                 </FormControl>
               </Box>
               <Grid item xs={12}>
                 <Grid container justifyContent={'center'}>
-                  <Button variant="contained" sx={{ backgroundColor: 'cadetblue', mt: 1 }} endIcon={<SendIcon/>}>
+                  <Button variant="contained" sx={{ backgroundColor: 'var(--theme-color)', mt: 1 }} endIcon={<SendIcon/>}>
                     Send Message
                   </Button>
                 </Grid>

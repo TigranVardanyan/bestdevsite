@@ -19,5 +19,5 @@
 }
 
 .cChange {
-  color: cadetblue;
+  color: var(--theme-color);;
 }
