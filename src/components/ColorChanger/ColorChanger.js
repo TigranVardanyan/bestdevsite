@@ -1,6 +1,5 @@
 import classes from './ColorChanger.module.css'
 import BrightnessHighIcon from '@mui/icons-material/BrightnessHigh';
-import CheckIcon from '@mui/icons-material/Check';
 import {useEffect, useState} from "react";
 import ColorChangeElement from "./ColorChangeElement";
 

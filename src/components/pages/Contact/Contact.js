@@ -4,11 +4,6 @@ import {
   Box,
   Button, FormControl,
   Grid,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableRow,
-  TextareaAutosize,
   TextField
 } from "@mui/material";
 import classes from './Contact.module.css'
@@ -17,9 +12,6 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import SendIcon from '@mui/icons-material/Send';
-import MyLocationOutlinedIcon from '@mui/icons-material/MyLocationOutlined';
-import PhoneEnabledOutlinedIcon from '@mui/icons-material/PhoneEnabledOutlined';
-import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 import ContactInfo from "../../ContactInfo/ContactInfo";
 
 const Contact = props => {
