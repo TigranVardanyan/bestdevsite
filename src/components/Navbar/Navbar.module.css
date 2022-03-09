@@ -10,6 +10,36 @@
   color: #b8bbbf;
 }
 
+.navigationList li a {
+  display: inline;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 8px;
+  margin-right: 8px;
+}
+
+.navigationList li a::after {
+  display: inline;
+  position: absolute;
+  transform: scale(0);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  content: '';
+  height: 2px;
+  width: 30px;
+  margin: 0 auto;
+  background-color: #2eca7f;
+  transition: all 0.5s;
+}
+
+.navigationList li a:hover::after {
+  transform: scale(1);
+}
+
 .author {
   text-align: center;
   font-size: 1.3rem;
