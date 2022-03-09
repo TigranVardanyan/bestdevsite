@@ -4,6 +4,18 @@ object-assign
 @license MIT
 */
 
+/*!
+ * Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */
+
+/*!
+ * baffle 0.3.6 - A tiny javascript library for obfuscating and revealing text in DOM elements.
+ * Copyright (c) 2016 Cam Wiegert <cam@camwiegert.com> - https://camwiegert.github.io/baffle
+ * License: MIT
+ */
+
 /**
  * React Router DOM v6.2.2
  *
