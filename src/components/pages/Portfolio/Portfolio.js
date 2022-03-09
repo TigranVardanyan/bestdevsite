@@ -5,7 +5,9 @@ import TimelineElement from "../../UI/TimelineElement/TimelineElement";
 const Portfolio = props => {
   return (
     <>
-      <MainHeader sectionHeader={"Portfolio"}/>
+      <MainHeader>
+        <h1>Portfolio</h1>
+      </MainHeader>
       <MainContent>
         <TimelineElement
           name={'10Web'}
@@ -20,7 +22,7 @@ const Portfolio = props => {
           link={'https://10web.io'}
         />
         <TimelineElement
-          name={'Xaviar'}
+          name={'10Web'}
           date={'2021-2022'}
           desc={'Hello world'}
           link={'https://10web.io'}

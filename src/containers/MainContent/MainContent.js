@@ -1,10 +1,11 @@
 import classes from "./MainContent.module.css";
+import {Grid} from "@mui/material";
 
 const MainContent = props => {
   return (
-    <div className={classes.mainContent}>
+    <Grid container className={classes.mainContent}>
       {props.children}
-    </div>
+    </Grid>
   )
 }
 

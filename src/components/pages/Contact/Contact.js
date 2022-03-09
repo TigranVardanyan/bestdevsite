@@ -17,13 +17,15 @@ import ContactInfo from "../../ContactInfo/ContactInfo";
 const Contact = props => {
   return (
     <>
-      <MainHeader sectionHeader={"Contact"}/>
+      <MainHeader>
+        <h1>Contact</h1>
+      </MainHeader>
       <MainContent>
         <Grid container direction="row">
           <Grid className={classes.contacts} item xs={12} md={6}>
             <Grid container direction="column">
               <Grid item xs={12} md={6}>
-                <h2>Get in <span className={classes.cChange}>Touch</span></h2>
+                <h2>Get in <span className={'cChange_color'}>Touch</span></h2>
                 <div className="ymaps" style={{ height: "240px" }}>
                   <YMaps query={{ lang: "en_US" }}>
                     <Map defaultState={{
@@ -47,7 +49,7 @@ const Contact = props => {
           <Grid className={classes.contactForm} item xs={12} md={6}>
             <Grid container direction="column">
               <Grid item xs={12}>
-                <h2>Contact <span className={classes.cChange}>Form</span></h2>
+                <h2>Contact <span className={'cChange_color'}>Form</span></h2>
               </Grid>
               <Box item xs={12} sx={{ display: 'flex', alignItems: 'flex-start', mt: 1 }}>
                 <AccountCircleOutlinedIcon sx={{ color: 'var(--theme-color)', width: "28px", height: '28px', mx: 2, my: 2 }}/>

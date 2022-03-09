@@ -24,3 +24,11 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+.cChange_color {
+  color: var(--theme-color)!important;
+}
+
+.cChange_bg {
+  background-color: var(--theme-color)!important;
+}

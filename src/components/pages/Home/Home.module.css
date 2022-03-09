@@ -1,0 +1,8 @@
+.author, .profession {
+  color: #ffffff;
+  text-align: center;
+}
+
+.cChange {
+  color: var(--theme-color);
+}

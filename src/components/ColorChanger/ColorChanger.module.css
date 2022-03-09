@@ -60,6 +60,9 @@
 .colorChanger .cogRot1 {
   transform: rotate(-720deg);
   transition: 0.45s linear;
+  transform-origin: 49% 51%;
+  width: 30px;
+  height: 30px;
 }
 
 .colorChanger .cogRot1:hover {
