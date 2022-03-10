@@ -1,14 +1,15 @@
-import avatar from './../../../assets/avatar.png'
 import MainHeader from "../../../containers/MainHeader/MainHeader";
 import MainContent from "../../../containers/MainContent/MainContent";
+import SocialIcon from "../../UI/SocialIcon/SocialIcon";
+import classes from './Home.module.css'
+import avatar from './../../../assets/avatar.png'
+
+import Reveal from "../../UI/Reveal/Reveal";
 import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
 import {faFacebookF} from "@fortawesome/free-brands-svg-icons/faFacebookF";
 import {faStackOverflow} from "@fortawesome/free-brands-svg-icons/faStackOverflow";
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import {Grid} from "@mui/material";
-import SocialIcon from "../../UI/SocialIcon/SocialIcon";
-import classes from './Home.module.css'
-import Reveal from "../../UI/Reveal/Reveal";
 
 const Home = props => {
   return (<>
