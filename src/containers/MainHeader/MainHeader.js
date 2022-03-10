@@ -6,6 +6,9 @@ const MainHeader = props => {
   return (
     <Grid
       container
+      direction={{ xs :'column', md: 'row' }}
+      justifyContent="center"
+      alignItems="center"
       className={classes.mainHeader}
       style={{backgroundImage: `url(${bg})`}}
     >

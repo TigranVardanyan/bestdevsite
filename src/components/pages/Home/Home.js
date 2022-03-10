@@ -1,6 +1,3 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faCoffee} from "@fortawesome/free-solid-svg-icons/faCoffee";
-import {fab} from '@fortawesome/free-brands-svg-icons'
 import avatar from './../../../assets/avatar.png'
 import MainHeader from "../../../containers/MainHeader/MainHeader";
 import MainContent from "../../../containers/MainContent/MainContent";
@@ -21,26 +18,27 @@ const Home = props => {
           <img id="photo-avatar" src={avatar} alt="" width={200} height={200}/>
         </div>
       </Grid>
-      <Grid continer xs={12} md={8}
-            container
-            direction="column"
-            justifyContent="center"
-            alignItems="center"
-      >
-        <h2 className={classes.author}>TIGRAN VARDANYAN</h2>
-        <h3 className={classes.profession}>
-          <div className="reveal">Software Developer</div>
-          <Reveal/>
-        </h3>
-        <div className="social-links_new">
-          <SocialIcon className={'cChange_color'} icon={faFacebookF}
-                      socialLink={'https://www.facebook.com/profile.php?id=100005146777210'}/>
-          <SocialIcon className={'cChange_color'} icon={faInstagram}
-                      socialLink={'https://www.instagram.com/tig_vardanyan/'}/>
-          <SocialIcon className={'cChange_color'} icon={faStackOverflow}
-                      socialLink={'https://ru.stackoverflow.com/users/299327/tigran-vardanyan'}/>
-          <SocialIcon className={'cChange_color'} icon={faGithub} socialLink={'https://github.com/TigranVardanyan'}/>
-        </div>
+      <Grid container xs={12} md={8} direction={"column"} alignItems={"center"}>
+        <Grid item xs={12}>
+          <h2 className={classes.author}>TIGRAN VARDANYAN</h2>
+        </Grid>
+        <Grid item>
+          <h3 className={classes.profession}>
+            <div className="reveal">Software Developer</div>
+            <Reveal/>
+          </h3>
+        </Grid>
+        <Grid item>
+          <div className="social-links_new">
+            <SocialIcon className={'cChange_color'} icon={faFacebookF}
+                        socialLink={'https://www.facebook.com/profile.php?id=100005146777210'}/>
+            <SocialIcon className={'cChange_color'} icon={faInstagram}
+                        socialLink={'https://www.instagram.com/tig_vardanyan/'}/>
+            <SocialIcon className={'cChange_color'} icon={faStackOverflow}
+                        socialLink={'https://ru.stackoverflow.com/users/299327/tigran-vardanyan'}/>
+            <SocialIcon className={'cChange_color'} icon={faGithub} socialLink={'https://github.com/TigranVardanyan'}/>
+          </div>
+        </Grid>
       </Grid>
     </MainHeader>
     <MainContent>
