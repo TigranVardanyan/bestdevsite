@@ -3,7 +3,7 @@ import {Grid} from "@mui/material";
 
 const MainContent = props => {
   return (
-    <Grid container className={classes.mainContent}>
+    <Grid container direction={"column"} className={classes.mainContent}>
       {props.children}
     </Grid>
   )

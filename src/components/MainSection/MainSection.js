@@ -18,7 +18,7 @@ const MainSection = props => {
           container
           spacing={0}
         >
-          <Grid item xs={9}>
+          <Grid item xs={10}>
             <Routes>
               <Route path="/bestdevsite/" element={<Home/>}/>
               <Route path="/bestdevsite/portfolio" element={<Portfolio/>}/>

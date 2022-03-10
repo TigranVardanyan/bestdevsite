@@ -1,0 +1,19 @@
+.homeHeader {
+  padding: 15px 50px;
+  background: var(--theme-color);
+  border-radius: 25px 25px 0 0;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.homeHeader h1 {
+  font-size: 44px;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
