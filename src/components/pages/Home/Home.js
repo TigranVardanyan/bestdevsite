@@ -9,14 +9,25 @@ import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
 import {faFacebookF} from "@fortawesome/free-brands-svg-icons/faFacebookF";
 import {faStackOverflow} from "@fortawesome/free-brands-svg-icons/faStackOverflow";
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
-import {Grid} from "@mui/material";
+import {Button, Grid, styled, Table, TableBody, TableContainer, TableRow} from "@mui/material";
+import TableCellTemp from "@mui/material/TableCell";
+
+import MyLocationOutlinedIcon from "@mui/icons-material/MyLocationOutlined";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import PhoneEnabledOutlinedIcon from "@mui/icons-material/PhoneEnabledOutlined";
+import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
+
+const TableCell = styled(TableCellTemp)(({}) => ({
+  border: 'none',
+}));
+
 
 const Home = props => {
   return (<>
-    <MainHeader style={{padding:'15px 50px'}}>
+    <MainHeader isHomepage={true}>
       <Grid item xs={12} md={4}>
         <div className="photo">
-          <img id="photo-avatar" src={avatar} alt="" width={270} height={270} style={{border: '6px solid white', position: "relative", top: '100px'}}/>
+          <img className={classes.photoAvatar} src={avatar} alt="" width={270} height={270}/>
         </div>
       </Grid>
       <Grid container xs={12} md={8} direction={"column"} alignItems={"center"}>
@@ -46,48 +57,74 @@ const Home = props => {
     <MainContent>
       <Grid container direction={"row"}>
         <Grid item xs={12} md={5}>
-          <div>
-            <h2>About <span className={classes.cChange}>Me</span></h2>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consnumquam quae quod vel. Accusamus amet dolores facilis iusto minus
-              obcaecati odio quae qui quo. Cum dolore laboriosam laudantium nulla perferendis, voluptatum.</p>
-          </div>
-          <button className="download_button">
-            DOWNLOAD RESUME
-          </button>
+          <Grid container direction={"column"}>
+            <Grid>
+              <h2>About <span className={classes.cChange}>Me</span></h2>
+            </Grid>
+            <Grid>
+              <p>Lorem ipsum dolor sit amet, consnumquam quae quod vel. Accusamus amet dolores facilis iusto minus
+                obcaecati odio quae qui quo. Cum dolore laboriosam laudantium nulla perferendis, voluptatum.</p>
+            </Grid>
+            <Button className="download_button" variant="outlined">
+              DOWNLOAD RESUME
+            </Button>
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={7}>
-          <div className="row">
-            <table>
-              <tbody>
-              <tr>
-                <td className="table_q">Age</td>
-                <td className="table_a">23</td>
-              </tr>
-              <tr>
-                <td className="table_q">Freelance</td>
-                <td className="table_a">Available</td>
-              </tr>
-              <tr>
-                <td className="table_q">Residence</td>
-                <td className="table_a">Armenian</td>
-              </tr>
-              <tr>
-                <td className="table_q">Address</td>
-                <td className="table_a">Armenia, Yerevan</td>
-              </tr>
-              <tr>
-                <td className="table_q">E-mail</td>
-                <td className="table_a cChange">tig.vardanyan.001@gmail.com</td>
-              </tr>
-              <tr>
-                <td className="table_q">Phone</td>
-                <td className="table_a">+374 77 720 166</td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
+        <Grid container xs={12} md={7} justifyContent={"center"} alignItems={"end"}>
+          <TableContainer>
+              <Table size="small">
+                <TableBody>
+                  <TableRow>
+                    <TableCell>
+                      Age
+                    </TableCell>
+                    <TableCell className={classes.tableCellRight}>
+                      22
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      Citizenship
+                    </TableCell>
+                    <TableCell className={classes.tableCellRight}>
+                      Armenian
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      Address
+                    </TableCell>
+                    <TableCell className={classes.tableCellRight}>
+                      Armenia, Yerevan
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      E-mail
+                    </TableCell>
+                    <TableCell className={classes.cChange + ' ' + classes.tableCellRight}>
+                      tig.vardanyan.001@gmail.com
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      Phone
+                    </TableCell>
+                    <TableCell className={classes.tableCellRight}>
+                      +374 77 720 166
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      Freelance
+                    </TableCell>
+                    <TableCell className={classes.tableCellRight}>
+                      Available
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
         </Grid>
       </Grid>
     </MainContent>

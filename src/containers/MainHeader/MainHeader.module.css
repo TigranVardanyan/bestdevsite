@@ -10,6 +10,18 @@
   background-size: cover;
 }
 
+.mainHeaderHomepage {
+  padding: 0 50px;
+  background: var(--theme-color);
+  border-radius: 25px 25px 0 0;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 .mainHeader h1 {
   font-size: 44px;
   font-family: Montserrat, Helvetica, sans-serif;

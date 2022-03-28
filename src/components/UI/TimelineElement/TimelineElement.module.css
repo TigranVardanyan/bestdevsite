@@ -15,8 +15,8 @@
 .timelineElement::before {
   display: block;
   position: absolute;
-  top: 16px;
-  left: -31.5px;
+  top: 18px;
+  left: -28.5px;
   content: "";
   height: 12px;
   width: 12px;

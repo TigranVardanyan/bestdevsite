@@ -9,7 +9,7 @@ const MainHeader = props => {
       direction={{ xs :'column', md: 'row' }}
       justifyContent="center"
       alignItems="center"
-      className={classes.mainHeader}
+      className={props.isHomepage ? classes.mainHeaderHomepage : classes.mainHeader}
       style={{backgroundImage: `url(${bg})`}}
     >
       {props.sectionHeader ? <h1>{props.sectionHeader}</h1> : props.children}

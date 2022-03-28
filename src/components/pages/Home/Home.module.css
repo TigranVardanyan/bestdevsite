@@ -4,5 +4,20 @@
 }
 
 .cChange {
-  color: var(--theme-color);
+  color: var(--theme-color)!important;
+}
+
+.photoAvatar {
+  transition: all 0.2s ease;
+  border: 6px solid white;
+  position: relative;
+  top: 40px;
+}
+.photoAvatar:hover {
+  top: 30px;
+  box-shadow: 0 15px 15px rgb(0 0 0 / 30%);
+}
+
+.tableCellRight {
+  text-align: right!important;
 }

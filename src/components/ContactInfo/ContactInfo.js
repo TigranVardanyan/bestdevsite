@@ -5,13 +5,14 @@ import PhoneEnabledOutlinedIcon from "@mui/icons-material/PhoneEnabledOutlined";
 import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
 
 const ContactInfo = props => {
+  const iconStyles = {color: "var(--theme-color)",cursor: 'pointer'}
   return (
     <TableContainer>
       <Table>
         <TableBody>
           <TableRow>
             <TableCell>
-              <MyLocationOutlinedIcon sx={{color: "var(--theme-color)"}}/>
+              <MyLocationOutlinedIcon sx={iconStyles}/>
             </TableCell>
             <TableCell>
               Yerevan, Armenia
@@ -19,7 +20,7 @@ const ContactInfo = props => {
           </TableRow>
           <TableRow>
             <TableCell>
-              <EmailOutlinedIcon sx={{color: "var(--theme-color)"}}/>
+              <EmailOutlinedIcon sx={iconStyles}/>
             </TableCell>
             <TableCell>
               tig.vardanyan.001@gmail.com
@@ -27,7 +28,7 @@ const ContactInfo = props => {
           </TableRow>
           <TableRow>
             <TableCell>
-              <PhoneEnabledOutlinedIcon sx={{color: "var(--theme-color)"}}/>
+              <PhoneEnabledOutlinedIcon sx={iconStyles}/>
             </TableCell>
             <TableCell>
               +374 77 720 166
@@ -35,7 +36,7 @@ const ContactInfo = props => {
           </TableRow>
           <TableRow>
             <TableCell>
-              <CheckOutlinedIcon sx={{color: "var(--theme-color)"}}/>
+              <CheckOutlinedIcon sx={iconStyles}/>
             </TableCell>
             <TableCell>
               Freelance Available
